@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1861 Census — Family Tree</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" media="print" href="/print.css">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/I0010/index.html">My tree</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/I0010/people/I0010/">Me</a>
+        <a class="secondary" href="/I0010/people/">People</a>
+        <a class="secondary" href="/I0010/places/">Places</a>
+        <a class="secondary" href="/I0010/events/">Events</a>
+        <a class="secondary" href="/I0010/census/">Census</a>
+        <a class="secondary" href="/I0010/birthdays/">Birthdays</a>
+        <a class="secondary" href="/I0010/surnames/">Surnames</a>
+        <span class="secondary">Viewing as Geoffrey &mdash; <a href="/">switch</a></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <h1>1861 Census <span class="years">7 Apr 1861</span></h1>
+
+    <div id="census-map"></div>
+    <div id="filters" class="event-filters"></div>
+
+    <table class="events-table" id="census-table">
+      <thead>
+        <tr>
+          <th data-col="0" class="sortable sort-asc">Name</th>
+          <th data-col="1" class="sortable">Household</th>
+          <th data-col="2" class="sortable">Place</th>
+          <th data-col="3" class="sortable" data-numeric="1">Born</th>
+          <th data-col="4" class="sortable" data-numeric="1">Age</th>
+          <th data-col="5" class="sortable">Relation</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr data-event-url="/I0010/events/E0309/">
+            <td>
+              <a href="/I0010/people/I0023/" class="male">Alfred Crowther</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0309/">Alfred Crowther</a>
+              
+            </td>
+            <td>
+              
+              <span></span>
+            </td>
+            <td class="year">1838</td>
+            <td class="year">22</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-event-url="/I0010/events/E0309/">
+            <td>
+              <a href="/I0010/people/I0024/" class="female">Clementine Ashford</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0309/">Alfred Crowther</a>
+              
+            </td>
+            <td>
+              
+              <span></span>
+            </td>
+            <td class="year">1840</td>
+            <td class="year">20</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-event-url="/I0010/events/E0309/">
+            <td>
+              <a href="/I0010/people/I0022/" class="male">Maurice Crowther</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0309/">Alfred Crowther</a>
+              
+            </td>
+            <td>
+              
+              <span></span>
+            </td>
+            <td class="year">1860</td>
+            <td class="year">0</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="51.5028" data-lon="-0.0877" data-place="Southwark" data-event-url="/I0010/events/E0314/">
+            <td>
+              <a href="/I0010/people/I0040/" class="female">Josephine Ashford</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0314/">Alfred Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0022/">Southwark</a>
+              
+            </td>
+            <td class="year">1800</td>
+            <td class="year">60</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="51.5028" data-lon="-0.0877" data-place="Southwark" data-event-url="/I0010/events/E0314/">
+            <td>
+              <a href="/I0010/people/I0039/" class="male">Alfred Ulverston</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0314/">Alfred Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0022/">Southwark</a>
+              
+            </td>
+            <td class="year">1801</td>
+            <td class="year">59</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="53.2591" data-lon="-1.9148" data-place="Buxton" data-event-url="/I0010/events/E0311/">
+            <td>
+              <a href="/I0010/people/I0029/" class="female">Lettice Stanwick</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0311/">Francis Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0030/">Buxton</a>
+              
+            </td>
+            <td class="year">1828</td>
+            <td class="year">32</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.2591" data-lon="-1.9148" data-place="Buxton" data-event-url="/I0010/events/E0311/">
+            <td>
+              <a href="/I0010/people/I0028/" class="male">Francis Ulverston</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0311/">Francis Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0030/">Buxton</a>
+              
+            </td>
+            <td class="year">1833</td>
+            <td class="year">27</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0010/events/E0315/">
+            <td>
+              <a href="/I0010/people/I0042/" class="male">Norman Idsworth</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0315/">Norman Idsworth</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0021/">Islington</a>
+              
+            </td>
+            <td class="year">1768</td>
+            <td class="year">92</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0010/events/E0313/">
+            <td>
+              <a href="/I0010/people/I0037/" class="male">Norman Yarmouth</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0313/">Norman Yarmouth</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0005/">Kingston upon Hull</a>
+              
+            </td>
+            <td class="year">1805</td>
+            <td class="year">55</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0010/events/E0313/">
+            <td>
+              <a href="/I0010/people/I0038/" class="female">Rosalind Vanthorpe</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0313/">Norman Yarmouth</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0005/">Kingston upon Hull</a>
+              
+            </td>
+            <td class="year">1810</td>
+            <td class="year">50</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-event-url="/I0010/events/E0312/">
+            <td>
+              <a href="/I0010/people/I0035/" class="male">Stanley Foxwell</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0312/">Stanley Foxwell</a>
+              
+            </td>
+            <td>
+              
+              <span></span>
+            </td>
+            <td class="year">1802</td>
+            <td class="year">58</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-event-url="/I0010/events/E0312/">
+            <td>
+              <a href="/I0010/people/I0036/" class="female">Dorothea Quinton</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0312/">Stanley Foxwell</a>
+              
+            </td>
+            <td>
+              
+              <span></span>
+            </td>
+            <td class="year">1806</td>
+            <td class="year">54</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="54.0488" data-lon="-2.8013" data-place="Lancaster" data-event-url="/I0010/events/E0310/">
+            <td>
+              <a href="/I0010/people/I0027/" class="female">Dorothea Yarmouth</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0310/">Wallace Foxwell</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0015/">Lancaster</a>
+              
+            </td>
+            <td class="year">1830</td>
+            <td class="year">30</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="54.0488" data-lon="-2.8013" data-place="Lancaster" data-event-url="/I0010/events/E0310/">
+            <td>
+              <a href="/I0010/people/I0026/" class="male">Wallace Foxwell</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0310/">Wallace Foxwell</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0015/">Lancaster</a>
+              
+            </td>
+            <td class="year">1832</td>
+            <td class="year">28</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="54.0488" data-lon="-2.8013" data-place="Lancaster" data-event-url="/I0010/events/E0310/">
+            <td>
+              <a href="/I0010/people/I0019/" class="male">Oswald Foxwell</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0010/events/E0310/">Wallace Foxwell</a>
+              
+            </td>
+            <td>
+              <a href="/I0010/places/P0015/">Lancaster</a>
+              
+            </td>
+            <td class="year">1860</td>
+            <td class="year">0</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+  </main>
+  <footer>
+    <p><a href="https://www.gramps-project.org">GRAMPS</a> family tree website generated by <a href="https://github.com/bennuttall/greatgramps">greatgramps</a></p>
+  </footer>
+  
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    const tbody = document.querySelector('#census-table tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+
+    let sortCol = 0;
+    let sortAsc = true;
+    let ancestorOnly = false;
+    let descendantOnly = false;
+
+    function cellText(row, col) {
+      return row.cells[col].textContent.trim();
+    }
+
+    function sortRows() {
+      const ths = document.querySelectorAll('#census-table th.sortable');
+      const numeric = ths[sortCol].dataset.numeric === '1';
+      rows.sort((a, b) => {
+        const av = cellText(a, sortCol);
+        const bv = cellText(b, sortCol);
+        if (numeric) {
+          const an = parseInt(av) || 0, bn = parseInt(bv) || 0;
+          return sortAsc ? an - bn : bn - an;
+        }
+        return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    }
+
+    document.querySelectorAll('#census-table th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = +th.dataset.col;
+        if (sortCol === col) {
+          sortAsc = !sortAsc;
+        } else {
+          sortCol = col;
+          sortAsc = true;
+        }
+        document.querySelectorAll('#census-table th.sortable').forEach(h => {
+          h.classList.remove('sort-asc', 'sort-desc');
+        });
+        th.classList.add(sortAsc ? 'sort-asc' : 'sort-desc');
+        sortRows();
+      });
+    });
+
+    function applyFilters() {
+      rows.forEach(r => {
+        r.hidden = (ancestorOnly && r.dataset.ancestor !== 'true')
+                || (descendantOnly && r.dataset.descendant !== 'true');
+      });
+      updateMap();
+    }
+
+    const ancestorBtn = document.createElement('button');
+    ancestorBtn.textContent = 'Ancestors';
+    ancestorBtn.className = 'filter-btn toggle-btn';
+    ancestorBtn.addEventListener('click', () => {
+      ancestorOnly = !ancestorOnly;
+      if (ancestorOnly) { descendantOnly = false; descendantBtn.classList.remove('active'); }
+      ancestorBtn.classList.toggle('active', ancestorOnly);
+      applyFilters();
+    });
+    document.getElementById('filters').appendChild(ancestorBtn);
+
+    const descendantBtn = document.createElement('button');
+    descendantBtn.textContent = 'Descendants';
+    descendantBtn.className = 'filter-btn toggle-btn';
+    descendantBtn.addEventListener('click', () => {
+      descendantOnly = !descendantOnly;
+      if (descendantOnly) { ancestorOnly = false; ancestorBtn.classList.remove('active'); }
+      descendantBtn.classList.toggle('active', descendantOnly);
+      applyFilters();
+    });
+    document.getElementById('filters').appendChild(descendantBtn);
+
+    const censusMap = L.map('census-map');
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(censusMap);
+    const markersLayer = L.layerGroup().addTo(censusMap);
+
+    function updateMap() {
+      markersLayer.clearLayers();
+      const groups = {};
+      rows.filter(r => !r.hidden && r.dataset.lat).forEach(r => {
+        const key = r.dataset.lat + ',' + r.dataset.lon;
+        if (!groups[key]) {
+          groups[key] = { lat: +r.dataset.lat, lon: +r.dataset.lon, place: r.dataset.place, households: new Map() };
+        }
+        const url = r.dataset.eventUrl;
+        if (!groups[key].households.has(url)) {
+          groups[key].households.set(url, r.cells[1].querySelector('a').textContent.trim());
+        }
+      });
+      const pts = Object.values(groups);
+      if (!pts.length) return;
+      pts.forEach(g => {
+        const lines = Array.from(g.households.entries())
+          .map(([url, name]) => '<a href="' + url + '">' + name + '</a>')
+          .join('<br>');
+        L.marker([g.lat, g.lon]).addTo(markersLayer)
+          .bindPopup('<strong>' + g.place + '</strong><br>' + lines);
+      });
+      censusMap.fitBounds(pts.map(g => [g.lat, g.lon]), { padding: [20, 20], maxZoom: 10 });
+    }
+
+    updateMap();
+    </script>
+  
+  <script>
+  var tabs = document.querySelector('.person-tabs');
+  if (tabs) {
+    var active = tabs.querySelector('span.active');
+    if (active) {
+      var btn = document.createElement('button');
+      btn.className = 'tabs-toggle';
+      btn.textContent = '▾';
+      btn.setAttribute('aria-label', 'Toggle tabs');
+      active.after(btn);
+      btn.addEventListener('click', function() {
+        var open = tabs.classList.toggle('open');
+        btn.textContent = open ? '▴' : '▾';
+      });
+    }
+  }
+
+  var eventsTable = document.querySelector('.events table');
+  if (eventsTable) {
+    var headRow = eventsTable.querySelector('thead tr');
+    var emptyTh = document.createElement('th');
+    emptyTh.className = 'expand-td';
+    headRow.appendChild(emptyTh);
+
+    Array.from(eventsTable.querySelectorAll('tbody tr')).forEach(function(row) {
+      var cell4 = row.cells[3];
+      var cell5 = row.cells[4];
+
+      var expandTd = document.createElement('td');
+      expandTd.className = 'expand-td';
+      row.appendChild(expandTd);
+
+      var parts = [];
+      if (cell4 && cell4.textContent.trim()) parts.push(cell4.innerHTML.trim());
+      if (cell5 && cell5.textContent.trim()) parts.push(cell5.innerHTML.trim());
+      if (!parts.length) return;
+
+      var xbtn = document.createElement('button');
+      xbtn.className = 'row-expand-btn';
+      xbtn.textContent = '▾';
+      expandTd.appendChild(xbtn);
+
+      var detailRow = document.createElement('tr');
+      detailRow.className = 'row-detail';
+      var detailTd = document.createElement('td');
+      detailTd.colSpan = row.cells.length;
+      detailTd.innerHTML = parts.join(' &middot; ');
+      detailRow.appendChild(detailTd);
+      row.after(detailRow);
+
+      xbtn.addEventListener('click', function() {
+        var open = detailRow.classList.toggle('open');
+        xbtn.textContent = open ? '▴' : '▾';
+        detailRow.style.display = open ? '' : 'none';
+      });
+    });
+  }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallace Foxwell — Family Tree</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" media="print" href="/print.css">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/I0010/index.html">My tree</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/I0010/people/I0010/">Me</a>
+        <a class="secondary" href="/I0010/people/">People</a>
+        <a class="secondary" href="/I0010/places/">Places</a>
+        <a class="secondary" href="/I0010/events/">Events</a>
+        <a class="secondary" href="/I0010/census/">Census</a>
+        <a class="secondary" href="/I0010/birthdays/">Birthdays</a>
+        <a class="secondary" href="/I0010/surnames/">Surnames</a>
+        <span class="secondary">Viewing as Geoffrey &mdash; <a href="/">switch</a></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <article class="person-detail">
+      <div class="person-header">
+  <div class="person-header-info">
+    <h1>
+      
+      
+        <span>Wallace </span><a href="/I0010/surnames/Foxwell/">Foxwell</a>
+      
+      
+      
+      <small class="years">(1832–1907)</small>
+    </h1>
+    
+    <table class="person-meta-table">
+      <tr>
+        <td>
+          
+          
+          
+          
+          <span class="ancestor-badge unrelated">unrelated</span>
+        </td>
+        
+        
+        <td></td>
+      </tr>
+      
+      <tr>
+        <td><span class="ancestor-badge deceased">deceased</span></td>
+        <td>died in 1907 aged 75</td>
+      </tr>
+    </table>
+  </div>
+  <div class="person-header-photo">
+    
+  </div>
+</div>
+      <nav class="person-tabs">
+        <span class="active">Profile</span>
+        <a href="/I0010/people/I0026/ancestors/">Ancestors <span class="tab-count">(8)</span></a>
+        <a href="/I0010/people/I0026/descendants/">Descendants <span class="tab-count">(12)</span></a>
+        <a href="/I0010/people/I0026/pictures/">Pictures <span class="tab-count">(2)</span></a>
+      </nav>
+
+      <div class="profile-overview">
+        <div>
+          <section class="parents">
+            <h3>Parents</h3>
+            <ul>
+              <li>
+                <a class="male" href="/I0010/people/I0035/">Stanley Foxwell</a>
+                <span class="years">(1802–1877)</span>
+                
+                
+                
+              </li>
+              <li>
+                <a class="female" href="/I0010/people/I0036/">Dorothea Quinton</a>
+                <span class="years">(1806–1887)</span>
+                
+                
+                
+              </li>
+            </ul>
+          </section>
+
+          <section class="siblings">
+            <h3>Siblings (1)</h3>
+            <ul>
+              <li>
+                
+                  <a href="/I0010/people/I0034/" class="female">Tabitha Foxwell</a>
+                  <span class="years">(1835–1916)</span>
+                  <span class="years">sister</span>
+                  
+                  
+                  
+                
+              </li>
+            </ul>
+          </section>
+
+          <section class="spouses">
+            <h3>Relationships</h3>
+            <ul>
+              
+                <li>
+                  <a href="/I0010/people/I0027/" class="female">Dorothea Yarmouth</a>
+                  
+                  
+                  
+                  <span class="years">Married</span>
+                  <span class="years">
+                    31 Dec 1859<span>, Southwark</span>
+                  </span>
+                </li>
+              
+            </ul>
+          </section>
+
+          <section class="children">
+            <h3>Children (1)</h3>
+            <ul>
+              <li>
+                <a href="/I0010/people/I0019/" class="male">Oswald Foxwell</a>
+                <span class="years">(1860–1953)</span>
+                
+                
+                
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div>
+          <div class="external-links">
+            <h3>External links</h3>
+            <ul>
+              <li>
+                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/46308559446/">Ancestry</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="occupations">
+            <h3>Occupations</h3>
+            <ul>
+              <li>
+                Cotton weaver
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="events">
+        <h2>Life Events</h2>
+        
+          <div class="event-filters">
+            <button class="filter-btn active" data-filter="all" onclick="filterEvents(this)">All</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Baptism">Baptism</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Birth">Birth</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Burial">Burial</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Census">Census</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Child born">Child born</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Death">Death</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Marriage">Marriage</button>
+          </div>
+        
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Age</th><th>Event</th><th>Detail</th><th>Location</th></tr>
+          </thead>
+          <tbody>
+            <tr data-type="Birth">
+              
+                <td>1832</td>
+                <td class="event-age">
+                  
+                </td>
+                <td>
+                  <a href="/I0010/events/E0096/">Birth</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                    
+                      <a
+                         href="/I0010/people/I0035/" class="male">Stanley Foxwell</a>
+                      <span> and </span>
+                      <a
+                         href="/I0010/people/I0036/" class="female">Dorothea Quinton</a>
+                    
+                  
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0028/">Lincoln</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Baptism">
+              
+                <td>22 Jan 1833</td>
+                <td class="event-age">
+                  
+                </td>
+                <td>
+                  <a href="/I0010/events/E0097/">Baptism</a>
+                  <a href="/I0010/events/E0097/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0028/">Lincoln</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>6 Jun 1841</td>
+                <td class="event-age">
+                  8
+                </td>
+                <td>
+                  <a href="/I0010/events/E0299/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1841 census - Stanley Foxwell household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0025/">Nottingham</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>30 Mar 1851</td>
+                <td class="event-age">
+                  18
+                </td>
+                <td>
+                  <a href="/I0010/events/E0306/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1851 census - Wallace Foxwell household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0010/">Snaith</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Marriage">
+              
+                <td>31 Dec 1859</td>
+                <td class="event-age">
+                  26
+                </td>
+                <td>
+                  <a href="/I0010/events/E0102/">Marriage</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    <a
+                       href="/I0010/people/I0027/" class="female">Dorothea Yarmouth</a>
+                    
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0022/">Southwark</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Child born">
+              
+                <td>1860</td>
+                <td class="event-age">
+                  27
+                </td>
+                <td>
+                  <a href="/I0010/events/E0069/">Child born</a>
+                  <a href="/I0010/events/E0069/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    <a
+                       href="/I0010/people/I0019/" class="male">Oswald Foxwell</a>
+                    
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0019/">Clitheroe</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>7 Apr 1861</td>
+                <td class="event-age">
+                  28
+                </td>
+                <td>
+                  <a href="/I0010/events/E0310/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1861 census - Wallace Foxwell household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0015/">Lancaster</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>2 Apr 1871</td>
+                <td class="event-age">
+                  38
+                </td>
+                <td>
+                  <a href="/I0010/events/E0317/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1871 census - Wallace Foxwell household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0020/">London</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>3 Apr 1881</td>
+                <td class="event-age">
+                  48
+                </td>
+                <td>
+                  <a href="/I0010/events/E0321/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1881 census - Wallace Foxwell household</span>
+                  
+                </td>
+                <td>
+                  
+                  <span></span>
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>31 Mar 1901</td>
+                <td class="event-age">
+                  68
+                </td>
+                <td>
+                  <a href="/I0010/events/E0330/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1901 census - Wallace Foxwell household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0026/">Retford</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Death">
+              
+                <td>18 Aug 1907</td>
+                <td class="event-age">
+                  74
+                </td>
+                <td>
+                  <a href="/I0010/events/E0098/">Death</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0017/">Bolton</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Burial">
+              
+                <td>Sep 1907</td>
+                <td class="event-age">
+                  
+                </td>
+                <td>
+                  <a href="/I0010/events/E0099/">Burial</a>
+                  <a href="/I0010/events/E0099/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0010/places/P0017/">Bolton</a>
+                  
+                </td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div id="map"></div>
+
+      <section class="ancestors">
+        <h2>Ancestors (8)</h2>
+        <div class="tree">
+          <div class="generation">
+            <h3>
+              <span>Parents</span>
+              
+              
+              
+              
+              <span class="years">(2 / 2)</span>
+              <span class="years pct-high">
+                100%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0010/people/I0035/" class="male">Stanley Foxwell</a>
+                    <span class="years">
+                      (1802–1877)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0010/people/I0036/" class="female">Dorothea Quinton</a>
+                      <span class="years">
+                        (1806–1887)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              <span>Grandparents</span>
+              
+              
+              
+              <span class="years">(2 / 4)</span>
+              <span class="years pct-mid">
+                50%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0010/people/I0046/" class="male">Kenneth Quinton</a>
+                    <span class="years">
+                      (1781–1847)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0010/people/I0047/" class="female">Isolde Havelock</a>
+                      <span class="years">
+                        (1781–1868)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              <span>Great-grandparents</span>
+              
+              
+              <span class="years">(2 / 8)</span>
+              <span class="years pct-low">
+                25%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0010/people/I0057/" class="male">Douglas Havelock</a>
+                    <span class="years">
+                      (1755–1848)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0010/people/I0058/" class="female">Beatrice Ravenswood</a>
+                      <span class="years">
+                        (1755–1823)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              <span>2nd great-grandparents</span>
+              
+              <span class="years">(2 / 16)</span>
+              <span class="years pct-low">
+                12%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0010/people/I0067/" class="male">Cecil Ravenswood</a>
+                    <span class="years">
+                      (1726–1787)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0010/people/I0068/" class="female">Felicity Kestrel</a>
+                      <span class="years">
+                        (1730–1793)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="descendants">
+        <h2>Descendants (12)</h2>
+        <div class="tree">
+          <div class="generation">
+            <h3>
+              <span>Children</span>
+              
+              
+              
+              
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0010/people/I0019/" class="male">Oswald Foxwell</a>
+                <span class="years">
+                  (1860–1953)
+                </span>
+                
+                
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              <span>Grandchildren</span>
+              
+              
+              
+              <span class="years">(2)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0010/people/I0018/" class="female">Edwina Foxwell</a>
+                <span class="years">
+                  (1883–1955)
+                </span>
+                
+                
+                
+              </li>
+              <li>
+                <a href="/I0010/people/I0007/" class="female">Prudence Foxwell</a>
+                <span class="years">
+                  (1885–1968)
+                </span>
+                
+                
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              <span>Great-grandchildren</span>
+              
+              
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0010/people/I0002/" class="female">Ursula Ravenswood</a>
+                <span class="years">
+                  (1921–1986)
+                </span>
+                
+                
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              <span>2nd great-grandchildren</span>
+              
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0010/people/I0000/" class="male">Alex Hartwell</a>
+                <span class="years">
+                  (1955–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>3th great-grandchildren</span>
+              <span class="years">(2)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0010/people/I0075/" class="male">Oliver Hartwell</a>
+                <span class="years">
+                  (1983–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0010/people/I0076/" class="female">Sophie Hartwell</a>
+                <span class="years">
+                  (1986–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>4th great-grandchildren</span>
+              <span class="years">(5)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0010/people/I0078/" class="male">Leo Hartwell</a>
+                <span class="years">
+                  (2012–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0010/people/I0079/" class="female">Iris Hartwell</a>
+                <span class="years">
+                  (2014–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0010/people/I0082/" class="female">Fern Ashford</a>
+                <span class="years">
+                  (2014–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0010/people/I0080/" class="male">Hugh Hartwell</a>
+                <span class="years">
+                  (2017–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0010/people/I0083/" class="male">Miles Ashford</a>
+                <span class="years">
+                  (2017–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  
+  </main>
+  <footer>
+    <p><a href="https://www.gramps-project.org">GRAMPS</a> family tree website generated by <a href="https://github.com/bennuttall/greatgramps">greatgramps</a></p>
+  </footer>
+  
+    <script>
+    function filterEvents(btn) {
+      document.querySelectorAll('.event-filters .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      document.querySelectorAll('.events tbody tr').forEach(function(row) {
+        if (row.classList.contains('row-detail')) return;
+        var show = filter === 'all' || row.dataset.type === filter;
+        row.style.display = show ? '' : 'none';
+        var next = row.nextElementSibling;
+        if (next && next.classList.contains('row-detail')) {
+          next.style.display = (show && next.classList.contains('open')) ? '' : 'none';
+        }
+      });
+    }
+    </script>
+    <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    var points = [{"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0010/places/P0028/", "types": ["Birth", "Baptism"]}, {"lat": "52.9540", "lon": "-1.1550", "name": "Nottingham", "url": "/I0010/places/P0025/", "types": ["Census"]}, {"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0010/places/P0010/", "types": ["Census"]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0010/places/P0022/", "types": ["Marriage"]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0010/places/P0019/", "types": ["Child born"]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0010/places/P0015/", "types": ["Census"]}, {"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0010/places/P0020/", "types": ["Census"]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0010/places/P0026/", "types": ["Census"]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0010/places/P0017/", "types": ["Death", "Burial"]}];
+    var map = L.map('map');
+    var bounds = points.map(p => [p.lat, p.lon]);
+    map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    points.forEach(function(p) {
+      L.marker([p.lat, p.lon]).addTo(map)
+        .bindPopup('<a href="' + p.url + '">' + p.name + '</a><br>' + p.types.join(', '));
+    });
+    </script>
+  
+  <script>
+  var tabs = document.querySelector('.person-tabs');
+  if (tabs) {
+    var active = tabs.querySelector('span.active');
+    if (active) {
+      var btn = document.createElement('button');
+      btn.className = 'tabs-toggle';
+      btn.textContent = '▾';
+      btn.setAttribute('aria-label', 'Toggle tabs');
+      active.after(btn);
+      btn.addEventListener('click', function() {
+        var open = tabs.classList.toggle('open');
+        btn.textContent = open ? '▴' : '▾';
+      });
+    }
+  }
+
+  var eventsTable = document.querySelector('.events table');
+  if (eventsTable) {
+    var headRow = eventsTable.querySelector('thead tr');
+    var emptyTh = document.createElement('th');
+    emptyTh.className = 'expand-td';
+    headRow.appendChild(emptyTh);
+
+    Array.from(eventsTable.querySelectorAll('tbody tr')).forEach(function(row) {
+      var cell4 = row.cells[3];
+      var cell5 = row.cells[4];
+
+      var expandTd = document.createElement('td');
+      expandTd.className = 'expand-td';
+      row.appendChild(expandTd);
+
+      var parts = [];
+      if (cell4 && cell4.textContent.trim()) parts.push(cell4.innerHTML.trim());
+      if (cell5 && cell5.textContent.trim()) parts.push(cell5.innerHTML.trim());
+      if (!parts.length) return;
+
+      var xbtn = document.createElement('button');
+      xbtn.className = 'row-expand-btn';
+      xbtn.textContent = '▾';
+      expandTd.appendChild(xbtn);
+
+      var detailRow = document.createElement('tr');
+      detailRow.className = 'row-detail';
+      var detailTd = document.createElement('td');
+      detailTd.colSpan = row.cells.length;
+      detailTd.innerHTML = parts.join(' &middot; ');
+      detailRow.appendChild(detailTd);
+      row.after(detailRow);
+
+      xbtn.addEventListener('click', function() {
+        var open = detailRow.classList.toggle('open');
+        xbtn.textContent = open ? '▴' : '▾';
+        detailRow.style.display = open ? '' : 'none';
+      });
+    });
+  }
+  </script>
+</body>
+</html>
+

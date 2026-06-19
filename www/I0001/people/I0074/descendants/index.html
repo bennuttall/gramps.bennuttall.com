@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diana Vanthorpe — Descendant Tree</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" media="print" href="/print.css">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/I0001/index.html">My tree</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/I0001/people/I0001/">Me</a>
+        <a class="secondary" href="/I0001/people/">People</a>
+        <a class="secondary" href="/I0001/places/">Places</a>
+        <a class="secondary" href="/I0001/events/">Events</a>
+        <a class="secondary" href="/I0001/census/">Census</a>
+        <a class="secondary" href="/I0001/birthdays/">Birthdays</a>
+        <a class="secondary" href="/I0001/surnames/">Surnames</a>
+        <span class="secondary">Viewing as Norman &mdash; <a href="/">switch</a></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <div class="person-header">
+  <div class="person-header-info">
+    <h1>
+      
+      
+        <span>Diana </span><a href="/I0001/surnames/Vanthorpe/">Vanthorpe</a>
+      
+      
+      <small class="years">(1957–)</small>
+      
+    </h1>
+    <p class="person-alt-names">
+      
+        
+        
+          <a href="/I0001/surnames/Hartwell/">Hartwell</a>
+          
+        
+        <span class="years">(married name)</span>
+      
+    </p>
+    <table class="person-meta-table">
+      <tr>
+        <td>
+          
+          
+          
+          <span class="ancestor-badge by-marriage">related by marriage</span>
+          
+        </td>
+        
+        <td>your daughter</td>
+        
+      </tr>
+      <tr>
+        <td><span class="ancestor-badge living">living</span></td>
+        <td>Age 68</td>
+      </tr>
+      
+    </table>
+  </div>
+  <div class="person-header-photo">
+    
+      <a href="/media/I0074_O0005.webp">
+        <img src="/media/I0074_O0005.webp" alt="Portrait" class="person-photo">
+      </a>
+    
+  </div>
+</div>
+    <nav class="person-tabs">
+      <a href="/I0001/people/I0074/">Profile</a>
+      <a href="/I0001/people/I0074/ancestors/">Ancestors <span class="tab-count">(0)</span></a>
+      <span class="active">Descendants <span class="tab-count">(7)</span></span>
+      <a href="/I0001/people/I0074/pictures/">Pictures <span class="tab-count">(3)</span></a>
+    </nav>
+    <div class="pedigree-wrap">
+      <div class="pedigree-chart" style="grid-template-columns:repeat(5,minmax(140px,1fr));grid-template-rows:repeat(5,minmax(2.5rem,auto))">
+        <a href="/I0001/people/I0074/" class="pedigree-cell gen-0 female" style="grid-row:1;grid-column:1/6">
+          <span class="pedigree-name">Diana Vanthorpe</span>
+          <span class="pedigree-years">
+            1957–2019
+          </span>
+          <span class="pedigree-children">
+            2 children
+          </span>
+        </a>
+        <a href="/I0001/people/I0075/descendants/" class="pedigree-cell gen-1 male" style="grid-row:2;grid-column:1/4">
+          <span class="pedigree-name">Oliver Hartwell</span>
+          <span class="pedigree-years">
+            1983–
+          </span>
+          <span class="pedigree-children">
+            3 children
+          </span>
+        </a>
+        <a href="/I0001/people/I0078/descendants/" class="pedigree-cell gen-2 male" style="grid-row:3;grid-column:1/2">
+          <span class="pedigree-name">Leo Hartwell</span>
+          <span class="pedigree-years">
+            2012–
+          </span>
+          
+        </a>
+        <a href="/I0001/people/I0079/descendants/" class="pedigree-cell gen-2 female" style="grid-row:3;grid-column:2/3">
+          <span class="pedigree-name">Iris Hartwell</span>
+          <span class="pedigree-years">
+            2014–
+          </span>
+          
+        </a>
+        <a href="/I0001/people/I0080/descendants/" class="pedigree-cell gen-2 male" style="grid-row:3;grid-column:3/4">
+          <span class="pedigree-name">Hugh Hartwell</span>
+          <span class="pedigree-years">
+            2017–
+          </span>
+          
+        </a>
+        <a href="/I0001/people/I0076/descendants/" class="pedigree-cell gen-1 female" style="grid-row:2;grid-column:4/6">
+          <span class="pedigree-name">Sophie Hartwell</span>
+          <span class="pedigree-years">
+            1986–
+          </span>
+          <span class="pedigree-children">
+            2 children
+          </span>
+        </a>
+        <a href="/I0001/people/I0082/descendants/" class="pedigree-cell gen-2 female" style="grid-row:3;grid-column:4/5">
+          <span class="pedigree-name">Fern Ashford</span>
+          <span class="pedigree-years">
+            2014–
+          </span>
+          
+        </a>
+        <a href="/I0001/people/I0083/descendants/" class="pedigree-cell gen-2 male" style="grid-row:3;grid-column:5/6">
+          <span class="pedigree-name">Miles Ashford</span>
+          <span class="pedigree-years">
+            2017–
+          </span>
+          
+        </a>
+      </div>
+    </div>
+    <div id="map"></div>
+  
+  </main>
+  <footer>
+    <p><a href="https://www.gramps-project.org">GRAMPS</a> family tree website generated by <a href="https://github.com/bennuttall/greatgramps">greatgramps</a></p>
+  </footer>
+  
+    <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    var points = [{"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0001/places/P0019/", "people": [{"name": "Oliver Hartwell", "url": "/I0001/people/I0075/", "types": ["Child born"]}, {"name": "Leo Hartwell", "url": "/I0001/people/I0078/", "types": ["Birth"]}]}, {"lat": "53.4808", "lon": "-2.2426", "name": "Manchester", "url": "/I0001/places/P0012/", "people": [{"name": "Sophie Hartwell", "url": "/I0001/people/I0076/", "types": ["Birth"]}]}, {"lat": "53.3933", "lon": "-2.9166", "name": "Liverpool", "url": "/I0001/places/P0013/", "people": [{"name": "Sophie Hartwell", "url": "/I0001/people/I0076/", "types": ["Marriage"]}]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0001/places/P0009/", "people": [{"name": "Sophie Hartwell", "url": "/I0001/people/I0076/", "types": ["Child born"]}, {"name": "Fern Ashford", "url": "/I0001/people/I0082/", "types": ["Birth"]}]}];
+    var map = L.map('map');
+    var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
+    map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    points.forEach(function(p) {
+      var peopleHtml = p.people.map(function(person) {
+        return '<a href="' + person.url + '">' + person.name + '</a>: ' + person.types.join(', ');
+      }).join('<br>');
+      L.circleMarker([parseFloat(p.lat), parseFloat(p.lon)], {
+        radius: Math.max(4, Math.min(14, 3 + p.people.length * 2)),
+        color: '#5a3e28',
+        fillColor: '#5a3e28',
+        fillOpacity: 0.6,
+        weight: 1,
+      }).addTo(map)
+        .bindPopup('<strong><a href="' + p.url + '">' + p.name + '</a></strong><br>' + peopleHtml);
+    });
+    </script>
+  
+  <script>
+  var tabs = document.querySelector('.person-tabs');
+  if (tabs) {
+    var active = tabs.querySelector('span.active');
+    if (active) {
+      var btn = document.createElement('button');
+      btn.className = 'tabs-toggle';
+      btn.textContent = '▾';
+      btn.setAttribute('aria-label', 'Toggle tabs');
+      active.after(btn);
+      btn.addEventListener('click', function() {
+        var open = tabs.classList.toggle('open');
+        btn.textContent = open ? '▴' : '▾';
+      });
+    }
+  }
+
+  var eventsTable = document.querySelector('.events table');
+  if (eventsTable) {
+    var headRow = eventsTable.querySelector('thead tr');
+    var emptyTh = document.createElement('th');
+    emptyTh.className = 'expand-td';
+    headRow.appendChild(emptyTh);
+
+    Array.from(eventsTable.querySelectorAll('tbody tr')).forEach(function(row) {
+      var cell4 = row.cells[3];
+      var cell5 = row.cells[4];
+
+      var expandTd = document.createElement('td');
+      expandTd.className = 'expand-td';
+      row.appendChild(expandTd);
+
+      var parts = [];
+      if (cell4 && cell4.textContent.trim()) parts.push(cell4.innerHTML.trim());
+      if (cell5 && cell5.textContent.trim()) parts.push(cell5.innerHTML.trim());
+      if (!parts.length) return;
+
+      var xbtn = document.createElement('button');
+      xbtn.className = 'row-expand-btn';
+      xbtn.textContent = '▾';
+      expandTd.appendChild(xbtn);
+
+      var detailRow = document.createElement('tr');
+      detailRow.className = 'row-detail';
+      var detailTd = document.createElement('td');
+      detailTd.colSpan = row.cells.length;
+      detailTd.innerHTML = parts.join(' &middot; ');
+      detailRow.appendChild(detailTd);
+      row.after(detailRow);
+
+      xbtn.addEventListener('click', function() {
+        var open = detailRow.classList.toggle('open');
+        xbtn.textContent = open ? '▴' : '▾';
+        detailRow.style.display = open ? '' : 'none';
+      });
+    });
+  }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josephine Ashford — Ancestor Tree</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" media="print" href="/print.css">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/I0000/index.html">My tree</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/I0000/people/I0000/">Me</a>
+        <a class="secondary" href="/I0000/people/">People</a>
+        <a class="secondary" href="/I0000/places/">Places</a>
+        <a class="secondary" href="/I0000/events/">Events</a>
+        <a class="secondary" href="/I0000/census/">Census</a>
+        <a class="secondary" href="/I0000/birthdays/">Birthdays</a>
+        <a class="secondary" href="/I0000/surnames/">Surnames</a>
+        <span class="secondary">Viewing as Alex &mdash; <a href="/">switch</a></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <div class="person-header">
+  <div class="person-header-info">
+    <h1>
+      
+      
+        <span>Josephine </span><a href="/I0000/surnames/Ashford/">Ashford</a>
+      
+      
+      
+      <small class="years">(1800–1862)</small>
+    </h1>
+    <p class="person-alt-names">
+      
+        
+        
+          <a href="/I0000/surnames/Ulverston/">Ulverston</a>
+          
+        
+        <span class="years">(married name)</span>
+      
+    </p>
+    <table class="person-meta-table">
+      <tr>
+        <td>
+          <span class="ancestor-badge">ancestor</span>
+          
+          
+          
+          
+        </td>
+        <td>your 3rd great-grandmother</td>
+        
+        
+      </tr>
+      
+      <tr>
+        <td><span class="ancestor-badge deceased">deceased</span></td>
+        <td>died in 1862 aged 62</td>
+      </tr>
+    </table>
+  </div>
+  <div class="person-header-photo">
+    
+  </div>
+</div>
+    <nav class="person-tabs">
+      <a href="/I0000/people/I0040/">Profile</a>
+      <span class="active">Ancestors <span class="tab-count">(6)</span></span>
+      <a href="/I0000/people/I0040/descendants/">Descendants <span class="tab-count">(13)</span></a>
+      <a href="/I0000/people/I0040/pictures/">Pictures <span class="tab-count">(2)</span></a>
+    </nav>
+    <div class="pedigree-wrap">
+      <div class="pedigree-chart" style="grid-template-rows:repeat(16,minmax(2.5rem,auto));grid-template-columns:repeat(5,minmax(140px,1fr))">
+        <a href="/I0000/people/I0040/" class="pedigree-cell gen-0 female" style="grid-column:1;grid-row:1/17">
+          <span class="pedigree-name">Josephine Ashford</span>
+          <span class="pedigree-years">
+            1800–1862
+          </span>
+        </a>
+        <a href="/I0000/people/I0052/ancestors/" class="pedigree-cell gen-1 female" style="grid-column:2;grid-row:9/17">
+          <span class="pedigree-name">Prudence Crowther</span>
+          <span class="pedigree-years">
+            1772–1851
+          </span>
+        </a>
+        <a href="/I0000/people/I0063/ancestors/" class="pedigree-cell gen-2 male" style="grid-column:3;grid-row:9/13">
+          <span class="pedigree-name">Edgar Crowther</span>
+          <span class="pedigree-years">
+            1750–1846
+          </span>
+        </a>
+        <a href="/I0000/people/I0064/ancestors/" class="pedigree-cell gen-2 female" style="grid-column:3;grid-row:13/17">
+          <span class="pedigree-name">Dorothea Langford</span>
+          <span class="pedigree-years">
+            1752–1824
+          </span>
+        </a>
+        <a href="/I0000/people/I0071/ancestors/" class="pedigree-cell gen-3 female" style="grid-column:4;grid-row:11/13">
+          <span class="pedigree-name">Tabitha Blackwell</span>
+          <span class="pedigree-years">
+            1723–1813
+          </span>
+        </a>
+        <a href="/I0000/people/I0072/ancestors/" class="pedigree-cell gen-3 male" style="grid-column:4;grid-row:13/15">
+          <span class="pedigree-name">Theodore Langford</span>
+          <span class="pedigree-years">
+            1725–1786
+          </span>
+        </a>
+        <a href="/I0000/people/I0073/ancestors/" class="pedigree-cell gen-3 female" style="grid-column:4;grid-row:15/17">
+          <span class="pedigree-name">Venetia Crowther</span>
+          <span class="pedigree-years">
+            1724–1786
+          </span>
+        </a>
+      </div>
+    </div>
+    <div id="map"></div>
+  
+  </main>
+  <footer>
+    <p><a href="https://www.gramps-project.org">GRAMPS</a> family tree website generated by <a href="https://github.com/bennuttall/greatgramps">greatgramps</a></p>
+  </footer>
+  
+    <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    var points = [{"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0000/places/P0009/", "people": [{"name": "Josephine Ashford", "url": "/I0000/people/I0040/", "types": ["Census"]}]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0000/places/P0022/", "people": [{"name": "Josephine Ashford", "url": "/I0000/people/I0040/", "types": ["Census"]}, {"name": "Prudence Crowther", "url": "/I0000/people/I0052/", "types": ["Birth"]}, {"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Child born"]}, {"name": "Dorothea Langford", "url": "/I0000/people/I0064/", "types": ["Child born"]}]}, {"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0000/places/P0020/", "people": [{"name": "Josephine Ashford", "url": "/I0000/people/I0040/", "types": ["Death", "Burial"]}]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0000/places/P0017/", "people": [{"name": "Prudence Crowther", "url": "/I0000/people/I0052/", "types": ["Marriage"]}]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0000/places/P0021/", "people": [{"name": "Prudence Crowther", "url": "/I0000/people/I0052/", "types": ["Death", "Burial"]}]}, {"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0000/places/P0014/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Birth", "Baptism"]}, {"name": "Tabitha Blackwell", "url": "/I0000/people/I0071/", "types": ["Child born"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Marriage"]}, {"name": "Dorothea Langford", "url": "/I0000/people/I0064/", "types": ["Marriage"]}]}, {"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0000/places/P0005/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Census"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0000/places/P0016/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Death"]}]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0000/places/P0026/", "people": [{"name": "Tabitha Blackwell", "url": "/I0000/people/I0071/", "types": ["Birth"]}]}, {"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0000/places/P0006/", "people": [{"name": "Tabitha Blackwell", "url": "/I0000/people/I0071/", "types": ["Marriage"]}, {"name": "Venetia Crowther", "url": "/I0000/people/I0073/", "types": ["Death"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0000/places/P0004/", "people": [{"name": "Dorothea Langford", "url": "/I0000/people/I0064/", "types": ["Birth"]}, {"name": "Theodore Langford", "url": "/I0000/people/I0072/", "types": ["Child born"]}, {"name": "Venetia Crowther", "url": "/I0000/people/I0073/", "types": ["Child born"]}]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0000/places/P0028/", "people": [{"name": "Dorothea Langford", "url": "/I0000/people/I0064/", "types": ["Death", "Burial"]}]}, {"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0000/places/P0008/", "people": [{"name": "Theodore Langford", "url": "/I0000/people/I0072/", "types": ["Birth"]}]}];
+    var map = L.map('map');
+    var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
+    map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    points.forEach(function(p) {
+      var peopleHtml = p.people.map(function(person) {
+        return '<a href="' + person.url + '">' + person.name + '</a>: ' + person.types.join(', ');
+      }).join('<br>');
+      L.circleMarker([parseFloat(p.lat), parseFloat(p.lon)], {
+        radius: Math.max(4, Math.min(14, 3 + p.people.length * 2)),
+        color: '#5a3e28',
+        fillColor: '#5a3e28',
+        fillOpacity: 0.6,
+        weight: 1,
+      }).addTo(map)
+        .bindPopup('<strong><a href="' + p.url + '">' + p.name + '</a></strong><br>' + peopleHtml);
+    });
+    </script>
+  
+  <script>
+  var tabs = document.querySelector('.person-tabs');
+  if (tabs) {
+    var active = tabs.querySelector('span.active');
+    if (active) {
+      var btn = document.createElement('button');
+      btn.className = 'tabs-toggle';
+      btn.textContent = '▾';
+      btn.setAttribute('aria-label', 'Toggle tabs');
+      active.after(btn);
+      btn.addEventListener('click', function() {
+        var open = tabs.classList.toggle('open');
+        btn.textContent = open ? '▴' : '▾';
+      });
+    }
+  }
+
+  var eventsTable = document.querySelector('.events table');
+  if (eventsTable) {
+    var headRow = eventsTable.querySelector('thead tr');
+    var emptyTh = document.createElement('th');
+    emptyTh.className = 'expand-td';
+    headRow.appendChild(emptyTh);
+
+    Array.from(eventsTable.querySelectorAll('tbody tr')).forEach(function(row) {
+      var cell4 = row.cells[3];
+      var cell5 = row.cells[4];
+
+      var expandTd = document.createElement('td');
+      expandTd.className = 'expand-td';
+      row.appendChild(expandTd);
+
+      var parts = [];
+      if (cell4 && cell4.textContent.trim()) parts.push(cell4.innerHTML.trim());
+      if (cell5 && cell5.textContent.trim()) parts.push(cell5.innerHTML.trim());
+      if (!parts.length) return;
+
+      var xbtn = document.createElement('button');
+      xbtn.className = 'row-expand-btn';
+      xbtn.textContent = '▾';
+      expandTd.appendChild(xbtn);
+
+      var detailRow = document.createElement('tr');
+      detailRow.className = 'row-detail';
+      var detailTd = document.createElement('td');
+      detailTd.colSpan = row.cells.length;
+      detailTd.innerHTML = parts.join(' &middot; ');
+      detailRow.appendChild(detailTd);
+      row.after(detailRow);
+
+      xbtn.addEventListener('click', function() {
+        var open = detailRow.classList.toggle('open');
+        xbtn.textContent = open ? '▴' : '▾';
+        detailRow.style.display = open ? '' : 'none';
+      });
+    });
+  }
+  </script>
+</body>
+</html>
+
