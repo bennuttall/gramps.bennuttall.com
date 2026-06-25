@@ -22,9 +22,10 @@
         <a class="secondary" href="/I0010/places/">Places</a>
         <a class="secondary" href="/I0010/events/">Events</a>
         <a class="secondary" href="/I0010/census/">Census</a>
+        <a class="secondary" href="/I0010/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0010/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0010/surnames/">Surnames</a>
-        <span class="secondary">Viewing as Geoffrey &mdash; <a href="/">switch</a></span>
+        <span class="secondary">Viewing as Tabitha &mdash; <a href="/">switch</a></span>
       </div>
     </nav>
   </header>
@@ -51,12 +52,12 @@
     <table class="events">
       <tr>
         <th>Date</th>
-        <td>27 May 1986</td>
+        <td>12 Aug 1986</td>
       </tr>
       <tr>
         <th>Place</th>
         <td>
-          <a href="/I0010/places/P0020/">London</a>
+          <a href="/I0010/places/P0035/">Sheffield General Cemetery</a>
           
         </td>
       </tr>
@@ -83,7 +84,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0010/places/P0020/"}];
+    var points = [{"lat": "53.36917", "lon": "-1.48722", "name": "Sheffield General Cemetery", "url": "/I0010/places/P0035/"}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

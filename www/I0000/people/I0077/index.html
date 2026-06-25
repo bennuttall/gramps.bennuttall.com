@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clara Dunmore — Family tree</title>
+  <title>Harriet Eastham — Family tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0000/places/">Places</a>
         <a class="secondary" href="/I0000/events/">Events</a>
         <a class="secondary" href="/I0000/census/">Census</a>
+        <a class="secondary" href="/I0000/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0000/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0000/surnames/">Surnames</a>
         <span class="secondary">Viewing as Alex &mdash; <a href="/">switch</a></span>
@@ -36,17 +37,17 @@
     <h1>
       
       
-        <span>Clara </span><a href="/I0000/surnames/Dunmore/">Dunmore</a>
+        <span>Harriet </span><a href="/I0000/surnames/Eastham/">Eastham</a>
       
       
-      <small class="years">(1984–)</small>
       
+      <small class="years">(1742–1803)</small>
     </h1>
     <p class="person-alt-names">
       
         
         
-          <a href="/I0000/surnames/Hartwell/">Hartwell</a>
+          <a href="/I0000/surnames/Crowther/">Crowther</a>
           
         
         <span class="years">(married name)</span>
@@ -55,36 +56,32 @@
     <table class="person-meta-table">
       <tr>
         <td>
+          <span class="ancestor-badge">ancestor</span>
           
           
           
-          <span class="ancestor-badge by-marriage">related by marriage</span>
           
         </td>
+        <td>your 6th great-grandmother</td>
         
-        <td>your daughter</td>
         
-      </tr>
-      <tr>
-        <td><span class="ancestor-badge living">living</span></td>
-        <td>Age 41</td>
       </tr>
       
+      <tr>
+        <td><span class="ancestor-badge deceased">deceased</span></td>
+        <td>died in 1803 aged 61</td>
+      </tr>
     </table>
   </div>
   <div class="person-header-photo">
-    
-      <a href="/media/I0077_O0008.webp">
-        <img src="/media/I0077_O0008.webp" alt="Portrait" class="person-photo">
-      </a>
     
   </div>
 </div>
       <nav class="person-tabs">
         <span class="active">Profile</span>
         <a href="/I0000/people/I0077/ancestors/">Ancestors <span class="tab-count">(0)</span></a>
-        <a href="/I0000/people/I0077/descendants/">Descendants <span class="tab-count">(3)</span></a>
-        <a href="/I0000/people/I0077/pictures/">Pictures <span class="tab-count">(2)</span></a>
+        <a href="/I0000/people/I0077/descendants/">Descendants <span class="tab-count">(19)</span></a>
+        <a href="/I0000/people/I0077/pictures/">Pictures <span class="tab-count">(3)</span></a>
       </nav>
 
       <div class="profile-overview">
@@ -98,13 +95,13 @@
             <ul>
               
                 <li>
-                  <a href="/I0000/people/I0075/" class="male">Oliver Hartwell</a>
+                  <a href="/I0000/people/I0076/" class="male">Barnabas Crowther</a>
                   
+                  <span class="ancestor-badge">ancestor</span>
                   
-                  <span class="ancestor-badge descendant">descendant</span>
                   <span class="years">Married</span>
                   <span class="years">
-                    2012
+                    29 Oct 1766<span>, Whitby</span>
                   </span>
                 </li>
               
@@ -112,28 +109,14 @@
           </section>
 
           <section class="children">
-            <h3>Children (3)</h3>
+            <h3>Children (1)</h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0078/" class="male">Leo Hartwell</a>
-                <span class="years">(2012–)</span>
+                <a href="/I0000/people/I0067/" class="male">Theodore Crowther</a>
+                <span class="years">(1769–1830)</span>
                 
+                <span class="ancestor-badge">ancestor</span>
                 
-                <span class="ancestor-badge descendant">descendant</span>
-              </li>
-              <li>
-                <a href="/I0000/people/I0079/" class="female">Iris Hartwell</a>
-                <span class="years">(2014–)</span>
-                
-                
-                <span class="ancestor-badge descendant">descendant</span>
-              </li>
-              <li>
-                <a href="/I0000/people/I0080/" class="male">Hugh Hartwell</a>
-                <span class="years">(2017–)</span>
-                
-                
-                <span class="ancestor-badge descendant">descendant</span>
               </li>
             </ul>
           </section>
@@ -144,7 +127,10 @@
             <h3>External links</h3>
             <ul>
               <li>
-                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/28346474523/">Ancestry</a>
+                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/56464598993/">Ancestry</a>
+              </li>
+              <li>
+                <a href="https://www.findagrave.com/memorial/950875214">Find a Grave</a>
               </li>
             </ul>
           </div>
@@ -167,9 +153,15 @@
           <div class="event-filters">
             <button class="filter-btn active" data-filter="all" onclick="filterEvents(this)">All</button>
             <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Baptism">Baptism</button>
+            <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Birth">Birth</button>
             <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Burial">Burial</button>
+            <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Child born">Child born</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Death">Death</button>
             <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Marriage">Marriage</button>
           </div>
@@ -181,13 +173,17 @@
           <tbody>
             <tr data-type="Birth">
               
-                <td>1984</td>
+                <td>1742</td>
                 <td class="event-age">
                   
                 </td>
                 <td>
-                  <a href="/I0000/events/E0284/">Birth</a>
-                  
+                  <a href="/I0000/events/E0302/">Birth</a>
+                  <a href="/I0000/events/E0302/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
                   
                   
                 </td>
@@ -198,19 +194,50 @@
                   
                 </td>
                 <td>
+                  <a
+                     href="/I0000/places/P0010/">Snaith</a>
                   
-                  <span></span>
                 </td>
               
             </tr>
-            <tr data-type="Child born">
+            <tr data-type="Baptism">
               
-                <td>2012</td>
+                <td>25 Oct 1742</td>
                 <td class="event-age">
-                  27
+                  
                 </td>
                 <td>
-                  <a href="/I0000/events/E0285/">Child born</a>
+                  <a href="/I0000/events/E0303/">Baptism</a>
+                  <a href="/I0000/events/E0303/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0010/">Snaith</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Marriage">
+              
+                <td>29 Oct 1766</td>
+                <td class="event-age">
+                  23
+                </td>
+                <td>
+                  <a href="/I0000/events/E0306/">Marriage</a>
                   
                   
                   
@@ -219,26 +246,26 @@
                   
                   
                     <a
-                       href="/I0000/people/I0078/" class="male">Leo Hartwell</a>
+                       href="/I0000/people/I0076/" class="male">Barnabas Crowther</a>
                     
                   
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0019/">Clitheroe</a>
+                     href="/I0000/places/P0009/">Whitby</a>
                   
                 </td>
               
             </tr>
-            <tr data-type="Marriage">
+            <tr data-type="Child born">
               
-                <td>2012</td>
+                <td>2 Dec 1769</td>
                 <td class="event-age">
-                  27
+                  26
                 </td>
                 <td>
-                  <a href="/I0000/events/E0289/">Marriage</a>
-                  <a href="/I0000/events/E0289/" class="photo-icon" title="Has image">
+                  <a href="/I0000/events/E0263/">Child born</a>
+                  <a href="/I0000/events/E0263/" class="photo-icon" title="Has image">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
                     </svg>
@@ -250,25 +277,56 @@
                   
                   
                     <a
-                       href="/I0000/people/I0075/" class="male">Oliver Hartwell</a>
+                       href="/I0000/people/I0067/" class="male">Theodore Crowther</a>
                     
                   
                 </td>
                 <td>
+                  <a
+                     href="/I0000/places/P0031/">Chesterfield</a>
                   
-                  <span></span>
                 </td>
               
             </tr>
-            <tr data-type="Child born">
+            <tr data-type="Death">
               
-                <td>2014</td>
+                <td>5 Jan 1803</td>
                 <td class="event-age">
-                  29
+                  60
                 </td>
                 <td>
-                  <a href="/I0000/events/E0286/">Child born</a>
+                  <a href="/I0000/events/E0304/">Death</a>
                   
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0030/">Buxton</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Burial">
+              
+                <td>24 Feb 1803</td>
+                <td class="event-age">
+                  
+                </td>
+                <td>
+                  <a href="/I0000/events/E0305/">Burial</a>
+                  <a href="/I0000/events/E0305/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
                   
                   
                 </td>
@@ -276,39 +334,14 @@
                   
                   
                     <a
-                       href="/I0000/people/I0079/" class="female">Iris Hartwell</a>
+                       href="https://www.findagrave.com/memorial/950875214">Find a Grave</a>
                     
                   
                 </td>
                 <td>
+                  <a
+                     href="/I0000/places/P0034/">Burngreave Cemetery</a>
                   
-                  <span></span>
-                </td>
-              
-            </tr>
-            <tr data-type="Child born">
-              
-                <td>21 Aug 2017</td>
-                <td class="event-age">
-                  32
-                </td>
-                <td>
-                  <a href="/I0000/events/E0287/">Child born</a>
-                  
-                  
-                  
-                </td>
-                <td>
-                  
-                  
-                    <a
-                       href="/I0000/people/I0080/" class="male">Hugh Hartwell</a>
-                    
-                  
-                </td>
-                <td>
-                  
-                  <span></span>
                 </td>
               
             </tr>
@@ -321,7 +354,7 @@
       
 
       <section class="descendants">
-        <h2>Descendants (3)</h2>
+        <h2>Descendants (19)</h2>
         <div class="tree">
           <div class="generation">
             <h3>
@@ -330,11 +363,245 @@
               
               
               
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0067/" class="male">Theodore Crowther</a>
+                <span class="years">
+                  (1769–1830)
+                </span>
+                
+                <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              <span>Grandchildren</span>
+              
+              
+              
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0054/" class="female">Araminta Crowther</a>
+                <span class="years">
+                  (1796–1859)
+                </span>
+                
+                <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              <span>Great-grandchildren</span>
+              
+              
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0039/" class="female">Winifred Idsworth</a>
+                <span class="years">
+                  (1813–1893)
+                </span>
+                
+                <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              <span>2nd great-grandchildren</span>
+              
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0026/" class="female">Winifred Ingleton</a>
+                <span class="years">
+                  (1840–1933)
+                </span>
+                
+                <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>3th great-grandchildren</span>
+              <span class="years">(2)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0015/" class="male">Geoffrey Ravenswood</a>
+                <span class="years">
+                  (1865–1961)
+                </span>
+                
+                <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+              <li>
+                <a href="/I0000/people/I0024/" class="female">Lettice Ravenswood</a>
+                <span class="years">
+                  (1869–1944)
+                </span>
+                
+                
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>4th great-grandchildren</span>
+              <span class="years">(2)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0008/" class="male">Norman Ravenswood</a>
+                <span class="years">
+                  (1895–1963)
+                </span>
+                
+                <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+              <li>
+                <a href="/I0000/people/I0014/" class="male">Ignatius Ravenswood</a>
+                <span class="years">
+                  (1897–1978)
+                </span>
+                
+                
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>5th great-grandchildren</span>
               <span class="years">(3)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0078/" class="male">Leo Hartwell</a>
+                <a href="/I0000/people/I0006/" class="male">Theodore Ravenswood</a>
+                <span class="years">
+                  (1919–2012)
+                </span>
+                
+                
+                
+              </li>
+              <li>
+                <a href="/I0000/people/I0002/" class="female">Ursula Ravenswood</a>
+                <span class="years">
+                  (1921–1986)
+                </span>
+                
+                <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+              <li>
+                <a href="/I0000/people/I0007/" class="male">Quentin Ravenswood</a>
+                <span class="years">
+                  (1921–1985)
+                </span>
+                
+                
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>6th great-grandchildren</span>
+              <span class="years">(1)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0000/" class="male">Alex Hartwell</a>
+                <span class="years">
+                  (1955–)
+                </span>
+                <span class="ancestor-badge me">me</span>
+                
+                
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>7th great-grandchildren</span>
+              <span class="years">(2)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0082/" class="male">Oliver Hartwell</a>
+                <span class="years">
+                  (1983–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0000/people/I0083/" class="female">Sophie Hartwell</a>
+                <span class="years">
+                  (1986–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+            </ul>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              
+              
+              <span>8th great-grandchildren</span>
+              <span class="years">(5)</span>
+            </h3>
+            <ul>
+              <li>
+                <a href="/I0000/people/I0085/" class="male">Leo Hartwell</a>
                 <span class="years">
                   (2012–)
                 </span>
@@ -343,7 +610,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0079/" class="female">Iris Hartwell</a>
+                <a href="/I0000/people/I0086/" class="female">Iris Hartwell</a>
                 <span class="years">
                   (2014–)
                 </span>
@@ -352,7 +619,25 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0080/" class="male">Hugh Hartwell</a>
+                <a href="/I0000/people/I0089/" class="female">Fern Ashford</a>
+                <span class="years">
+                  (2014–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0000/people/I0087/" class="male">Hugh Hartwell</a>
+                <span class="years">
+                  (2017–)
+                </span>
+                
+                
+                <span class="ancestor-badge descendant">descendant</span>
+              </li>
+              <li>
+                <a href="/I0000/people/I0090/" class="male">Miles Ashford</a>
                 <span class="years">
                   (2017–)
                 </span>
@@ -390,7 +675,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0000/places/P0019/", "types": ["Child born"]}];
+    var points = [{"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0000/places/P0010/", "types": ["Birth", "Baptism"]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0000/places/P0009/", "types": ["Marriage"]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0000/places/P0031/", "types": ["Child born"]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "types": ["Death"]}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "/I0000/places/P0034/", "types": ["Burial"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

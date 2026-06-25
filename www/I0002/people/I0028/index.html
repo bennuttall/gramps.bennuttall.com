@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francis Ulverston — Family tree</title>
+  <title>Douglas Zelby — Family tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0002/places/">Places</a>
         <a class="secondary" href="/I0002/events/">Events</a>
         <a class="secondary" href="/I0002/census/">Census</a>
+        <a class="secondary" href="/I0002/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0002/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0002/surnames/">Surnames</a>
         <span class="secondary">Viewing as Ursula &mdash; <a href="/">switch</a></span>
@@ -36,11 +37,11 @@
     <h1>
       
       
-        <span>Francis </span><a href="/I0002/surnames/Ulverston/">Ulverston</a>
+        <span>Douglas </span><a href="/I0002/surnames/Zelby/">Zelby</a>
       
       
       
-      <small class="years">(1833–1914)</small>
+      <small class="years">(1838–1925)</small>
     </h1>
     
     <table class="person-meta-table">
@@ -59,7 +60,7 @@
       
       <tr>
         <td><span class="ancestor-badge deceased">deceased</span></td>
-        <td>died in 1914 aged 81</td>
+        <td>died in 1925 aged 87</td>
       </tr>
     </table>
   </div>
@@ -69,9 +70,9 @@
 </div>
       <nav class="person-tabs">
         <span class="active">Profile</span>
-        <a href="/I0002/people/I0028/ancestors/">Ancestors <span class="tab-count">(14)</span></a>
-        <a href="/I0002/people/I0028/descendants/">Descendants <span class="tab-count">(12)</span></a>
-        
+        <a href="/I0002/people/I0028/ancestors/">Ancestors <span class="tab-count">(13)</span></a>
+        <a href="/I0002/people/I0028/descendants/">Descendants <span class="tab-count">(13)</span></a>
+        <a href="/I0002/people/I0028/pictures/">Pictures <span class="tab-count">(5)</span></a>
       </nav>
 
       <div class="profile-overview">
@@ -80,15 +81,15 @@
             <h3>Parents</h3>
             <ul>
               <li>
-                <a class="male" href="/I0002/people/I0039/">Alfred Ulverston</a>
-                <span class="years">(1801–1878)</span>
+                <a class="male" href="/I0002/people/I0042/">Oswald Zelby</a>
+                <span class="years">(1804–1870)</span>
                 
                 
                 
               </li>
               <li>
-                <a class="female" href="/I0002/people/I0040/">Josephine Ashford</a>
-                <span class="years">(1800–1862)</span>
+                <a class="female" href="/I0002/people/I0043/">Winifred Oulton</a>
+                <span class="years">(1802–1882)</span>
                 
                 
                 
@@ -96,20 +97,44 @@
             </ul>
           </section>
 
-          
+          <section class="siblings">
+            <h3>Siblings (2)</h3>
+            <ul>
+              <li>
+                
+                  <a href="/I0002/people/I0041/" class="female">Ursula Zelby</a>
+                  <span class="years">(1832–1900)</span>
+                  <span class="years">sister</span>
+                  
+                  
+                  
+                
+              </li>
+              <li>
+                
+                  <a href="/I0002/people/I0040/" class="male">Ulric Zelby</a>
+                  <span class="years">(1839–1933)</span>
+                  <span class="years">brother</span>
+                  
+                  
+                  
+                
+              </li>
+            </ul>
+          </section>
 
           <section class="spouses">
             <h3>Relationships</h3>
             <ul>
               
                 <li>
-                  <a href="/I0002/people/I0029/" class="female">Lettice Stanwick</a>
+                  <a href="/I0002/people/I0029/" class="female">Cecily Stanwick</a>
                   
                   <span class="ancestor-badge">ancestor</span>
                   
                   <span class="years">Married</span>
                   <span class="years">
-                    May 1862<span>, Clitheroe</span>
+                    Nov 1861<span>, Clitheroe</span>
                   </span>
                 </li>
               
@@ -120,8 +145,8 @@
             <h3>Children (1)</h3>
             <ul>
               <li>
-                <a href="/I0002/people/I0020/" class="female">Prudence Ulverston</a>
-                <span class="years">(1865–1955)</span>
+                <a href="/I0002/people/I0017/" class="male">Alfred Zelby</a>
+                <span class="years">(1861–1930)</span>
                 
                 <span class="ancestor-badge">ancestor</span>
                 
@@ -135,7 +160,10 @@
             <h3>External links</h3>
             <ul>
               <li>
-                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/23950873922/">Ancestry</a>
+                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/91949873752/">Ancestry</a>
+              </li>
+              <li>
+                <a href="https://www.findagrave.com/memorial/473887247">Find a Grave</a>
               </li>
             </ul>
           </div>
@@ -144,7 +172,7 @@
             <h3>Occupations</h3>
             <ul>
               <li>
-                Miller
+                Dentist
                 
               </li>
             </ul>
@@ -162,6 +190,8 @@
             <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Birth">Birth</button>
             <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Burial">Burial</button>
+            <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Census">Census</button>
             <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Child born">Child born</button>
@@ -178,47 +208,52 @@
           <tbody>
             <tr data-type="Birth">
               
-                <td>1833</td>
+                <td>1838</td>
                 <td class="event-age">
                   
                 </td>
                 <td>
-                  <a href="/I0002/events/E0103/">Birth</a>
-                  
-                  <span class="tag-icon interesting" title="Interesting">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"/>
+                  <a href="/I0002/events/E0105/">Birth</a>
+                  <a href="/I0002/events/E0105/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
                     </svg>
-                  </span>
+                  </a>
+                  
                   
                 </td>
                 <td>
                   
                     
                       <a
-                         href="/I0002/people/I0039/" class="male">Alfred Ulverston</a>
+                         href="/I0002/people/I0042/" class="male">Oswald Zelby</a>
                       <span> and </span>
                       <a
-                         href="/I0002/people/I0040/" class="female">Josephine Ashford</a>
+                         href="/I0002/people/I0043/" class="female">Winifred Oulton</a>
                     
                   
                   
                 </td>
                 <td>
+                  <a
+                     href="/I0002/places/P0031/">Chesterfield</a>
                   
-                  <span></span>
                 </td>
               
             </tr>
             <tr data-type="Baptism">
               
-                <td>22 Sep 1833</td>
+                <td>19 Oct 1838</td>
                 <td class="event-age">
                   
                 </td>
                 <td>
-                  <a href="/I0002/events/E0104/">Baptism</a>
-                  
+                  <a href="/I0002/events/E0106/">Baptism</a>
+                  <a href="/I0002/events/E0106/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
                   
                   
                 </td>
@@ -227,6 +262,172 @@
                   
                     
                     <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0031/">Chesterfield</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>6 Jun 1841</td>
+                <td class="event-age">
+                  2
+                </td>
+                <td>
+                  <a href="/I0002/events/E0340/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1841 census - Oswald Zelby household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0008/">Goole</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>30 Mar 1851</td>
+                <td class="event-age">
+                  12
+                </td>
+                <td>
+                  <a href="/I0002/events/E0355/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1851 census - Oswald Zelby household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0005/">Kingston upon Hull</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>7 Apr 1861</td>
+                <td class="event-age">
+                  22
+                </td>
+                <td>
+                  <a href="/I0002/events/E0363/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1861 census - Douglas Zelby household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0016/">Blackburn</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Child born">
+              
+                <td>7 Oct 1861</td>
+                <td class="event-age">
+                  22
+                </td>
+                <td>
+                  <a href="/I0002/events/E0062/">Child born</a>
+                  <a href="/I0002/events/E0062/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    <a
+                       href="/I0002/people/I0017/" class="male">Alfred Zelby</a>
+                    
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0004/">Bradford</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Marriage">
+              
+                <td>Nov 1861</td>
+                <td class="event-age">
+                  22
+                </td>
+                <td>
+                  <a href="/I0002/events/E0112/">Marriage</a>
+                  <a href="/I0002/events/E0112/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    <a
+                       href="/I0002/people/I0029/" class="female">Cecily Stanwick</a>
+                    
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0019/">Clitheroe</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>2 Apr 1871</td>
+                <td class="event-age">
+                  32
+                </td>
+                <td>
+                  <a href="/I0002/events/E0370/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1871 census - Douglas Zelby household</span>
                   
                 </td>
                 <td>
@@ -237,12 +438,12 @@
             </tr>
             <tr data-type="Census">
               
-                <td>7 Apr 1861</td>
+                <td>3 Apr 1881</td>
                 <td class="event-age">
-                  27
+                  42
                 </td>
                 <td>
-                  <a href="/I0002/events/E0311/">Census</a>
+                  <a href="/I0002/events/E0379/">Census</a>
                   
                   
                   
@@ -251,24 +452,24 @@
                   
                   
                     
-                    <span>1861 census - Francis Ulverston household</span>
+                    <span>1881 census - Douglas Zelby household</span>
                   
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0030/">Buxton</a>
+                     href="/I0002/places/P0015/">Lancaster</a>
                   
                 </td>
               
             </tr>
-            <tr data-type="Marriage">
+            <tr data-type="Census">
               
-                <td>May 1862</td>
+                <td>31 Mar 1901</td>
                 <td class="event-age">
-                  28
+                  62
                 </td>
                 <td>
-                  <a href="/I0002/events/E0110/">Marriage</a>
+                  <a href="/I0002/events/E0400/">Census</a>
                   
                   
                   
@@ -276,26 +477,25 @@
                 <td>
                   
                   
-                    <a
-                       href="/I0002/people/I0029/" class="female">Lettice Stanwick</a>
                     
+                    <span>1901 census - Douglas Zelby household</span>
                   
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0019/">Clitheroe</a>
+                     href="/I0002/places/P0004/">Bradford</a>
                   
                 </td>
               
             </tr>
-            <tr data-type="Child born">
+            <tr data-type="Census">
               
-                <td>Sep 1865</td>
+                <td>2 Apr 1911</td>
                 <td class="event-age">
-                  31
+                  72
                 </td>
                 <td>
-                  <a href="/I0002/events/E0072/">Child born</a>
+                  <a href="/I0002/events/E0407/">Census</a>
                   
                   
                   
@@ -303,27 +503,56 @@
                 <td>
                   
                   
-                    <a
-                       href="/I0002/people/I0020/" class="female">Prudence Ulverston</a>
                     
+                    <span>1911 census - Douglas Zelby household</span>
                   
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0019/">Clitheroe</a>
+                     href="/I0002/places/P0018/">Bury</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>19 Jun 1921</td>
+                <td class="event-age">
+                  82
+                </td>
+                <td>
+                  <a href="/I0002/events/E0412/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1921 census - Douglas Zelby household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0028/">Lincoln</a>
                   
                 </td>
               
             </tr>
             <tr data-type="Death">
               
-                <td>1914</td>
+                <td>4 Aug 1925</td>
                 <td class="event-age">
-                  80
+                  86
                 </td>
                 <td>
-                  <a href="/I0002/events/E0105/">Death</a>
-                  
+                  <a href="/I0002/events/E0107/">Death</a>
+                  <a href="/I0002/events/E0107/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
                   
                   
                 </td>
@@ -336,7 +565,38 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0010/">Snaith</a>
+                     href="/I0002/places/P0008/">Goole</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Burial">
+              
+                <td>9 Sep 1925</td>
+                <td class="event-age">
+                  
+                </td>
+                <td>
+                  <a href="/I0002/events/E0108/">Burial</a>
+                  <a href="/I0002/events/E0108/" class="photo-icon" title="Has image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                    </svg>
+                  </a>
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    <a
+                       href="https://www.findagrave.com/memorial/473887247">Find a Grave</a>
+                    
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0002/places/P0008/">Goole</a>
                   
                 </td>
               
@@ -348,7 +608,7 @@
       <div id="map"></div>
 
       <section class="ancestors">
-        <h2>Ancestors (14)</h2>
+        <h2>Ancestors (13)</h2>
         <div class="tree">
           <div class="generation">
             <h3>
@@ -366,18 +626,18 @@
               
                 <div>
                   
-                    <a href="/I0002/people/I0039/" class="male">Alfred Ulverston</a>
+                    <a href="/I0002/people/I0042/" class="male">Oswald Zelby</a>
                     <span class="years">
-                      (1801–1878)
+                      (1804–1870)
                     </span>
                   
                 </div>
                 <div>
                   
                     
-                      <a href="/I0002/people/I0040/" class="female">Josephine Ashford</a>
+                      <a href="/I0002/people/I0043/" class="female">Winifred Oulton</a>
                       <span class="years">
-                        (1800–1862)
+                        (1802–1882)
                       </span>
                     
                   
@@ -392,27 +652,27 @@
               
               
               
-              <span class="years">(3 / 4)</span>
+              <span class="years">(4 / 4)</span>
               <span class="years pct-high">
-                75%
+                100%
               </span>
             </h3>
             <div class="two-col">
               
                 <div>
                   
-                    <a href="/I0002/people/I0050/" class="male">Wallace Ulverston</a>
+                    <a href="/I0002/people/I0055/" class="male">Percy Zelby</a>
                     <span class="years">
-                      (1779–1864)
+                      (1784–1862)
                     </span>
                   
                 </div>
                 <div>
                   
                     
-                      <a href="/I0002/people/I0051/" class="female">Harriet Idsworth</a>
+                      <a href="/I0002/people/I0056/" class="female">Agatha Kestrel</a>
                       <span class="years">
-                        (1775–1856)
+                        (1789–1883)
                       </span>
                     
                   
@@ -420,13 +680,20 @@
               
                 <div>
                   
-                    <a href="/I0002/people/I0052/" class="female">Prudence Crowther</a>
+                    <a href="/I0002/people/I0057/" class="male">Ulric Oulton</a>
                     <span class="years">
-                      (1772–1851)
+                      (1771–1861)
                     </span>
                   
                 </div>
                 <div>
+                  
+                    
+                      <a href="/I0002/people/I0058/" class="female">Isolde Fernley</a>
+                      <span class="years">
+                        (1776–1861)
+                      </span>
+                    
                   
                 </div>
               
@@ -448,18 +715,18 @@
               
                 <div>
                   
-                    <a href="/I0002/people/I0061/" class="male">Ignatius Ulverston</a>
+                    <a href="/I0002/people/I0069/" class="male">Kenneth Zelby</a>
                     <span class="years">
-                      (1745–1826)
+                      (1753–1844)
                     </span>
                   
                 </div>
                 <div>
                   
                     
-                      <a href="/I0002/people/I0062/" class="female">Clementine Langford</a>
+                      <a href="/I0002/people/I0070/" class="female">Edwina Jarrow</a>
                       <span class="years">
-                        (1744–1824)
+                        (1751–1828)
                       </span>
                     
                   
@@ -467,18 +734,18 @@
               
                 <div>
                   
-                    <a href="/I0002/people/I0063/" class="male">Edgar Crowther</a>
+                    <a href="/I0002/people/I0071/" class="male">Bernard Fernley</a>
                     <span class="years">
-                      (1750–1846)
+                      (1745–1816)
                     </span>
                   
                 </div>
                 <div>
                   
                     
-                      <a href="/I0002/people/I0064/" class="female">Dorothea Langford</a>
+                      <a href="/I0002/people/I0072/" class="female">Imelda Foxwell</a>
                       <span class="years">
-                        (1752–1824)
+                        (1740–1829)
                       </span>
                     
                   
@@ -493,37 +760,18 @@
               
               <span>2nd great-grandparents</span>
               
-              <span class="years">(5 / 16)</span>
+              <span class="years">(3 / 16)</span>
               <span class="years pct-low">
-                31%
+                18%
               </span>
             </h3>
             <div class="two-col">
               
                 <div>
                   
-                    <a href="/I0002/people/I0069/" class="male">Cecil Langford</a>
+                    <a href="/I0002/people/I0078/" class="female">Tabitha Pembridge</a>
                     <span class="years">
-                      (1720–1781)
-                    </span>
-                  
-                </div>
-                <div>
-                  
-                    
-                      <a href="/I0002/people/I0070/" class="female">Norah Oulton</a>
-                      <span class="years">
-                        (1723–1785)
-                      </span>
-                    
-                  
-                </div>
-              
-                <div>
-                  
-                    <a href="/I0002/people/I0071/" class="female">Tabitha Blackwell</a>
-                    <span class="years">
-                      (1723–1813)
+                      (1724–1808)
                     </span>
                   
                 </div>
@@ -533,18 +781,18 @@
               
                 <div>
                   
-                    <a href="/I0002/people/I0072/" class="male">Theodore Langford</a>
+                    <a href="/I0002/people/I0079/" class="male">Clement Fernley</a>
                     <span class="years">
-                      (1725–1786)
+                      (1719–1791)
                     </span>
                   
                 </div>
                 <div>
                   
                     
-                      <a href="/I0002/people/I0073/" class="female">Venetia Crowther</a>
+                      <a href="/I0002/people/I0080/" class="female">Norah Thornbury</a>
                       <span class="years">
-                        (1724–1786)
+                        (1724–1802)
                       </span>
                     
                   
@@ -556,7 +804,7 @@
       </section>
 
       <section class="descendants">
-        <h2>Descendants (12)</h2>
+        <h2>Descendants (13)</h2>
         <div class="tree">
           <div class="generation">
             <h3>
@@ -569,9 +817,9 @@
             </h3>
             <ul>
               <li>
-                <a href="/I0002/people/I0020/" class="female">Prudence Ulverston</a>
+                <a href="/I0002/people/I0017/" class="male">Alfred Zelby</a>
                 <span class="years">
-                  (1865–1955)
+                  (1861–1930)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
@@ -586,22 +834,13 @@
               
               
               
-              <span class="years">(2)</span>
+              <span class="years">(1)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0002/people/I0018/" class="female">Edwina Foxwell</a>
+                <a href="/I0002/people/I0009/" class="female">Prudence Zelby</a>
                 <span class="years">
-                  (1883–1955)
-                </span>
-                
-                
-                
-              </li>
-              <li>
-                <a href="/I0002/people/I0007/" class="female">Prudence Foxwell</a>
-                <span class="years">
-                  (1885–1968)
+                  (1891–1967)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
@@ -616,15 +855,33 @@
               <span>Great-grandchildren</span>
               
               
-              <span class="years">(1)</span>
+              <span class="years">(3)</span>
             </h3>
             <ul>
+              <li>
+                <a href="/I0002/people/I0006/" class="male">Theodore Ravenswood</a>
+                <span class="years">
+                  (1919–2012)
+                </span>
+                
+                
+                
+              </li>
               <li>
                 <a href="/I0002/people/I0002/" class="female">Ursula Ravenswood</a>
                 <span class="years">
                   (1921–1986)
                 </span>
                 <span class="ancestor-badge me">me</span>
+                
+                
+              </li>
+              <li>
+                <a href="/I0002/people/I0007/" class="male">Quentin Ravenswood</a>
+                <span class="years">
+                  (1921–1985)
+                </span>
+                
                 
                 
               </li>
@@ -662,7 +919,7 @@
             </h3>
             <ul>
               <li>
-                <a href="/I0002/people/I0075/" class="male">Oliver Hartwell</a>
+                <a href="/I0002/people/I0082/" class="male">Oliver Hartwell</a>
                 <span class="years">
                   (1983–)
                 </span>
@@ -671,7 +928,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0002/people/I0076/" class="female">Sophie Hartwell</a>
+                <a href="/I0002/people/I0083/" class="female">Sophie Hartwell</a>
                 <span class="years">
                   (1986–)
                 </span>
@@ -692,7 +949,7 @@
             </h3>
             <ul>
               <li>
-                <a href="/I0002/people/I0078/" class="male">Leo Hartwell</a>
+                <a href="/I0002/people/I0085/" class="male">Leo Hartwell</a>
                 <span class="years">
                   (2012–)
                 </span>
@@ -701,7 +958,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0002/people/I0079/" class="female">Iris Hartwell</a>
+                <a href="/I0002/people/I0086/" class="female">Iris Hartwell</a>
                 <span class="years">
                   (2014–)
                 </span>
@@ -710,7 +967,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0002/people/I0082/" class="female">Fern Ashford</a>
+                <a href="/I0002/people/I0089/" class="female">Fern Ashford</a>
                 <span class="years">
                   (2014–)
                 </span>
@@ -719,7 +976,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0002/people/I0080/" class="male">Hugh Hartwell</a>
+                <a href="/I0002/people/I0087/" class="male">Hugh Hartwell</a>
                 <span class="years">
                   (2017–)
                 </span>
@@ -728,7 +985,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0002/people/I0083/" class="male">Miles Ashford</a>
+                <a href="/I0002/people/I0090/" class="male">Miles Ashford</a>
                 <span class="years">
                   (2017–)
                 </span>
@@ -766,7 +1023,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0002/places/P0030/", "types": ["Census"]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0002/places/P0019/", "types": ["Marriage", "Child born"]}, {"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0002/places/P0010/", "types": ["Death"]}];
+    var points = [{"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0002/places/P0031/", "types": ["Birth", "Baptism"]}, {"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0002/places/P0008/", "types": ["Census", "Death", "Burial"]}, {"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0002/places/P0005/", "types": ["Census"]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0002/places/P0016/", "types": ["Census"]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0002/places/P0004/", "types": ["Child born", "Census"]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0002/places/P0019/", "types": ["Marriage"]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0002/places/P0015/", "types": ["Census"]}, {"lat": "53.5933", "lon": "-2.2966", "name": "Bury", "url": "/I0002/places/P0018/", "types": ["Census"]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0002/places/P0028/", "types": ["Census"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alfred Kestrel — Ancestor Tree</title>
+  <title>Lavinia Crowther — Ancestor Tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0000/places/">Places</a>
         <a class="secondary" href="/I0000/events/">Events</a>
         <a class="secondary" href="/I0000/census/">Census</a>
+        <a class="secondary" href="/I0000/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0000/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0000/surnames/">Surnames</a>
         <span class="secondary">Viewing as Alex &mdash; <a href="/">switch</a></span>
@@ -35,11 +36,11 @@
     <h1>
       
       
-        <span>Alfred </span><a href="/I0000/surnames/Kestrel/">Kestrel</a>
+        <span>Lavinia </span><a href="/I0000/surnames/Crowther/">Crowther</a>
       
       
       
-      <small class="years">(1765–1845)</small>
+      <small class="years">(1813–1908)</small>
     </h1>
     
     <table class="person-meta-table">
@@ -51,14 +52,14 @@
           
           
         </td>
-        <td>your 4th great-grandfather</td>
+        <td>your 3rd great-grandmother</td>
         
         
       </tr>
       
       <tr>
         <td><span class="ancestor-badge deceased">deceased</span></td>
-        <td>died in 1845 aged 80</td>
+        <td>died in 1908 aged 95</td>
       </tr>
     </table>
   </div>
@@ -69,15 +70,15 @@
     <nav class="person-tabs">
       <a href="/I0000/people/I0044/">Profile</a>
       <span class="active">Ancestors <span class="tab-count">(0)</span></span>
-      <a href="/I0000/people/I0044/descendants/">Descendants <span class="tab-count">(15)</span></a>
+      <a href="/I0000/people/I0044/descendants/">Descendants <span class="tab-count">(14)</span></a>
       <a href="/I0000/people/I0044/pictures/">Pictures <span class="tab-count">(3)</span></a>
     </nav>
     <div class="pedigree-wrap">
       <div class="pedigree-chart" style="grid-template-rows:repeat(16,minmax(2.5rem,auto));grid-template-columns:repeat(5,minmax(140px,1fr))">
-        <a href="/I0000/people/I0044/" class="pedigree-cell gen-0 male" style="grid-column:1;grid-row:1/17">
-          <span class="pedigree-name">Alfred Kestrel</span>
+        <a href="/I0000/people/I0044/" class="pedigree-cell gen-0 female" style="grid-column:1;grid-row:1/17">
+          <span class="pedigree-name">Lavinia Crowther</span>
           <span class="pedigree-years">
-            1765–1845
+            1813–1908
           </span>
         </a>
       </div>
@@ -92,7 +93,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0000/places/P0022/", "people": [{"name": "Alfred Kestrel", "url": "/I0000/people/I0044/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0000/places/P0016/", "people": [{"name": "Alfred Kestrel", "url": "/I0000/people/I0044/", "types": ["Child born"]}]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0000/places/P0021/", "people": [{"name": "Alfred Kestrel", "url": "/I0000/people/I0044/", "types": ["Census"]}]}, {"lat": "53.5933", "lon": "-2.2966", "name": "Bury", "url": "/I0000/places/P0018/", "people": [{"name": "Alfred Kestrel", "url": "/I0000/people/I0044/", "types": ["Death", "Burial"]}]}];
+    var points = [{"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0000/places/P0019/", "people": [{"name": "Lavinia Crowther", "url": "/I0000/people/I0044/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "people": [{"name": "Lavinia Crowther", "url": "/I0000/people/I0044/", "types": ["Child born"]}]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0000/places/P0031/", "people": [{"name": "Lavinia Crowther", "url": "/I0000/people/I0044/", "types": ["Census"]}]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0000/places/P0017/", "people": [{"name": "Lavinia Crowther", "url": "/I0000/people/I0044/", "types": ["Census"]}]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0000/places/P0028/", "people": [{"name": "Lavinia Crowther", "url": "/I0000/people/I0044/", "types": ["Census"]}]}, {"lat": "52.9540", "lon": "-1.1550", "name": "Nottingham", "url": "/I0000/places/P0025/", "people": [{"name": "Lavinia Crowther", "url": "/I0000/people/I0044/", "types": ["Death", "Burial"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

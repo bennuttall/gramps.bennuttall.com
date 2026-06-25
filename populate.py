@@ -129,6 +129,24 @@ ENGLAND_PLACES = [
     ("chesterfield",    "Chesterfield",       "Town",    "53.2350",  "-1.4216",  "derbyshire"),
 ]
 
+# Intermediate places needed to parent some cemeteries
+CEMETERY_PARENT_PLACES = [
+    ("bacup",      "Bacup",      "Town", "53.7037", "-2.2020", "lancashire"),
+    ("rossendale", "Rossendale", "Town", "53.7060", "-2.2848", "lancashire"),
+]
+
+# (key, name, lat, lon, parent_key) — drawn from a real tree
+CEMETERIES = [
+    ("burngreave_cemetery",         "Burngreave Cemetery",               "53.3969",  "-1.4615",  "sheffield"),
+    ("sheffield_general_cemetery",  "Sheffield General Cemetery",        "53.36917", "-1.48722", "sheffield"),
+    ("city_road_cemetery",          "City Road Cemetery",                "53.36948", "-1.44069", "sheffield"),
+    ("southern_cemetery",           "Southern Cemetery",                 "53.42781", "-2.2611",  "manchester"),
+    ("hull_general_cemetery",       "Hull General Cemetery",             "53.75176", "-0.36274", "hull"),
+    ("bacup_cemetery",              "Bacup Cemetery",                    "53.69068", "-2.21566", "bacup"),
+    ("st_john_churchyard",          "St John the Evangelist Churchyard", "53.70373", "-2.20196", "bacup"),
+    ("rawtenstall_cemetery",        "Rawtenstall Cemetery",              "53.70602", "-2.28475", "rossendale"),
+]
+
 # Only cities/towns are used for individual events (not countries or counties)
 EVENT_PLACE_KEYS = {key for key, _, ptype, *_ in ENGLAND_PLACES if ptype in ("City", "Town", "Borough")}
 
@@ -171,7 +189,7 @@ def _add_url(person, url_type_str, path):
 
 
 def _make_person(db, trans, given, surname, gender, birth_year, death_year=None,
-                 birth_place=None, death_place=None):
+                 birth_place=None, death_place=None, burial_place=None):
     person = Person()
 
     name = Name()
@@ -212,7 +230,7 @@ def _make_person(db, trans, given, surname, gender, birth_year, death_year=None,
             bur_y = death_year + (bur_total - 1) // 12
             bur_m = ((bur_total - 1) % 12) + 1
             bur_d = random.randint(1, calendar.monthrange(bur_y, bur_m)[1]) if random.random() < 0.75 else 0
-            _add(EventType.BURIAL, bur_y, bur_m, bur_d, death_place)
+            _add(EventType.BURIAL, bur_y, bur_m, bur_d, burial_place or death_place)
             has_burial = True
 
         if random.random() < 0.30:
@@ -292,15 +310,41 @@ def _make_place(db, trans, name, type_str, lat, lon, parent_handle=None):
     return place.get_handle()
 
 
+def _make_cemetery(db, trans, name, lat, lon, parent_handle=None):
+    place = Place()
+    pname = PlaceName()
+    pname.set_value(name)
+    place.set_name(pname)
+    place.set_type(PlaceType((PlaceType.CUSTOM, 'Cemetery')))
+    if lat:
+        place.set_latitude(lat)
+    if lon:
+        place.set_longitude(lon)
+    if parent_handle:
+        pref = PlaceRef()
+        pref.set_reference_handle(parent_handle)
+        place.add_placeref(pref)
+    db.add_place(place, trans)
+    return place.get_handle()
+
+
 def build_places(db, trans):
-    """Create the England place hierarchy; return a dict of key -> handle."""
+    """Create the England place hierarchy; return (event_handles, cemetery_handles)."""
     handles = {}
     for key, name, type_str, lat, lon, parent_key in ENGLAND_PLACES:
         parent_handle = handles[parent_key] if parent_key else None
         handles[key] = _make_place(db, trans, name, type_str, lat, lon, parent_handle)
+    for key, name, type_str, lat, lon, parent_key in CEMETERY_PARENT_PLACES:
+        parent_handle = handles[parent_key] if parent_key else None
+        handles[key] = _make_place(db, trans, name, type_str, lat, lon, parent_handle)
+    cemetery_handles = []
+    for key, name, lat, lon, parent_key in CEMETERIES:
+        h = _make_cemetery(db, trans, name, lat, lon, handles.get(parent_key))
+        handles[key] = h
+        cemetery_handles.append(h)
     event_handles = [handles[k] for k in EVENT_PLACE_KEYS]
-    print(f"Built {len(handles)} places ({len(event_handles)} usable for events)")
-    return event_handles
+    print(f"Built {len(handles)} places ({len(event_handles)} usable for events, {len(cemetery_handles)} cemeteries)")
+    return event_handles, cemetery_handles
 
 
 def _pick_place(event_place_handles, prob=0.70):
@@ -357,7 +401,7 @@ def init_db(path):
 
 # ── Ancestor tree ─────────────────────────────────────────────────────────────
 
-def build_ancestors(db, trans, root, root_birth, root_surname, place_handles=None):
+def build_ancestors(db, trans, root, root_birth, root_surname, place_handles=None, cemetery_handles=None):
     """Build up to 8 generations of ancestors using ahnentafel numbering.
 
     Ahnentafel: 1=root, 2=father, 3=mother, 2n=father of n, 2n+1=mother of n.
@@ -413,6 +457,7 @@ def build_ancestors(db, trans, root, root_birth, root_surname, place_handles=Non
                         child_surname, sib_gender, sib_birth, sib_death,
                         birth_place=_pick_place(place_handles),
                         death_place=_pick_place(place_handles),
+                        burial_place=_pick_place(cemetery_handles),
                     )
                     siblings.append((sib, sib_birth, sib_death))
                     total += 1
@@ -432,6 +477,7 @@ def build_ancestors(db, trans, root, root_birth, root_surname, place_handles=Non
                     father_birth, father_death,
                     birth_place=_pick_place(place_handles),
                     death_place=_pick_place(place_handles),
+                    burial_place=_pick_place(cemetery_handles),
                 )
                 tree[ahn * 2] = (father, father_birth, father_surname, father_death)
                 total += 1
@@ -444,6 +490,7 @@ def build_ancestors(db, trans, root, root_birth, root_surname, place_handles=Non
                     mother_birth, mother_death,
                     birth_place=_pick_place(place_handles),
                     death_place=_pick_place(place_handles),
+                    burial_place=_pick_place(cemetery_handles),
                 )
                 tree[ahn * 2 + 1] = (mother, mother_birth, mother_surname, mother_death)
                 total += 1
@@ -705,7 +752,7 @@ def main():
 
     with DbTxn("Populate demo database", db) as trans:
         print("Building places...")
-        place_handles = build_places(db, trans)
+        place_handles, cemetery_handles = build_places(db, trans)
 
         root_surname = "Hartwell"
         root_birth = 1955
@@ -714,14 +761,15 @@ def main():
         print(f"Root: Alex Hartwell ({root_birth})")
 
         print("\nBuilding ancestor tree...")
-        ancestor_count, families = build_ancestors(db, trans, root, root_birth, root_surname, place_handles)
+        ancestor_count, families = build_ancestors(db, trans, root, root_birth, root_surname, place_handles, cemetery_handles)
         print(f"  → {ancestor_count} ancestors created")
 
         spouse_birth = root_birth + random.randint(-3, 5)
         spouse_death = _death_year(spouse_birth)
         spouse = _make_person(db, trans, "Diana", "Vanthorpe", Person.FEMALE,
                               spouse_birth, spouse_death,
-                              birth_place=_pick_place(place_handles))
+                              birth_place=_pick_place(place_handles),
+                              burial_place=_pick_place(cemetery_handles))
 
         child1_birth = root_birth + 28
         child1 = _make_person(db, trans, "Oliver", root_surname, Person.MALE, child1_birth,
@@ -744,7 +792,8 @@ def main():
         oliver_spouse_death = _death_year(oliver_spouse_birth)
         oliver_spouse = _make_person(db, trans, "Clara", "Dunmore", Person.FEMALE,
                                      oliver_spouse_birth, oliver_spouse_death,
-                                     birth_place=_pick_place(place_handles))
+                                     birth_place=_pick_place(place_handles),
+                                     burial_place=_pick_place(cemetery_handles))
 
         gc1_birth = child1_birth + 29
         gc2_birth = gc1_birth + 2
@@ -769,7 +818,8 @@ def main():
         sophie_spouse_death = _death_year(sophie_spouse_birth)
         sophie_spouse = _make_person(db, trans, "Edmund", "Ashford", Person.MALE,
                                      sophie_spouse_birth, sophie_spouse_death,
-                                     birth_place=_pick_place(place_handles))
+                                     birth_place=_pick_place(place_handles),
+                                     burial_place=_pick_place(cemetery_handles))
 
         gc4_birth = child2_birth + 28
         gc5_birth = gc4_birth + 3
@@ -807,12 +857,6 @@ def main():
 
     db.close()
     print("\nDone. Root person ID: I0000")
-
-    print("\nBuilding site...")
-    config_path = Path(__file__).parent.parent / "config.yml"
-    os.environ["GREATGRAMPS_CONFIG"] = str(config_path)
-    from greatgramps.build import build
-    build()
 
 
 if __name__ == "__main__":

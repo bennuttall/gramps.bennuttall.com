@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1851 census - Wallace Foxwell household — Family tree</title>
+  <title>Marriage of Barnabas Crowther and Harriet Eastham — Family tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0000/places/">Places</a>
         <a class="secondary" href="/I0000/events/">Events</a>
         <a class="secondary" href="/I0000/census/">Census</a>
+        <a class="secondary" href="/I0000/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0000/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0000/surnames/">Surnames</a>
         <span class="secondary">Viewing as Alex &mdash; <a href="/">switch</a></span>
@@ -31,9 +32,17 @@
   <main>
     
 
+
     <h1>
-      1851 census - Wallace Foxwell household
+      Marriage
+       of
+        <a href="/I0000/people/I0076/" class="male">Barnabas Crowther</a>
       
+       and 
+      
+        <a href="/I0000/people/I0077/" class="female">Harriet Eastham</a>
+      
+      <span class="ancestor-badge">ancestor</span>
       
     </h1>
 
@@ -42,58 +51,89 @@
     <table class="events">
       <tr>
         <th>Date</th>
-        <td>30 Mar 1851</td>
+        <td>29 Oct 1766</td>
       </tr>
       <tr>
         <th>Place</th>
         <td>
-          <a href="/I0000/places/P0010/">Snaith</a>
+          <a href="/I0000/places/P0009/">Whitby</a>
           
         </td>
       </tr>
+      
     </table>
+
+    <div class="couple-details">
+      <div class="spouse-detail">
+        <h2>
+          <a href="/I0000/people/I0076/" class="male">Barnabas Crowther</a>
+        </h2>
+        
+        <table class="events">
+          <tr>
+            <th>Age at marriage</th>
+            <td>27</td>
+          </tr>
+          <tr>
+            <th>Born</th>
+            <td>
+              1739
+               in Southwark
+            </td>
+          </tr>
+          
+          
+        </table>
+      </div>
+      <div class="spouse-detail">
+        <h2>
+          <a href="/I0000/people/I0077/" class="female">Harriet Eastham</a>
+        </h2>
+        
+        <table class="events">
+          <tr>
+            <th>Age at marriage</th>
+            <td>24</td>
+          </tr>
+          <tr>
+            <th>Born</th>
+            <td>
+              1742
+               in Snaith
+            </td>
+          </tr>
+          
+          
+        </table>
+      </div>
+    </div>
 
     <div id="map"></div>
 
     
 
     
-      <h2>People</h2>
+      <h2>Children</h2>
       <table class="events-table">
         <thead>
           <tr>
             <th>Name</th>
             <th>Born</th>
-            <th>Age</th>
-            <th>Relation</th>
+            <th>Died</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <a href="/I0000/people/I0027/" class="female">Dorothea Yarmouth</a>
-              <span class="ancestor-badge">ancestor</span>
-              
+              <a href="/I0000/people/I0067/" class="male">Theodore Crowther</a>
             </td>
+            <td class="year">1769</td>
             <td class="year">1830</td>
-            <td class="year">20</td>
-            
-            <td class="year">2nd great-grandmother</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/I0000/people/I0026/" class="male">Wallace Foxwell</a>
-              <span class="ancestor-badge">ancestor</span>
-              
-            </td>
-            <td class="year">1832</td>
-            <td class="year">18</td>
-            
-            <td class="year">2nd great-grandfather</td>
           </tr>
         </tbody>
       </table>
     
+
 
   
   </main>
@@ -104,7 +144,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0000/places/P0010/"}];
+    var points = [{"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0000/places/P0009/"}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

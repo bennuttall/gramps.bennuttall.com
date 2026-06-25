@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Death of Felicity Kestrel — Family tree</title>
+  <title>Burial of Millicent Drewett — Family tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0001/places/">Places</a>
         <a class="secondary" href="/I0001/events/">Events</a>
         <a class="secondary" href="/I0001/census/">Census</a>
+        <a class="secondary" href="/I0001/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0001/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0001/surnames/">Surnames</a>
         <span class="secondary">Viewing as Norman &mdash; <a href="/">switch</a></span>
@@ -33,10 +34,10 @@
 
 
     <h1>
-      Death
+      Burial
       
        of
-        <a href="/I0001/people/I0068/" class="female">Felicity Kestrel</a>
+        <a href="/I0001/people/I0066/" class="female">Millicent Drewett</a>
       
       
       
@@ -44,28 +45,31 @@
       
     </h1>
 
-    
+    <div class="photos">
+      <a href="/media/E0261_O0144.webp">
+        <img src="/media/E0261_O0144.webp"
+             alt="Event photo"
+             class="person-photo">
+      </a>
+    </div>
 
     
 
     <table class="events">
       <tr>
         <th>Date</th>
-        <td>13 Jun 1793</td>
+        <td>20 Oct 1865</td>
       </tr>
       <tr>
         <th>Place</th>
         <td>
-          <a href="/I0001/places/P0007/">Wakefield</a>
+          <a href="/I0001/places/P0034/">Burngreave Cemetery</a>
           
         </td>
       </tr>
       
       
-      <tr>
-        <th>Find a Grave</th>
-        <td><a href="https://www.findagrave.com/memorial/113950725">Felicity Kestrel on findagrave.com</a></td>
-      </tr>
+      
     </table>
 
     <div id="map"></div>
@@ -86,7 +90,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0001/places/P0007/"}];
+    var points = [{"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "/I0001/places/P0034/"}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

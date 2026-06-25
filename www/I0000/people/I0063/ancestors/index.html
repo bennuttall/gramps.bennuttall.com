@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edgar Crowther — Ancestor Tree</title>
+  <title>Theodore Vanthorpe — Ancestor Tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0000/places/">Places</a>
         <a class="secondary" href="/I0000/events/">Events</a>
         <a class="secondary" href="/I0000/census/">Census</a>
+        <a class="secondary" href="/I0000/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0000/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0000/surnames/">Surnames</a>
         <span class="secondary">Viewing as Alex &mdash; <a href="/">switch</a></span>
@@ -35,11 +36,11 @@
     <h1>
       
       
-        <span>Edgar </span><a href="/I0000/surnames/Crowther/">Crowther</a>
+        <span>Theodore </span><a href="/I0000/surnames/Vanthorpe/">Vanthorpe</a>
       
       
       
-      <small class="years">(1750–1846)</small>
+      <small class="years">(1757–1843)</small>
     </h1>
     
     <table class="person-meta-table">
@@ -58,7 +59,7 @@
       
       <tr>
         <td><span class="ancestor-badge deceased">deceased</span></td>
-        <td>died in 1846 aged 96</td>
+        <td>died in 1843 aged 86</td>
       </tr>
     </table>
   </div>
@@ -68,22 +69,16 @@
 </div>
     <nav class="person-tabs">
       <a href="/I0000/people/I0063/">Profile</a>
-      <span class="active">Ancestors <span class="tab-count">(1)</span></span>
-      <a href="/I0000/people/I0063/descendants/">Descendants <span class="tab-count">(15)</span></a>
+      <span class="active">Ancestors <span class="tab-count">(0)</span></span>
+      <a href="/I0000/people/I0063/descendants/">Descendants <span class="tab-count">(16)</span></a>
       <a href="/I0000/people/I0063/pictures/">Pictures <span class="tab-count">(2)</span></a>
     </nav>
     <div class="pedigree-wrap">
       <div class="pedigree-chart" style="grid-template-rows:repeat(16,minmax(2.5rem,auto));grid-template-columns:repeat(5,minmax(140px,1fr))">
         <a href="/I0000/people/I0063/" class="pedigree-cell gen-0 male" style="grid-column:1;grid-row:1/17">
-          <span class="pedigree-name">Edgar Crowther</span>
+          <span class="pedigree-name">Theodore Vanthorpe</span>
           <span class="pedigree-years">
-            1750–1846
-          </span>
-        </a>
-        <a href="/I0000/people/I0071/ancestors/" class="pedigree-cell gen-1 female" style="grid-column:2;grid-row:9/17">
-          <span class="pedigree-name">Tabitha Blackwell</span>
-          <span class="pedigree-years">
-            1723–1813
+            1757–1843
           </span>
         </a>
       </div>
@@ -98,7 +93,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0000/places/P0014/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Birth", "Baptism"]}, {"name": "Tabitha Blackwell", "url": "/I0000/people/I0071/", "types": ["Child born"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Marriage"]}]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0000/places/P0022/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Child born"]}]}, {"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0000/places/P0005/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Census"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0000/places/P0016/", "people": [{"name": "Edgar Crowther", "url": "/I0000/people/I0063/", "types": ["Death"]}]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0000/places/P0026/", "people": [{"name": "Tabitha Blackwell", "url": "/I0000/people/I0071/", "types": ["Birth"]}]}, {"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0000/places/P0006/", "people": [{"name": "Tabitha Blackwell", "url": "/I0000/people/I0071/", "types": ["Marriage"]}]}];
+    var points = [{"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0000/places/P0004/", "people": [{"name": "Theodore Vanthorpe", "url": "/I0000/people/I0063/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0000/places/P0003/", "people": [{"name": "Theodore Vanthorpe", "url": "/I0000/people/I0063/", "types": ["Child born"]}]}, {"lat": "53.75176", "lon": "-0.36274", "name": "Hull General Cemetery", "url": "/I0000/places/P0038/", "people": [{"name": "Theodore Vanthorpe", "url": "/I0000/people/I0063/", "types": ["Burial"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

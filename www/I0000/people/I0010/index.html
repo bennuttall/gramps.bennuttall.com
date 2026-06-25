@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geoffrey Hartwell — Family tree</title>
+  <title>Tabitha Thornbury — Family tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0000/places/">Places</a>
         <a class="secondary" href="/I0000/events/">Events</a>
         <a class="secondary" href="/I0000/census/">Census</a>
+        <a class="secondary" href="/I0000/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0000/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0000/surnames/">Surnames</a>
         <span class="secondary">Viewing as Alex &mdash; <a href="/">switch</a></span>
@@ -36,11 +37,11 @@
     <h1>
       
       
-        <span>Geoffrey </span><a href="/I0000/surnames/Hartwell/">Hartwell</a>
+        <span>Tabitha </span><a href="/I0000/surnames/Thornbury/">Thornbury</a>
       
       
       
-      <small class="years">(1876–1945)</small>
+      <small class="years">(1873–1969)</small>
     </h1>
     
     <table class="person-meta-table">
@@ -52,14 +53,14 @@
           
           
         </td>
-        <td>your great-grandfather</td>
+        <td>your great-grandmother</td>
         
         
       </tr>
       
       <tr>
         <td><span class="ancestor-badge deceased">deceased</span></td>
-        <td>died in 1945 aged 69</td>
+        <td>died in 1969 aged 96</td>
       </tr>
     </table>
   </div>
@@ -69,39 +70,57 @@
 </div>
       <nav class="person-tabs">
         <span class="active">Profile</span>
-        <a href="/I0000/people/I0010/ancestors/">Ancestors <span class="tab-count">(0)</span></a>
-        <a href="/I0000/people/I0010/descendants/">Descendants <span class="tab-count">(13)</span></a>
-        <a href="/I0000/people/I0010/pictures/">Pictures <span class="tab-count">(3)</span></a>
+        <a href="/I0000/people/I0010/ancestors/">Ancestors <span class="tab-count">(8)</span></a>
+        <a href="/I0000/people/I0010/descendants/">Descendants <span class="tab-count">(11)</span></a>
+        <a href="/I0000/people/I0010/pictures/">Pictures <span class="tab-count">(2)</span></a>
       </nav>
 
       <div class="profile-overview">
         <div>
-          
+          <section class="parents">
+            <h3>Parents</h3>
+            <ul>
+              <li>
+                <a class="male" href="/I0000/people/I0020/">Reginald Thornbury</a>
+                <span class="years">(1841–1927)</span>
+                
+                
+                
+              </li>
+              <li>
+                <a class="female" href="/I0000/people/I0021/">Edwina Halcomb</a>
+                <span class="years">(1840–1927)</span>
+                
+                
+                
+              </li>
+            </ul>
+          </section>
 
-          
+          <section class="siblings">
+            <h3>Siblings (1)</h3>
+            <ul>
+              <li>
+                
+                  <a href="/I0000/people/I0019/" class="male">Maurice Thornbury</a>
+                  <span class="years">(1867–1941)</span>
+                  <span class="years">brother</span>
+                  
+                  
+                  
+                
+              </li>
+            </ul>
+          </section>
 
           
 
           <section class="children">
-            <h3>Children (3)</h3>
+            <h3>Children (1)</h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0008/" class="female">Beatrice Hartwell</a>
-                <span class="years">(1895–1961)</span>
-                
-                
-                
-              </li>
-              <li>
-                <a href="/I0000/people/I0009/" class="male">Norman Hartwell</a>
-                <span class="years">(1899–1969)</span>
-                
-                
-                
-              </li>
-              <li>
-                <a href="/I0000/people/I0004/" class="male">Barnabas Hartwell</a>
-                <span class="years">(1902–1967)</span>
+                <a href="/I0000/people/I0004/" class="male">Theodore Hartwell</a>
+                <span class="years">(1902–1989)</span>
                 
                 <span class="ancestor-badge">ancestor</span>
                 
@@ -115,20 +134,12 @@
             <h3>External links</h3>
             <ul>
               <li>
-                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/62549800598/">Ancestry</a>
+                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/58293833828/">Ancestry</a>
               </li>
             </ul>
           </div>
 
-          <div class="occupations">
-            <h3>Occupations</h3>
-            <ul>
-              <li>
-                University lecturer
-                
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
 
@@ -138,9 +149,9 @@
           <div class="event-filters">
             <button class="filter-btn active" data-filter="all" onclick="filterEvents(this)">All</button>
             <button class="filter-btn"
-                    onclick="filterEvents(this)" data-filter="Baptism">Baptism</button>
-            <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Birth">Birth</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Burial">Burial</button>
             <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Census">Census</button>
             <button class="filter-btn"
@@ -149,8 +160,6 @@
                     onclick="filterEvents(this)" data-filter="Death">Death</button>
             <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Marriage">Marriage</button>
-            <button class="filter-btn"
-                    onclick="filterEvents(this)" data-filter="Probate">Probate</button>
           </div>
         
         <table>
@@ -160,12 +169,12 @@
           <tbody>
             <tr data-type="Birth">
               
-                <td>1876</td>
+                <td>Nov 1873</td>
                 <td class="event-age">
                   
                 </td>
                 <td>
-                  <a href="/I0000/events/E0036/">Birth</a>
+                  <a href="/I0000/events/E0038/">Birth</a>
                   
                   
                   
@@ -173,29 +182,31 @@
                 <td>
                   
                     
+                      <a
+                         href="/I0000/people/I0020/" class="male">Reginald Thornbury</a>
+                      <span> and </span>
+                      <a
+                         href="/I0000/people/I0021/" class="female">Edwina Halcomb</a>
+                    
                   
                   
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0022/">Southwark</a>
+                     href="/I0000/places/P0008/">Goole</a>
                   
                 </td>
               
             </tr>
-            <tr data-type="Baptism">
+            <tr data-type="Census">
               
-                <td>30 Jun 1876</td>
+                <td>3 Apr 1881</td>
                 <td class="event-age">
-                  
+                  7
                 </td>
                 <td>
-                  <a href="/I0000/events/E0037/">Baptism</a>
-                  <a href="/I0000/events/E0037/" class="photo-icon" title="Has image">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                    </svg>
-                  </a>
+                  <a href="/I0000/events/E0375/">Census</a>
+                  
                   
                   
                 </td>
@@ -203,24 +214,24 @@
                   
                   
                     
-                    <span></span>
+                    <span>1881 census - Reginald Thornbury household</span>
                   
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0022/">Southwark</a>
+                     href="/I0000/places/P0009/">Whitby</a>
                   
                 </td>
               
             </tr>
-            <tr data-type="Child born">
+            <tr data-type="Census">
               
-                <td>1895</td>
+                <td>5 Apr 1891</td>
                 <td class="event-age">
-                  18
+                  17
                 </td>
                 <td>
-                  <a href="/I0000/events/E0029/">Child born</a>
+                  <a href="/I0000/events/E0384/">Census</a>
                   
                   
                   
@@ -228,89 +239,25 @@
                 <td>
                   
                   
-                    <a
-                       href="/I0000/people/I0008/" class="female">Beatrice Hartwell</a>
                     
-                  
-                </td>
-                <td>
-                  <a
-                     href="/I0000/places/P0007/">Wakefield</a>
-                  
-                </td>
-              
-            </tr>
-            <tr data-type="Child born">
-              
-                <td>13 Mar 1899</td>
-                <td class="event-age">
-                  22
-                </td>
-                <td>
-                  <a href="/I0000/events/E0033/">Child born</a>
-                  <a href="/I0000/events/E0033/" class="photo-icon" title="Has image">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                    </svg>
-                  </a>
-                  
+                    <span>1891 census - Tabitha Thornbury household</span>
                   
                 </td>
                 <td>
                   
-                  
-                    <a
-                       href="/I0000/people/I0009/" class="male">Norman Hartwell</a>
-                    
-                  
-                </td>
-                <td>
-                  <a
-                     href="/I0000/places/P0023/">Westminster</a>
-                  
-                </td>
-              
-            </tr>
-            <tr data-type="Child born">
-              
-                <td>20 Jul 1902</td>
-                <td class="event-age">
-                  25
-                </td>
-                <td>
-                  <a href="/I0000/events/E0013/">Child born</a>
-                  <a href="/I0000/events/E0013/" class="photo-icon" title="Has image">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                    </svg>
-                  </a>
-                  
-                  
-                </td>
-                <td>
-                  
-                  
-                    <a
-                       href="/I0000/people/I0004/" class="male">Barnabas Hartwell</a>
-                    
-                  
-                </td>
-                <td>
-                  <a
-                     href="/I0000/places/P0030/">Buxton</a>
-                  
+                  <span></span>
                 </td>
               
             </tr>
             <tr data-type="Marriage">
               
-                <td>Oct 1902</td>
+                <td>17 Nov 1900</td>
                 <td class="event-age">
-                  25
+                  26
                 </td>
                 <td>
-                  <a href="/I0000/events/E0040/">Marriage</a>
-                  <a href="/I0000/events/E0040/" class="photo-icon" title="Has image">
+                  <a href="/I0000/events/E0041/">Marriage</a>
+                  <a href="/I0000/events/E0041/" class="photo-icon" title="Has image">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
                     </svg>
@@ -333,12 +280,12 @@
             </tr>
             <tr data-type="Census">
               
-                <td>2 Apr 1911</td>
+                <td>31 Mar 1901</td>
                 <td class="event-age">
-                  34
+                  27
                 </td>
                 <td>
-                  <a href="/I0000/events/E0331/">Census</a>
+                  <a href="/I0000/events/E0395/">Census</a>
                   
                   
                   
@@ -347,12 +294,39 @@
                   
                   
                     
-                    <span>1911 census - Geoffrey Hartwell household</span>
+                    <span>1901 census - Tabitha Thornbury household</span>
                   
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0030/">Buxton</a>
+                     href="/I0000/places/P0014/">Preston</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Child born">
+              
+                <td>22 Feb 1902</td>
+                <td class="event-age">
+                  28
+                </td>
+                <td>
+                  <a href="/I0000/events/E0016/">Child born</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    <a
+                       href="/I0000/people/I0004/" class="male">Theodore Hartwell</a>
+                    
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0028/">Lincoln</a>
                   
                 </td>
               
@@ -361,10 +335,10 @@
               
                 <td>19 Jun 1921</td>
                 <td class="event-age">
-                  44
+                  47
                 </td>
                 <td>
-                  <a href="/I0000/events/E0337/">Census</a>
+                  <a href="/I0000/events/E0410/">Census</a>
                   
                   
                   
@@ -373,24 +347,50 @@
                   
                   
                     
-                    <span>1921 census - Geoffrey Hartwell household</span>
+                    <span>1921 census - Tabitha Thornbury household</span>
                   
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0031/">Chesterfield</a>
+                     href="/I0000/places/P0022/">Southwark</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>29 Sep 1939</td>
+                <td class="event-age">
+                  65
+                </td>
+                <td>
+                  <a href="/I0000/events/E0414/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1939 register - Tabitha Thornbury household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0030/">Buxton</a>
                   
                 </td>
               
             </tr>
             <tr data-type="Death">
               
-                <td>2 Mar 1945</td>
+                <td>Feb 1969</td>
                 <td class="event-age">
-                  68
+                  95
                 </td>
                 <td>
-                  <a href="/I0000/events/E0038/">Death</a>
+                  <a href="/I0000/events/E0039/">Death</a>
                   
                   
                   
@@ -404,25 +404,29 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0003/">Leeds</a>
+                     href="/I0000/places/P0026/">Retford</a>
                   
                 </td>
               
             </tr>
-            <tr data-type="Probate">
+            <tr data-type="Burial">
               
-                <td>3 May 1945</td>
+                <td>7 Feb 1969</td>
                 <td class="event-age">
                   
                 </td>
                 <td>
-                  <a href="/I0000/events/E0039/">Probate</a>
-                  <a href="/I0000/events/E0039/" class="photo-icon" title="Has image">
+                  <a href="/I0000/events/E0040/">Burial</a>
+                  <a href="/I0000/events/E0040/" class="photo-icon" title="Has image">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
                     </svg>
                   </a>
-                  
+                  <span class="tag-icon interesting" title="Interesting">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"/>
+                    </svg>
+                  </span>
                   
                 </td>
                 <td>
@@ -433,8 +437,9 @@
                   
                 </td>
                 <td>
+                  <a
+                     href="/I0000/places/P0038/">Hull General Cemetery</a>
                   
-                  <span></span>
                 </td>
               
             </tr>
@@ -444,10 +449,138 @@
 
       <div id="map"></div>
 
-      
+      <section class="ancestors">
+        <h2>Ancestors (8)</h2>
+        <div class="tree">
+          <div class="generation">
+            <h3>
+              <span>Parents</span>
+              
+              
+              
+              
+              <span class="years">(2 / 2)</span>
+              <span class="years pct-high">
+                100%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0000/people/I0020/" class="male">Reginald Thornbury</a>
+                    <span class="years">
+                      (1841–1927)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0000/people/I0021/" class="female">Edwina Halcomb</a>
+                      <span class="years">
+                        (1840–1927)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              <span>Grandparents</span>
+              
+              
+              
+              <span class="years">(2 / 4)</span>
+              <span class="years pct-mid">
+                50%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0000/people/I0034/" class="male">Maurice Halcomb</a>
+                    <span class="years">
+                      (1811–1905)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0000/people/I0035/" class="female">Beatrice Ingleton</a>
+                      <span class="years">
+                        (1814–1875)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              
+              <span>Great-grandparents</span>
+              
+              
+              <span class="years">(4 / 8)</span>
+              <span class="years pct-mid">
+                50%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0000/people/I0047/" class="male">Cecil Halcomb</a>
+                    <span class="years">
+                      (1784–1866)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0000/people/I0048/" class="female">Octavia Quinton</a>
+                      <span class="years">
+                        (1782–1857)
+                      </span>
+                    
+                  
+                </div>
+              
+                <div>
+                  
+                    <a href="/I0000/people/I0049/" class="male">Ulric Ingleton</a>
+                    <span class="years">
+                      (1782–1878)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0000/people/I0050/" class="female">Isolde Zelby</a>
+                      <span class="years">
+                        (1784–1879)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="descendants">
-        <h2>Descendants (13)</h2>
+        <h2>Descendants (11)</h2>
         <div class="tree">
           <div class="generation">
             <h3>
@@ -456,31 +589,13 @@
               
               
               
-              <span class="years">(3)</span>
+              <span class="years">(1)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0008/" class="female">Beatrice Hartwell</a>
+                <a href="/I0000/people/I0004/" class="male">Theodore Hartwell</a>
                 <span class="years">
-                  (1895–1961)
-                </span>
-                
-                
-                
-              </li>
-              <li>
-                <a href="/I0000/people/I0009/" class="male">Norman Hartwell</a>
-                <span class="years">
-                  (1899–1969)
-                </span>
-                
-                
-                
-              </li>
-              <li>
-                <a href="/I0000/people/I0004/" class="male">Barnabas Hartwell</a>
-                <span class="years">
-                  (1902–1967)
+                  (1902–1989)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
@@ -550,7 +665,7 @@
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0075/" class="male">Oliver Hartwell</a>
+                <a href="/I0000/people/I0082/" class="male">Oliver Hartwell</a>
                 <span class="years">
                   (1983–)
                 </span>
@@ -559,7 +674,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0076/" class="female">Sophie Hartwell</a>
+                <a href="/I0000/people/I0083/" class="female">Sophie Hartwell</a>
                 <span class="years">
                   (1986–)
                 </span>
@@ -580,7 +695,7 @@
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0078/" class="male">Leo Hartwell</a>
+                <a href="/I0000/people/I0085/" class="male">Leo Hartwell</a>
                 <span class="years">
                   (2012–)
                 </span>
@@ -589,7 +704,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0079/" class="female">Iris Hartwell</a>
+                <a href="/I0000/people/I0086/" class="female">Iris Hartwell</a>
                 <span class="years">
                   (2014–)
                 </span>
@@ -598,7 +713,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0082/" class="female">Fern Ashford</a>
+                <a href="/I0000/people/I0089/" class="female">Fern Ashford</a>
                 <span class="years">
                   (2014–)
                 </span>
@@ -607,7 +722,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0080/" class="male">Hugh Hartwell</a>
+                <a href="/I0000/people/I0087/" class="male">Hugh Hartwell</a>
                 <span class="years">
                   (2017–)
                 </span>
@@ -616,7 +731,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0083/" class="male">Miles Ashford</a>
+                <a href="/I0000/people/I0090/" class="male">Miles Ashford</a>
                 <span class="years">
                   (2017–)
                 </span>
@@ -654,7 +769,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0000/places/P0022/", "types": ["Birth", "Baptism"]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0000/places/P0007/", "types": ["Child born"]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0000/places/P0023/", "types": ["Child born"]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "types": ["Child born", "Census"]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0000/places/P0031/", "types": ["Census"]}, {"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0000/places/P0003/", "types": ["Death"]}];
+    var points = [{"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0000/places/P0008/", "types": ["Birth"]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0000/places/P0009/", "types": ["Census"]}, {"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0000/places/P0014/", "types": ["Census"]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0000/places/P0028/", "types": ["Child born"]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0000/places/P0022/", "types": ["Census"]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "types": ["Census"]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0000/places/P0026/", "types": ["Death"]}, {"lat": "53.75176", "lon": "-0.36274", "name": "Hull General Cemetery", "url": "/I0000/places/P0038/", "types": ["Burial"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

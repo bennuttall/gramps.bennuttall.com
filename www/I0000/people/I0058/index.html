@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beatrice Ravenswood — Family tree</title>
+  <title>Isolde Fernley — Family tree</title>
   <link rel="stylesheet" href="/style.css">
   
   <link rel="stylesheet" media="print" href="/print.css">
@@ -22,6 +22,7 @@
         <a class="secondary" href="/I0000/places/">Places</a>
         <a class="secondary" href="/I0000/events/">Events</a>
         <a class="secondary" href="/I0000/census/">Census</a>
+        <a class="secondary" href="/I0000/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0000/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0000/surnames/">Surnames</a>
         <span class="secondary">Viewing as Alex &mdash; <a href="/">switch</a></span>
@@ -36,17 +37,17 @@
     <h1>
       
       
-        <span>Beatrice </span><a href="/I0000/surnames/Ravenswood/">Ravenswood</a>
+        <span>Isolde </span><a href="/I0000/surnames/Fernley/">Fernley</a>
       
       
       
-      <small class="years">(1755–1823)</small>
+      <small class="years">(1776–1861)</small>
     </h1>
     <p class="person-alt-names">
       
         
         
-          <a href="/I0000/surnames/Havelock/">Havelock</a>
+          <a href="/I0000/surnames/Oulton/">Oulton</a>
           
         
         <span class="years">(married name)</span>
@@ -61,14 +62,14 @@
           
           
         </td>
-        <td>your 5th great-grandmother</td>
+        <td>your 4th great-grandmother</td>
         
         
       </tr>
       
       <tr>
         <td><span class="ancestor-badge deceased">deceased</span></td>
-        <td>died in 1823 aged 68</td>
+        <td>died in 1861 aged 85</td>
       </tr>
     </table>
   </div>
@@ -78,9 +79,9 @@
 </div>
       <nav class="person-tabs">
         <span class="active">Profile</span>
-        <a href="/I0000/people/I0058/ancestors/">Ancestors <span class="tab-count">(2)</span></a>
-        <a href="/I0000/people/I0058/descendants/">Descendants <span class="tab-count">(16)</span></a>
-        <a href="/I0000/people/I0058/pictures/">Pictures <span class="tab-count">(4)</span></a>
+        <a href="/I0000/people/I0058/ancestors/">Ancestors <span class="tab-count">(4)</span></a>
+        <a href="/I0000/people/I0058/descendants/">Descendants <span class="tab-count">(17)</span></a>
+        <a href="/I0000/people/I0058/pictures/">Pictures <span class="tab-count">(1)</span></a>
       </nav>
 
       <div class="profile-overview">
@@ -89,15 +90,15 @@
             <h3>Parents</h3>
             <ul>
               <li>
-                <a class="male" href="/I0000/people/I0067/">Cecil Ravenswood</a>
-                <span class="years">(1726–1787)</span>
+                <a class="male" href="/I0000/people/I0071/">Bernard Fernley</a>
+                <span class="years">(1745–1816)</span>
                 
                 
                 
               </li>
               <li>
-                <a class="female" href="/I0000/people/I0068/">Felicity Kestrel</a>
-                <span class="years">(1730–1793)</span>
+                <a class="female" href="/I0000/people/I0072/">Imelda Foxwell</a>
+                <span class="years">(1740–1829)</span>
                 
                 
                 
@@ -112,13 +113,13 @@
             <ul>
               
                 <li>
-                  <a href="/I0000/people/I0057/" class="male">Douglas Havelock</a>
+                  <a href="/I0000/people/I0057/" class="male">Ulric Oulton</a>
                   
                   <span class="ancestor-badge">ancestor</span>
                   
                   <span class="years">Married</span>
                   <span class="years">
-                    21 Jan 1778<span>, Snaith</span>
+                    Nov 1800
                   </span>
                 </li>
               
@@ -129,8 +130,8 @@
             <h3>Children (1)</h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0047/" class="female">Isolde Havelock</a>
-                <span class="years">(1781–1868)</span>
+                <a href="/I0000/people/I0043/" class="female">Winifred Oulton</a>
+                <span class="years">(1802–1882)</span>
                 
                 <span class="ancestor-badge">ancestor</span>
                 
@@ -144,23 +145,12 @@
             <h3>External links</h3>
             <ul>
               <li>
-                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/51988341734/">Ancestry</a>
-              </li>
-              <li>
-                <a href="https://www.findagrave.com/memorial/140833665">Find a Grave</a>
+                <a href="https://www.ancestry.co.uk/family-tree/person/tree/1234567890/person/33304991087/">Ancestry</a>
               </li>
             </ul>
           </div>
 
-          <div class="occupations">
-            <h3>Occupations</h3>
-            <ul>
-              <li>
-                School mistress
-                
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
 
@@ -170,9 +160,13 @@
           <div class="event-filters">
             <button class="filter-btn active" data-filter="all" onclick="filterEvents(this)">All</button>
             <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Baptism">Baptism</button>
+            <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Birth">Birth</button>
             <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Burial">Burial</button>
+            <button class="filter-btn"
+                    onclick="filterEvents(this)" data-filter="Census">Census</button>
             <button class="filter-btn"
                     onclick="filterEvents(this)" data-filter="Child born">Child born</button>
             <button class="filter-btn"
@@ -188,17 +182,13 @@
           <tbody>
             <tr data-type="Birth">
               
-                <td>15 Aug 1755</td>
+                <td>Sep 1776</td>
                 <td class="event-age">
                   
                 </td>
                 <td>
-                  <a href="/I0000/events/E0223/">Birth</a>
-                  <a href="/I0000/events/E0223/" class="photo-icon" title="Has image">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                    </svg>
-                  </a>
+                  <a href="/I0000/events/E0226/">Birth</a>
+                  
                   
                   
                 </td>
@@ -206,34 +196,56 @@
                   
                     
                       <a
-                         href="/I0000/people/I0067/" class="male">Cecil Ravenswood</a>
+                         href="/I0000/people/I0071/" class="male">Bernard Fernley</a>
                       <span> and </span>
                       <a
-                         href="/I0000/people/I0068/" class="female">Felicity Kestrel</a>
+                         href="/I0000/people/I0072/" class="female">Imelda Foxwell</a>
                     
                   
                   
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0010/">Snaith</a>
+                     href="/I0000/places/P0028/">Lincoln</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Baptism">
+              
+                <td>3 Oct 1776</td>
+                <td class="event-age">
+                  
+                </td>
+                <td>
+                  <a href="/I0000/events/E0227/">Baptism</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0028/">Lincoln</a>
                   
                 </td>
               
             </tr>
             <tr data-type="Marriage">
               
-                <td>21 Jan 1778</td>
+                <td>Nov 1800</td>
                 <td class="event-age">
-                  22
+                  23
                 </td>
                 <td>
-                  <a href="/I0000/events/E0226/">Marriage</a>
-                  <a href="/I0000/events/E0226/" class="photo-icon" title="Has image">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                    </svg>
-                  </a>
+                  <a href="/I0000/events/E0230/">Marriage</a>
+                  
                   
                   
                 </td>
@@ -241,26 +253,25 @@
                   
                   
                     <a
-                       href="/I0000/people/I0057/" class="male">Douglas Havelock</a>
+                       href="/I0000/people/I0057/" class="male">Ulric Oulton</a>
                     
                   
                 </td>
                 <td>
-                  <a
-                     href="/I0000/places/P0010/">Snaith</a>
                   
+                  <span></span>
                 </td>
               
             </tr>
             <tr data-type="Child born">
               
-                <td>1781</td>
+                <td>Oct 1802</td>
                 <td class="event-age">
                   25
                 </td>
                 <td>
-                  <a href="/I0000/events/E0179/">Child born</a>
-                  <a href="/I0000/events/E0179/" class="photo-icon" title="Has image">
+                  <a href="/I0000/events/E0159/">Child born</a>
+                  <a href="/I0000/events/E0159/" class="photo-icon" title="Has image">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
                     </svg>
@@ -272,7 +283,7 @@
                   
                   
                     <a
-                       href="/I0000/people/I0047/" class="female">Isolde Havelock</a>
+                       href="/I0000/people/I0043/" class="female">Winifred Oulton</a>
                     
                   
                 </td>
@@ -283,15 +294,97 @@
                 </td>
               
             </tr>
-            <tr data-type="Death">
+            <tr data-type="Census">
               
-                <td>9 Jan 1823</td>
+                <td>6 Jun 1841</td>
                 <td class="event-age">
-                  67
+                  64
                 </td>
                 <td>
-                  <a href="/I0000/events/E0224/">Death</a>
-                  <a href="/I0000/events/E0224/" class="photo-icon" title="Has image">
+                  <a href="/I0000/events/E0348/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1841 census - Ulric Oulton household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0028/">Lincoln</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Census">
+              
+                <td>30 Mar 1851</td>
+                <td class="event-age">
+                  74
+                </td>
+                <td>
+                  <a href="/I0000/events/E0360/">Census</a>
+                  
+                  
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span>1851 census - Ulric Oulton household</span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0026/">Retford</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Death">
+              
+                <td>Mar 1861</td>
+                <td class="event-age">
+                  84
+                </td>
+                <td>
+                  <a href="/I0000/events/E0228/">Death</a>
+                  
+                  <span class="tag-icon interesting" title="Interesting">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"/>
+                    </svg>
+                  </span>
+                  
+                </td>
+                <td>
+                  
+                  
+                    
+                    <span></span>
+                  
+                </td>
+                <td>
+                  <a
+                     href="/I0000/places/P0013/">Liverpool</a>
+                  
+                </td>
+              
+            </tr>
+            <tr data-type="Burial">
+              
+                <td>11 Apr 1861</td>
+                <td class="event-age">
+                  
+                </td>
+                <td>
+                  <a href="/I0000/events/E0229/">Burial</a>
+                  <a href="/I0000/events/E0229/" class="photo-icon" title="Has image">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
                     </svg>
@@ -308,38 +401,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0005/">Kingston upon Hull</a>
-                  
-                </td>
-              
-            </tr>
-            <tr data-type="Burial">
-              
-                <td>24 Jan 1823</td>
-                <td class="event-age">
-                  
-                </td>
-                <td>
-                  <a href="/I0000/events/E0225/">Burial</a>
-                  <a href="/I0000/events/E0225/" class="photo-icon" title="Has image">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                    </svg>
-                  </a>
-                  
-                  
-                </td>
-                <td>
-                  
-                  
-                    <a
-                       href="https://www.findagrave.com/memorial/140833665">Find a Grave</a>
-                    
-                  
-                </td>
-                <td>
-                  <a
-                     href="/I0000/places/P0005/">Kingston upon Hull</a>
+                     href="/I0000/places/P0041/">Rawtenstall Cemetery</a>
                   
                 </td>
               
@@ -351,7 +413,7 @@
       <div id="map"></div>
 
       <section class="ancestors">
-        <h2>Ancestors (2)</h2>
+        <h2>Ancestors (4)</h2>
         <div class="tree">
           <div class="generation">
             <h3>
@@ -369,18 +431,53 @@
               
                 <div>
                   
-                    <a href="/I0000/people/I0067/" class="male">Cecil Ravenswood</a>
+                    <a href="/I0000/people/I0071/" class="male">Bernard Fernley</a>
                     <span class="years">
-                      (1726–1787)
+                      (1745–1816)
                     </span>
                   
                 </div>
                 <div>
                   
                     
-                      <a href="/I0000/people/I0068/" class="female">Felicity Kestrel</a>
+                      <a href="/I0000/people/I0072/" class="female">Imelda Foxwell</a>
                       <span class="years">
-                        (1730–1793)
+                        (1740–1829)
+                      </span>
+                    
+                  
+                </div>
+              
+            </div>
+          </div>
+          <div class="generation">
+            <h3>
+              
+              <span>Grandparents</span>
+              
+              
+              
+              <span class="years">(2 / 4)</span>
+              <span class="years pct-mid">
+                50%
+              </span>
+            </h3>
+            <div class="two-col">
+              
+                <div>
+                  
+                    <a href="/I0000/people/I0079/" class="male">Clement Fernley</a>
+                    <span class="years">
+                      (1719–1791)
+                    </span>
+                  
+                </div>
+                <div>
+                  
+                    
+                      <a href="/I0000/people/I0080/" class="female">Norah Thornbury</a>
+                      <span class="years">
+                        (1724–1802)
                       </span>
                     
                   
@@ -392,7 +489,7 @@
       </section>
 
       <section class="descendants">
-        <h2>Descendants (16)</h2>
+        <h2>Descendants (17)</h2>
         <div class="tree">
           <div class="generation">
             <h3>
@@ -405,9 +502,9 @@
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0047/" class="female">Isolde Havelock</a>
+                <a href="/I0000/people/I0043/" class="female">Winifred Oulton</a>
                 <span class="years">
-                  (1781–1868)
+                  (1802–1882)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
@@ -422,16 +519,34 @@
               
               
               
-              <span class="years">(1)</span>
+              <span class="years">(3)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0036/" class="female">Dorothea Quinton</a>
+                <a href="/I0000/people/I0041/" class="female">Ursula Zelby</a>
                 <span class="years">
-                  (1806–1887)
+                  (1832–1900)
+                </span>
+                
+                
+                
+              </li>
+              <li>
+                <a href="/I0000/people/I0028/" class="male">Douglas Zelby</a>
+                <span class="years">
+                  (1838–1925)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+              <li>
+                <a href="/I0000/people/I0040/" class="male">Ulric Zelby</a>
+                <span class="years">
+                  (1839–1933)
+                </span>
+                
+                
                 
               </li>
             </ul>
@@ -443,25 +558,16 @@
               <span>Great-grandchildren</span>
               
               
-              <span class="years">(2)</span>
+              <span class="years">(1)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0026/" class="male">Wallace Foxwell</a>
+                <a href="/I0000/people/I0017/" class="male">Alfred Zelby</a>
                 <span class="years">
-                  (1832–1907)
+                  (1861–1930)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
-                
-              </li>
-              <li>
-                <a href="/I0000/people/I0034/" class="female">Tabitha Foxwell</a>
-                <span class="years">
-                  (1835–1916)
-                </span>
-                
-                
                 
               </li>
             </ul>
@@ -477,9 +583,9 @@
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0019/" class="male">Oswald Foxwell</a>
+                <a href="/I0000/people/I0009/" class="female">Prudence Zelby</a>
                 <span class="years">
-                  (1860–1953)
+                  (1891–1967)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
@@ -494,25 +600,34 @@
               
               
               <span>3th great-grandchildren</span>
-              <span class="years">(2)</span>
+              <span class="years">(3)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0018/" class="female">Edwina Foxwell</a>
+                <a href="/I0000/people/I0006/" class="male">Theodore Ravenswood</a>
                 <span class="years">
-                  (1883–1955)
+                  (1919–2012)
                 </span>
                 
                 
                 
               </li>
               <li>
-                <a href="/I0000/people/I0007/" class="female">Prudence Foxwell</a>
+                <a href="/I0000/people/I0002/" class="female">Ursula Ravenswood</a>
                 <span class="years">
-                  (1885–1968)
+                  (1921–1986)
                 </span>
                 
                 <span class="ancestor-badge">ancestor</span>
+                
+              </li>
+              <li>
+                <a href="/I0000/people/I0007/" class="male">Quentin Ravenswood</a>
+                <span class="years">
+                  (1921–1985)
+                </span>
+                
+                
                 
               </li>
             </ul>
@@ -524,27 +639,6 @@
               
               
               <span>4th great-grandchildren</span>
-              <span class="years">(1)</span>
-            </h3>
-            <ul>
-              <li>
-                <a href="/I0000/people/I0002/" class="female">Ursula Ravenswood</a>
-                <span class="years">
-                  (1921–1986)
-                </span>
-                
-                <span class="ancestor-badge">ancestor</span>
-                
-              </li>
-            </ul>
-          </div>
-          <div class="generation">
-            <h3>
-              
-              
-              
-              
-              <span>5th great-grandchildren</span>
               <span class="years">(1)</span>
             </h3>
             <ul>
@@ -565,12 +659,12 @@
               
               
               
-              <span>6th great-grandchildren</span>
+              <span>5th great-grandchildren</span>
               <span class="years">(2)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0075/" class="male">Oliver Hartwell</a>
+                <a href="/I0000/people/I0082/" class="male">Oliver Hartwell</a>
                 <span class="years">
                   (1983–)
                 </span>
@@ -579,7 +673,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0076/" class="female">Sophie Hartwell</a>
+                <a href="/I0000/people/I0083/" class="female">Sophie Hartwell</a>
                 <span class="years">
                   (1986–)
                 </span>
@@ -595,12 +689,12 @@
               
               
               
-              <span>7th great-grandchildren</span>
+              <span>6th great-grandchildren</span>
               <span class="years">(5)</span>
             </h3>
             <ul>
               <li>
-                <a href="/I0000/people/I0078/" class="male">Leo Hartwell</a>
+                <a href="/I0000/people/I0085/" class="male">Leo Hartwell</a>
                 <span class="years">
                   (2012–)
                 </span>
@@ -609,7 +703,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0079/" class="female">Iris Hartwell</a>
+                <a href="/I0000/people/I0086/" class="female">Iris Hartwell</a>
                 <span class="years">
                   (2014–)
                 </span>
@@ -618,7 +712,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0082/" class="female">Fern Ashford</a>
+                <a href="/I0000/people/I0089/" class="female">Fern Ashford</a>
                 <span class="years">
                   (2014–)
                 </span>
@@ -627,7 +721,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0080/" class="male">Hugh Hartwell</a>
+                <a href="/I0000/people/I0087/" class="male">Hugh Hartwell</a>
                 <span class="years">
                   (2017–)
                 </span>
@@ -636,7 +730,7 @@
                 <span class="ancestor-badge descendant">descendant</span>
               </li>
               <li>
-                <a href="/I0000/people/I0083/" class="male">Miles Ashford</a>
+                <a href="/I0000/people/I0090/" class="male">Miles Ashford</a>
                 <span class="years">
                   (2017–)
                 </span>
@@ -674,7 +768,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0000/places/P0010/", "types": ["Birth", "Marriage"]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0000/places/P0021/", "types": ["Child born"]}, {"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0000/places/P0005/", "types": ["Death", "Burial"]}];
+    var points = [{"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0000/places/P0028/", "types": ["Birth", "Baptism", "Census"]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0000/places/P0021/", "types": ["Child born"]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0000/places/P0026/", "types": ["Census"]}, {"lat": "53.3933", "lon": "-2.9166", "name": "Liverpool", "url": "/I0000/places/P0013/", "types": ["Death"]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0000/places/P0041/", "types": ["Burial"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});
