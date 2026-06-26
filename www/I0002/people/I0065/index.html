@@ -25,7 +25,21 @@
         <a class="secondary" href="/I0002/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0002/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0002/surnames/">Surnames</a>
-        <span class="secondary">Viewing as Ursula &mdash; <a href="/">switch</a></span>
+        <details class="secondary view-as" data-current="I0002">
+          <summary>Viewing as Ursula &mdash; switch</summary>
+          <ul>
+            <li>
+              <a href="/I0000/">Alex Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0001/">Norman Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0010/">Tabitha Thornbury</a>
+            </li>
+          </ul>
+        </details>
+        
       </div>
     </nav>
   </header>
@@ -643,6 +657,17 @@
     </script>
   
   <script>
+  var viewAs = document.querySelector('.view-as');
+  if (viewAs) {
+    var currentId = viewAs.dataset.current;
+    var path = window.location.pathname;
+    var prefix = '/' + currentId + '/';
+    var pagePath = path.startsWith(prefix) ? path.slice(prefix.length) : '';
+    viewAs.querySelectorAll('a[href]').forEach(function(a) {
+      a.href = a.getAttribute('href') + pagePath;
+    });
+  }
+
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
     var active = tabs.querySelector('span.active');
