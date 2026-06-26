@@ -60,32 +60,21 @@
     <div id="map"></div>
 
     <section>
-      <h2>Events (3)</h2>
+      <h2>Burials (3)</h2>
       <input type="search" id="people-search" placeholder="Search people…">
       <div id="filters" class="event-filters"></div>
       <table class="events-table" id="places-events-table">
         <thead>
           <tr>
             <th>Year</th>
-            <th>Event</th>
-            <th>People</th>
+            <th>Person</th>
+            <th>Find A Grave</th>
             
           </tr>
         </thead>
         <tbody>
           <tr data-type="Burial">
             <td class="year">1828</td>
-            <td>
-              <a href="/I0002/events/E0233/">Burial</a>
-              
-              <a href="https://www.findagrave.com/memorial/404009507" class="photo-icon" title="Find a Grave">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true" style="transform: rotate(180deg)">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M9.75 11.625l2.25 2.25m0 0 2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/>
-                </svg>
-              </a>
-              
-              
-            </td>
             <td>
               
               <span>
@@ -96,17 +85,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              <a href="https://www.findagrave.com/memorial/404009507">Find a Grave</a>
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1856</td>
-            <td>
-              <a href="/I0002/events/E0240/">Burial</a>
-              
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -117,17 +102,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1986</td>
-            <td>
-              <a href="/I0002/events/E0009/">Burial</a>
-              
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -137,6 +118,9 @@
                   
                 </span>
               </span>
+            </td>
+            <td>
+              
             </td>
             
           </tr>
@@ -187,7 +171,6 @@
     const rows = Array.from(document.querySelectorAll('#places-events-table tbody tr'));
     const filtersEl = document.getElementById('filters');
 
-    const types = [...new Set(rows.map(r => r.dataset.type))];
     rows.forEach(r => { if (r.querySelector('.ancestor-badge')) r.dataset.ancestor = 'true'; });
     const hasAncestors = rows.some(r => r.dataset.ancestor);
 
@@ -197,10 +180,8 @@
     function applyFilter() {
       const q = peopleSearch.value.toLowerCase();
       rows.forEach(r => {
-        const typeMatch = active === null ? true
-          : active === 'ancestors' ? r.dataset.ancestor
-          : r.dataset.type === active;
-        const peopleMatch = r.cells[2].textContent.toLowerCase().includes(q);
+        const typeMatch = active === null ? true : r.dataset.ancestor;
+        const peopleMatch = r.cells[1].textContent.toLowerCase().includes(q);
         r.hidden = !(typeMatch && peopleMatch);
       });
     }
@@ -221,10 +202,9 @@
       return btn;
     }
 
-    if (types.length > 1 || hasAncestors) {
+    if (hasAncestors) {
       filtersEl.appendChild(makeButton('All', null));
-      types.forEach(t => filtersEl.appendChild(makeButton(t, t)));
-      if (hasAncestors) filtersEl.appendChild(makeButton('Ancestors', 'ancestors'));
+      filtersEl.appendChild(makeButton('Ancestors', 'ancestors'));
     }
     </script>
   

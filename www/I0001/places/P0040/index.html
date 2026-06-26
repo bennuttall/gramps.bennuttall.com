@@ -60,32 +60,21 @@
     <div id="map"></div>
 
     <section>
-      <h2>Events (7)</h2>
+      <h2>Burials (7)</h2>
       <input type="search" id="people-search" placeholder="Search people…">
       <div id="filters" class="event-filters"></div>
       <table class="events-table" id="places-events-table">
         <thead>
           <tr>
             <th>Year</th>
-            <th>Event</th>
-            <th>People</th>
+            <th>Person</th>
+            <th>Find A Grave</th>
             
           </tr>
         </thead>
         <tbody>
           <tr data-type="Burial">
             <td class="year">1852</td>
-            <td>
-              <a href="/I0001/events/E0199/">Burial</a>
-              <a href="/I0001/events/E0199/" class="photo-icon" title="Has image">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                </svg>
-              </a>
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -96,17 +85,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1862</td>
-            <td>
-              <a href="/I0001/events/E0176/">Burial</a>
-              
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -117,17 +102,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1903</td>
-            <td>
-              <a href="/I0001/events/E0135/">Burial</a>
-              
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -138,17 +119,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1906</td>
-            <td>
-              <a href="/I0001/events/E0103/">Burial</a>
-              
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -159,21 +136,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1919</td>
-            <td>
-              <a href="/I0001/events/E0115/">Burial</a>
-              
-              <a href="https://www.findagrave.com/memorial/599720101" class="photo-icon" title="Find a Grave">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true" style="transform: rotate(180deg)">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M9.75 11.625l2.25 2.25m0 0 2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/>
-                </svg>
-              </a>
-              
-              
-            </td>
             <td>
               
               <span>
@@ -184,17 +153,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              <a href="https://www.findagrave.com/memorial/599720101">Find a Grave</a>
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1930</td>
-            <td>
-              <a href="/I0001/events/E0064/">Burial</a>
-              
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -205,17 +170,13 @@
                 </span>
               </span>
             </td>
+            <td>
+              
+            </td>
             
           </tr>
           <tr data-type="Burial">
             <td class="year">1978</td>
-            <td>
-              <a href="/I0001/events/E0054/">Burial</a>
-              
-              
-              
-              
-            </td>
             <td>
               
               <span>
@@ -225,6 +186,9 @@
                   
                 </span>
               </span>
+            </td>
+            <td>
+              
             </td>
             
           </tr>
@@ -275,7 +239,6 @@
     const rows = Array.from(document.querySelectorAll('#places-events-table tbody tr'));
     const filtersEl = document.getElementById('filters');
 
-    const types = [...new Set(rows.map(r => r.dataset.type))];
     rows.forEach(r => { if (r.querySelector('.ancestor-badge')) r.dataset.ancestor = 'true'; });
     const hasAncestors = rows.some(r => r.dataset.ancestor);
 
@@ -285,10 +248,8 @@
     function applyFilter() {
       const q = peopleSearch.value.toLowerCase();
       rows.forEach(r => {
-        const typeMatch = active === null ? true
-          : active === 'ancestors' ? r.dataset.ancestor
-          : r.dataset.type === active;
-        const peopleMatch = r.cells[2].textContent.toLowerCase().includes(q);
+        const typeMatch = active === null ? true : r.dataset.ancestor;
+        const peopleMatch = r.cells[1].textContent.toLowerCase().includes(q);
         r.hidden = !(typeMatch && peopleMatch);
       });
     }
@@ -309,10 +270,9 @@
       return btn;
     }
 
-    if (types.length > 1 || hasAncestors) {
+    if (hasAncestors) {
       filtersEl.appendChild(makeButton('All', null));
-      types.forEach(t => filtersEl.appendChild(makeButton(t, t)));
-      if (hasAncestors) filtersEl.appendChild(makeButton('Ancestors', 'ancestors'));
+      filtersEl.appendChild(makeButton('Ancestors', 'ancestors'));
     }
     </script>
   
