@@ -149,9 +149,9 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-    var places = [{"lat": "53.69068", "lon": "-2.21566", "name": "Bacup Cemetery", "url": "P0039/", "count": 5}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "P0034/", "count": 5}, {"lat": "53.36948", "lon": "-1.44069", "name": "City Road Cemetery", "url": "P0036/", "count": 3}, {"lat": "53.75176", "lon": "-0.36274", "name": "Hull General Cemetery", "url": "P0038/", "count": 4}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "P0041/", "count": 6}, {"lat": "53.36917", "lon": "-1.48722", "name": "Sheffield General Cemetery", "url": "P0035/", "count": 3}, {"lat": "53.42781", "lon": "-2.2611", "name": "Southern Cemetery", "url": "P0037/", "count": 5}, {"lat": "53.70373", "lon": "-2.20196", "name": "St John the Evangelist Churchyard", "url": "P0040/", "count": 7}];
+    var places = [{"lat": "53.69068", "lon": "-2.21566", "name": "Bacup Cemetery", "url": "P0039/", "count": 5, "ancestor_count": 3}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "P0034/", "count": 5, "ancestor_count": 4}, {"lat": "53.36948", "lon": "-1.44069", "name": "City Road Cemetery", "url": "P0036/", "count": 3, "ancestor_count": 1}, {"lat": "53.75176", "lon": "-0.36274", "name": "Hull General Cemetery", "url": "P0038/", "count": 4, "ancestor_count": 0}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "P0041/", "count": 6, "ancestor_count": 4}, {"lat": "53.36917", "lon": "-1.48722", "name": "Sheffield General Cemetery", "url": "P0035/", "count": 3, "ancestor_count": 1}, {"lat": "53.42781", "lon": "-2.2611", "name": "Southern Cemetery", "url": "P0037/", "count": 5, "ancestor_count": 1}, {"lat": "53.70373", "lon": "-2.20196", "name": "St John the Evangelist Churchyard", "url": "P0040/", "count": 7, "ancestor_count": 4}];
 
-    places.forEach(function(p) {
+    var markers = places.map(function(p) {
       var marker = L.circleMarker([p.lat, p.lon], {
         radius: Math.max(4, Math.min(14, 3 + p.count / 2)),
         color: '#5a3e28',
@@ -160,7 +160,21 @@
         weight: 1,
       }).addTo(map);
       marker.bindPopup('<a href="' + p.url + '">' + p.name + '</a> (' + p.count + ' burials)');
+      return {marker: marker, p: p};
     });
+
+    function updateMap() {
+      markers.forEach(function(m) {
+        var count = ancestorsOnly ? m.p.ancestor_count : m.p.count;
+        if (count > 0) {
+          m.marker.setRadius(Math.max(4, Math.min(14, 3 + count / 2)));
+          m.marker.setPopupContent('<a href="' + m.p.url + '">' + m.p.name + '</a> (' + count + ' burials)');
+          if (!map.hasLayer(m.marker)) m.marker.addTo(map);
+        } else {
+          if (map.hasLayer(m.marker)) m.marker.remove();
+        }
+      });
+    }
     </script>
     <script>
     const tbody = document.querySelector('#cemeteries-table tbody');
@@ -189,6 +203,7 @@
         burialsCell.dataset.val = count;
       });
       updateCount(visible);
+      updateMap();
     }
     updateCount(total);
 
