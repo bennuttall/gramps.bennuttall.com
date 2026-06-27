@@ -35,6 +35,15 @@
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -221,7 +230,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0028/">Lincoln</a>
+                     href="/I0001/places/P0008/">Goole</a>
                   
                 </td>
               
@@ -247,7 +256,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0028/">Lincoln</a>
+                     href="/I0001/places/P0008/">Goole</a>
                   
                 </td>
               
@@ -304,7 +313,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0021/">Islington</a>
+                     href="/I0001/places/P0031/">Chesterfield</a>
                   
                 </td>
               
@@ -330,7 +339,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0028/">Lincoln</a>
+                     href="/I0001/places/P0008/">Goole</a>
                   
                 </td>
               
@@ -356,7 +365,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0026/">Retford</a>
+                     href="/I0001/places/P0019/">Clitheroe</a>
                   
                 </td>
               
@@ -386,7 +395,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0013/">Liverpool</a>
+                     href="/I0001/places/P0010/">Snaith</a>
                   
                 </td>
               
@@ -783,7 +792,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0001/places/P0028/", "types": ["Birth", "Baptism", "Census"]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0001/places/P0021/", "types": ["Child born"]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0001/places/P0026/", "types": ["Census"]}, {"lat": "53.3933", "lon": "-2.9166", "name": "Liverpool", "url": "/I0001/places/P0013/", "types": ["Death"]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0001/places/P0041/", "types": ["Burial"]}];
+    var points = [{"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0001/places/P0008/", "types": ["Birth", "Baptism", "Census"]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0001/places/P0031/", "types": ["Child born"]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0001/places/P0019/", "types": ["Census"]}, {"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0001/places/P0010/", "types": ["Death"]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0001/places/P0041/", "types": ["Burial"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

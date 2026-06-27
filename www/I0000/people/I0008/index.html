@@ -35,6 +35,15 @@
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -250,7 +259,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0030/">Buxton</a>
+                     href="/I0000/places/P0016/">Blackburn</a>
                   
                 </td>
               
@@ -276,7 +285,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0017/">Bolton</a>
+                     href="/I0000/places/P0028/">Lincoln</a>
                   
                 </td>
               
@@ -303,7 +312,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0014/">Preston</a>
+                     href="/I0000/places/P0002/">Sheffield</a>
                   
                 </td>
               
@@ -334,7 +343,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0031/">Chesterfield</a>
+                     href="/I0000/places/P0003/">Leeds</a>
                   
                 </td>
               
@@ -365,7 +374,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0025/">Nottingham</a>
+                     href="/I0000/places/P0014/">Preston</a>
                   
                 </td>
               
@@ -425,7 +434,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0025/">Nottingham</a>
+                     href="/I0000/places/P0014/">Preston</a>
                   
                 </td>
               
@@ -451,7 +460,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0000/places/P0017/">Bolton</a>
+                     href="/I0000/places/P0028/">Lincoln</a>
                   
                 </td>
               
@@ -912,7 +921,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "types": ["Birth"]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0000/places/P0017/", "types": ["Census", "Death"]}, {"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0000/places/P0014/", "types": ["Child born"]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0000/places/P0031/", "types": ["Child born"]}, {"lat": "52.9540", "lon": "-1.1550", "name": "Nottingham", "url": "/I0000/places/P0025/", "types": ["Child born", "Census"]}];
+    var points = [{"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0000/places/P0016/", "types": ["Birth"]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0000/places/P0028/", "types": ["Census", "Death"]}, {"lat": "53.3811", "lon": "-1.4701", "name": "Sheffield", "url": "/I0000/places/P0002/", "types": ["Child born"]}, {"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0000/places/P0003/", "types": ["Child born"]}, {"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0000/places/P0014/", "types": ["Child born", "Census"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

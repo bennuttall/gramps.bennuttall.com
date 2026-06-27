@@ -35,6 +35,15 @@
               <a href="/I0001/">Norman Hartwell</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -108,7 +117,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0002/places/P0006/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Birth", "Baptism"]}]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0002/places/P0009/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Child born"]}]}, {"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0002/places/P0010/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Census"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0002/places/P0016/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Census"]}]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0002/places/P0031/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Death"]}]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0002/places/P0041/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Burial"]}]}];
+    var points = [{"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0002/places/P0022/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0002/places/P0007/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Child born"]}]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0002/places/P0021/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Census"]}]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0002/places/P0023/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Census"]}]}, {"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0002/places/P0003/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Death"]}]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0002/places/P0041/", "people": [{"name": "Ulric Ingleton", "url": "/I0002/people/I0049/", "types": ["Burial"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

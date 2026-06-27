@@ -37,6 +37,15 @@
             <li>
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
           </ul>
         </details>
         
@@ -108,7 +117,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0010/places/P0003/", "people": [{"name": "Eugenia Crowther", "url": "/I0010/people/I0068/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0010/places/P0007/", "people": [{"name": "Eugenia Crowther", "url": "/I0010/people/I0068/", "types": ["Child born"]}]}];
+    var points = [{"lat": "52.9540", "lon": "-1.1550", "name": "Nottingham", "url": "/I0010/places/P0025/", "people": [{"name": "Eugenia Crowther", "url": "/I0010/people/I0068/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0010/places/P0004/", "people": [{"name": "Eugenia Crowther", "url": "/I0010/people/I0068/", "types": ["Child born"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

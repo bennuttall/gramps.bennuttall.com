@@ -37,6 +37,15 @@
             <li>
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
           </ul>
         </details>
         
@@ -108,7 +117,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0010/places/P0026/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Birth"]}]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0010/places/P0023/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Marriage", "Child born"]}]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0010/places/P0007/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Census"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0010/places/P0030/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Census"]}]}];
+    var points = [{"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0010/places/P0019/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Birth"]}]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0010/places/P0015/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Marriage", "Child born"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0010/places/P0004/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Census"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0010/places/P0016/", "people": [{"name": "Alfred Westgate", "url": "/I0010/people/I0045/", "types": ["Census"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

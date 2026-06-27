@@ -35,6 +35,15 @@
               <a href="/I0001/">Norman Hartwell</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -117,7 +126,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0002/places/P0004/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Census"]}]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0002/places/P0026/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Child born", "Census"]}]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0002/places/P0031/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Census"]}]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0002/places/P0015/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Census"]}]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0002/places/P0019/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Death"]}]}];
+    var points = [{"lat": "53.4808", "lon": "-2.2426", "name": "Manchester", "url": "/I0002/places/P0012/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Census"]}]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0002/places/P0019/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Child born", "Census"]}]}, {"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0002/places/P0003/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Census"]}]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0002/places/P0009/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Census"]}]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0002/places/P0026/", "people": [{"name": "Venetia Pembridge", "url": "/I0002/people/I0023/", "types": ["Death"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

@@ -35,6 +35,15 @@
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -108,7 +117,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0000/places/P0010/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Birth", "Baptism"]}]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0000/places/P0023/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Marriage"]}]}, {"lat": "53.4808", "lon": "-2.2426", "name": "Manchester", "url": "/I0000/places/P0012/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Child born"]}]}, {"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0000/places/P0008/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Death", "Burial"]}]}];
+    var points = [{"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0000/places/P0021/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Birth", "Baptism"]}]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0000/places/P0015/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Marriage"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Child born"]}]}, {"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0000/places/P0005/", "people": [{"name": "Reginald Idsworth", "url": "/I0000/people/I0065/", "types": ["Death", "Burial"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

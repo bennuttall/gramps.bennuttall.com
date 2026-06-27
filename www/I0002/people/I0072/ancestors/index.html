@@ -35,6 +35,15 @@
               <a href="/I0001/">Norman Hartwell</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -117,7 +126,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0002/places/P0010/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Birth", "Baptism"]}]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0002/places/P0021/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Marriage"]}]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0002/places/P0028/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Child born"]}]}, {"lat": "53.4808", "lon": "-2.2426", "name": "Manchester", "url": "/I0002/places/P0012/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Death"]}]}];
+    var points = [{"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0002/places/P0021/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0002/places/P0031/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Marriage"]}]}, {"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0002/places/P0008/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Child born"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0002/places/P0030/", "people": [{"name": "Imelda Foxwell", "url": "/I0002/people/I0072/", "types": ["Death"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

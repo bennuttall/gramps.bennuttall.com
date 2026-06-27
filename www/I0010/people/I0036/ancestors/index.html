@@ -37,6 +37,15 @@
             <li>
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
           </ul>
         </details>
         
@@ -108,7 +117,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0010/places/P0028/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Birth"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0010/places/P0004/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Marriage"]}]}, {"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0010/places/P0020/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Child born"]}]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0010/places/P0019/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0010/places/P0023/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0010/places/P0007/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0010/places/P0030/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "53.70373", "lon": "-2.20196", "name": "St John the Evangelist Churchyard", "url": "/I0010/places/P0040/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Burial"]}]}];
+    var points = [{"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0010/places/P0008/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Birth"]}]}, {"lat": "53.4808", "lon": "-2.2426", "name": "Manchester", "url": "/I0010/places/P0012/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Marriage"]}]}, {"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0010/places/P0006/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Child born"]}]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0010/places/P0026/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0010/places/P0015/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0010/places/P0004/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0010/places/P0016/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Census"]}]}, {"lat": "53.70373", "lon": "-2.20196", "name": "St John the Evangelist Churchyard", "url": "/I0010/places/P0040/", "people": [{"name": "Jerome Crowther", "url": "/I0010/people/I0036/", "types": ["Burial"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

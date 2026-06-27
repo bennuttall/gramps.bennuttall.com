@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1841 Census — Hartwell Family Tree</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" media="print" href="/print.css">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/I0005/index.html">My tree</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/I0005/people/I0005/">Me</a>
+        <a class="secondary" href="/I0005/people/">People</a>
+        <a class="secondary" href="/I0005/places/">Places</a>
+        <a class="secondary" href="/I0005/events/">Events</a>
+        <a class="secondary" href="/I0005/census/">Census</a>
+        <a class="secondary" href="/I0005/cemeteries/">Cemeteries</a>
+        <a class="secondary" href="/I0005/birthdays/">Birthdays</a>
+        <a class="secondary" href="/I0005/surnames/">Surnames</a>
+        <details class="secondary view-as" data-current="I0005">
+          <summary>Viewing as Dorothea &mdash; switch</summary>
+          <ul>
+            <li>
+              <a href="/I0000/">Alex Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0001/">Norman Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0002/">Ursula Ravenswood</a>
+            </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0010/">Tabitha Thornbury</a>
+            </li>
+          </ul>
+        </details>
+        
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <h1>1841 Census <span class="years">6 Jun 1841</span></h1>
+
+    <div id="census-map"></div>
+    <div id="filters" class="event-filters"></div>
+
+    <table class="events-table" id="census-table">
+      <thead>
+        <tr>
+          <th data-col="0" class="sortable sort-asc">Name</th>
+          <th data-col="1" class="sortable">Household</th>
+          <th data-col="2" class="sortable">Place</th>
+          <th data-col="3" class="sortable" data-numeric="1">Born</th>
+          <th data-col="4" class="sortable" data-numeric="1">Age</th>
+          <th data-col="5" class="sortable">Relation</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr data-lat="53.7944" data-lon="-1.7519" data-place="Bradford" data-event-url="/I0005/events/E0342/">
+            <td>
+              <a href="/I0005/people/I0046/" class="female">Edwina Thornbury</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0342/">Alfred Westgate</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0004/">Bradford</a>
+              
+            </td>
+            <td class="year">1799</td>
+            <td class="year">41</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7944" data-lon="-1.7519" data-place="Bradford" data-event-url="/I0005/events/E0342/">
+            <td>
+              <a href="/I0005/people/I0045/" class="male">Alfred Westgate</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0342/">Alfred Westgate</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0004/">Bradford</a>
+              
+            </td>
+            <td class="year">1804</td>
+            <td class="year">36</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7944" data-lon="-1.7519" data-place="Bradford" data-event-url="/I0005/events/E0342/">
+            <td>
+              <a href="/I0005/people/I0031/" class="female">Eugenia Westgate</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0342/">Alfred Westgate</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0004/">Bradford</a>
+              
+            </td>
+            <td class="year">1835</td>
+            <td class="year">5</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="53.5769" data-lon="-2.4282" data-place="Bolton" data-event-url="/I0005/events/E0343/">
+            <td>
+              <a href="/I0005/people/I0048/" class="female">Octavia Quinton</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0343/">Cecil Halcomb</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0017/">Bolton</a>
+              
+            </td>
+            <td class="year">1782</td>
+            <td class="year">58</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.5769" data-lon="-2.4282" data-place="Bolton" data-event-url="/I0005/events/E0343/">
+            <td>
+              <a href="/I0005/people/I0047/" class="male">Cecil Halcomb</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0343/">Cecil Halcomb</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0017/">Bolton</a>
+              
+            </td>
+            <td class="year">1784</td>
+            <td class="year">56</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0005/events/E0339/">
+            <td>
+              <a href="/I0005/people/I0039/" class="female">Winifred Idsworth</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0339/">Clement Ingleton</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0023/">Westminster</a>
+              
+            </td>
+            <td class="year">1813</td>
+            <td class="year">27</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0005/events/E0339/">
+            <td>
+              <a href="/I0005/people/I0038/" class="male">Clement Ingleton</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0339/">Clement Ingleton</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0023/">Westminster</a>
+              
+            </td>
+            <td class="year">1815</td>
+            <td class="year">25</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0005/events/E0339/">
+            <td>
+              <a href="/I0005/people/I0026/" class="female">Winifred Ingleton</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0339/">Clement Ingleton</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0023/">Westminster</a>
+              
+            </td>
+            <td class="year">1840</td>
+            <td class="year">0</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-ancestor="true" data-lat="53.7486" data-lon="-2.4875" data-place="Blackburn" data-event-url="/I0005/events/E0345/">
+            <td>
+              <a href="/I0005/people/I0051/" class="male">Kenneth Ulverston</a>
+              <span class="ancestor-badge">ancestor</span>
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0345/">Kenneth Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0016/">Blackburn</a>
+              
+            </td>
+            <td class="year">1783</td>
+            <td class="year">57</td>
+            
+            <td class="year">2nd great-grandfather</td>
+          </tr>
+          <tr data-ancestor="true" data-lat="53.7486" data-lon="-2.4875" data-place="Blackburn" data-event-url="/I0005/events/E0345/">
+            <td>
+              <a href="/I0005/people/I0052/" class="female">Araminta Vanthorpe</a>
+              <span class="ancestor-badge">ancestor</span>
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0345/">Kenneth Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0016/">Blackburn</a>
+              
+            </td>
+            <td class="year">1786</td>
+            <td class="year">54</td>
+            
+            <td class="year">2nd great-grandmother</td>
+          </tr>
+        
+          <tr data-lat="53.7974" data-lon="-1.5438" data-place="Leeds" data-event-url="/I0005/events/E0341/">
+            <td>
+              <a href="/I0005/people/I0044/" class="female">Lavinia Crowther</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0341/">Lavinia Crowther</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0003/">Leeds</a>
+              
+            </td>
+            <td class="year">1813</td>
+            <td class="year">27</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7974" data-lon="-1.5438" data-place="Leeds" data-event-url="/I0005/events/E0341/">
+            <td>
+              <a href="/I0005/people/I0030/" class="male">Barnabas Vanthorpe</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0341/">Lavinia Crowther</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0003/">Leeds</a>
+              
+            </td>
+            <td class="year">1834</td>
+            <td class="year">6</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0005/events/E0346/">
+            <td>
+              <a href="/I0005/people/I0053/" class="male">Norman Idsworth</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0346/">Norman Idsworth</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0021/">Islington</a>
+              
+            </td>
+            <td class="year">1792</td>
+            <td class="year">48</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0005/events/E0346/">
+            <td>
+              <a href="/I0005/people/I0054/" class="female">Araminta Crowther</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0346/">Norman Idsworth</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0021/">Islington</a>
+              
+            </td>
+            <td class="year">1796</td>
+            <td class="year">44</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0005/events/E0340/">
+            <td>
+              <a href="/I0005/people/I0043/" class="female">Winifred Oulton</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0340/">Oswald Zelby</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0005/">Kingston upon Hull</a>
+              
+            </td>
+            <td class="year">1802</td>
+            <td class="year">38</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0005/events/E0340/">
+            <td>
+              <a href="/I0005/people/I0042/" class="male">Oswald Zelby</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0340/">Oswald Zelby</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0005/">Kingston upon Hull</a>
+              
+            </td>
+            <td class="year">1804</td>
+            <td class="year">36</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0005/events/E0340/">
+            <td>
+              <a href="/I0005/people/I0041/" class="female">Ursula Zelby</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0340/">Oswald Zelby</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0005/">Kingston upon Hull</a>
+              
+            </td>
+            <td class="year">1832</td>
+            <td class="year">8</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0005/events/E0340/">
+            <td>
+              <a href="/I0005/people/I0028/" class="male">Douglas Zelby</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0340/">Oswald Zelby</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0005/">Kingston upon Hull</a>
+              
+            </td>
+            <td class="year">1838</td>
+            <td class="year">2</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0005/events/E0340/">
+            <td>
+              <a href="/I0005/people/I0040/" class="male">Ulric Zelby</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0340/">Oswald Zelby</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0005/">Kingston upon Hull</a>
+              
+            </td>
+            <td class="year">1839</td>
+            <td class="year">1</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="53.2307" data-lon="-0.5406" data-place="Lincoln" data-event-url="/I0005/events/E0347/">
+            <td>
+              <a href="/I0005/people/I0055/" class="male">Percy Zelby</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0347/">Percy Zelby</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0028/">Lincoln</a>
+              
+            </td>
+            <td class="year">1784</td>
+            <td class="year">56</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.2307" data-lon="-0.5406" data-place="Lincoln" data-event-url="/I0005/events/E0347/">
+            <td>
+              <a href="/I0005/people/I0056/" class="female">Agatha Kestrel</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0347/">Percy Zelby</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0028/">Lincoln</a>
+              
+            </td>
+            <td class="year">1789</td>
+            <td class="year">51</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-ancestor="true" data-lat="53.5229" data-lon="-1.1312" data-place="Doncaster" data-event-url="/I0005/events/E0349/">
+            <td>
+              <a href="/I0005/people/I0062/" class="female">Tabitha Halcomb</a>
+              <span class="ancestor-badge">ancestor</span>
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0349/">Stanley Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0006/">Doncaster</a>
+              
+            </td>
+            <td class="year">1758</td>
+            <td class="year">82</td>
+            
+            <td class="year">3rd great-grandmother</td>
+          </tr>
+          <tr data-ancestor="true" data-lat="53.5229" data-lon="-1.1312" data-place="Doncaster" data-event-url="/I0005/events/E0349/">
+            <td>
+              <a href="/I0005/people/I0061/" class="male">Stanley Ulverston</a>
+              <span class="ancestor-badge">ancestor</span>
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0349/">Stanley Ulverston</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0006/">Doncaster</a>
+              
+            </td>
+            <td class="year">1761</td>
+            <td class="year">79</td>
+            
+            <td class="year">3rd great-grandfather</td>
+          </tr>
+        
+          <tr data-ancestor="true" data-event-url="/I0005/events/E0350/">
+            <td>
+              <a href="/I0005/people/I0063/" class="male">Theodore Vanthorpe</a>
+              <span class="ancestor-badge">ancestor</span>
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0350/">Theodore Vanthorpe</a>
+              
+            </td>
+            <td>
+              
+              <span></span>
+            </td>
+            <td class="year">1757</td>
+            <td class="year">83</td>
+            
+            <td class="year">3rd great-grandfather</td>
+          </tr>
+          <tr data-ancestor="true" data-event-url="/I0005/events/E0350/">
+            <td>
+              <a href="/I0005/people/I0064/" class="female">Ursula Ingleton</a>
+              <span class="ancestor-badge">ancestor</span>
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0350/">Theodore Vanthorpe</a>
+              
+            </td>
+            <td>
+              
+              <span></span>
+            </td>
+            <td class="year">1761</td>
+            <td class="year">79</td>
+            
+            <td class="year">3rd great-grandmother</td>
+          </tr>
+        
+          <tr data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0005/events/E0344/">
+            <td>
+              <a href="/I0005/people/I0049/" class="male">Ulric Ingleton</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0344/">Ulric Ingleton</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0021/">Islington</a>
+              
+            </td>
+            <td class="year">1782</td>
+            <td class="year">58</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0005/events/E0344/">
+            <td>
+              <a href="/I0005/people/I0050/" class="female">Isolde Zelby</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0344/">Ulric Ingleton</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0021/">Islington</a>
+              
+            </td>
+            <td class="year">1784</td>
+            <td class="year">56</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+          <tr data-lat="53.7045" data-lon="-0.8746" data-place="Goole" data-event-url="/I0005/events/E0348/">
+            <td>
+              <a href="/I0005/people/I0057/" class="male">Ulric Oulton</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0348/">Ulric Oulton</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0008/">Goole</a>
+              
+            </td>
+            <td class="year">1771</td>
+            <td class="year">69</td>
+            
+            <td class="year"></td>
+          </tr>
+          <tr data-lat="53.7045" data-lon="-0.8746" data-place="Goole" data-event-url="/I0005/events/E0348/">
+            <td>
+              <a href="/I0005/people/I0058/" class="female">Isolde Fernley</a>
+              
+              
+            </td>
+            <td>
+              <a href="/I0005/events/E0348/">Ulric Oulton</a>
+              
+            </td>
+            <td>
+              <a href="/I0005/places/P0008/">Goole</a>
+              
+            </td>
+            <td class="year">1776</td>
+            <td class="year">64</td>
+            
+            <td class="year"></td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+  </main>
+  <footer>
+    <p><a href="https://www.gramps-project.org">GRAMPS</a> family tree website generated by <a href="https://github.com/bennuttall/greatgramps">greatgramps</a></p>
+  </footer>
+  
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    const tbody = document.querySelector('#census-table tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+
+    let sortCol = 0;
+    let sortAsc = true;
+    let ancestorOnly = false;
+    let descendantOnly = false;
+
+    function cellText(row, col) {
+      return row.cells[col].textContent.trim();
+    }
+
+    function sortRows() {
+      const ths = document.querySelectorAll('#census-table th.sortable');
+      const numeric = ths[sortCol].dataset.numeric === '1';
+      rows.sort((a, b) => {
+        const av = cellText(a, sortCol);
+        const bv = cellText(b, sortCol);
+        if (numeric) {
+          const an = parseInt(av) || 0, bn = parseInt(bv) || 0;
+          return sortAsc ? an - bn : bn - an;
+        }
+        return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    }
+
+    document.querySelectorAll('#census-table th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = +th.dataset.col;
+        if (sortCol === col) {
+          sortAsc = !sortAsc;
+        } else {
+          sortCol = col;
+          sortAsc = true;
+        }
+        document.querySelectorAll('#census-table th.sortable').forEach(h => {
+          h.classList.remove('sort-asc', 'sort-desc');
+        });
+        th.classList.add(sortAsc ? 'sort-asc' : 'sort-desc');
+        sortRows();
+      });
+    });
+
+    function applyFilters() {
+      rows.forEach(r => {
+        r.hidden = (ancestorOnly && r.dataset.ancestor !== 'true')
+                || (descendantOnly && r.dataset.descendant !== 'true');
+      });
+      updateMap();
+    }
+
+    const ancestorBtn = document.createElement('button');
+    ancestorBtn.textContent = 'Ancestors';
+    ancestorBtn.className = 'filter-btn toggle-btn';
+    ancestorBtn.addEventListener('click', () => {
+      ancestorOnly = !ancestorOnly;
+      if (ancestorOnly) { descendantOnly = false; descendantBtn.classList.remove('active'); }
+      ancestorBtn.classList.toggle('active', ancestorOnly);
+      applyFilters();
+    });
+    document.getElementById('filters').appendChild(ancestorBtn);
+
+    const descendantBtn = document.createElement('button');
+    descendantBtn.textContent = 'Descendants';
+    descendantBtn.className = 'filter-btn toggle-btn';
+    descendantBtn.addEventListener('click', () => {
+      descendantOnly = !descendantOnly;
+      if (descendantOnly) { ancestorOnly = false; ancestorBtn.classList.remove('active'); }
+      descendantBtn.classList.toggle('active', descendantOnly);
+      applyFilters();
+    });
+    document.getElementById('filters').appendChild(descendantBtn);
+
+    const censusMap = L.map('census-map');
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(censusMap);
+    const markersLayer = L.layerGroup().addTo(censusMap);
+
+    function updateMap() {
+      markersLayer.clearLayers();
+      const groups = {};
+      rows.filter(r => !r.hidden && r.dataset.lat).forEach(r => {
+        const key = r.dataset.lat + ',' + r.dataset.lon;
+        if (!groups[key]) {
+          groups[key] = { lat: +r.dataset.lat, lon: +r.dataset.lon, place: r.dataset.place, households: new Map() };
+        }
+        const url = r.dataset.eventUrl;
+        if (!groups[key].households.has(url)) {
+          groups[key].households.set(url, r.cells[1].querySelector('a').textContent.trim());
+        }
+      });
+      const pts = Object.values(groups);
+      if (!pts.length) return;
+      pts.forEach(g => {
+        const lines = Array.from(g.households.entries())
+          .map(([url, name]) => '<a href="' + url + '">' + name + '</a>')
+          .join('<br>');
+        L.marker([g.lat, g.lon]).addTo(markersLayer)
+          .bindPopup('<strong>' + g.place + '</strong><br>' + lines);
+      });
+      censusMap.fitBounds(pts.map(g => [g.lat, g.lon]), { padding: [20, 20], maxZoom: 10 });
+    }
+
+    updateMap();
+    </script>
+  
+  <script>
+  var viewAs = document.querySelector('.view-as');
+  if (viewAs) {
+    var currentId = viewAs.dataset.current;
+    var path = window.location.pathname;
+    var prefix = '/' + currentId + '/';
+    var pagePath = path.startsWith(prefix) ? path.slice(prefix.length) : '';
+    viewAs.querySelectorAll('a[href]').forEach(function(a) {
+      a.href = a.getAttribute('href') + pagePath;
+    });
+  }
+
+  var tabs = document.querySelector('.person-tabs');
+  if (tabs) {
+    var active = tabs.querySelector('span.active');
+    if (active) {
+      var btn = document.createElement('button');
+      btn.className = 'tabs-toggle';
+      btn.textContent = '▾';
+      btn.setAttribute('aria-label', 'Toggle tabs');
+      active.after(btn);
+      btn.addEventListener('click', function() {
+        var open = tabs.classList.toggle('open');
+        btn.textContent = open ? '▴' : '▾';
+      });
+    }
+  }
+
+  var eventsTable = document.querySelector('.events table');
+  if (eventsTable) {
+    var headRow = eventsTable.querySelector('thead tr');
+    var emptyTh = document.createElement('th');
+    emptyTh.className = 'expand-td';
+    headRow.appendChild(emptyTh);
+
+    Array.from(eventsTable.querySelectorAll('tbody tr')).forEach(function(row) {
+      var cell4 = row.cells[3];
+      var cell5 = row.cells[4];
+
+      var expandTd = document.createElement('td');
+      expandTd.className = 'expand-td';
+      row.appendChild(expandTd);
+
+      var parts = [];
+      if (cell4 && cell4.textContent.trim()) parts.push(cell4.innerHTML.trim());
+      if (cell5 && cell5.textContent.trim()) parts.push(cell5.innerHTML.trim());
+      if (!parts.length) return;
+
+      var xbtn = document.createElement('button');
+      xbtn.className = 'row-expand-btn';
+      xbtn.textContent = '▾';
+      expandTd.appendChild(xbtn);
+
+      var detailRow = document.createElement('tr');
+      detailRow.className = 'row-detail';
+      var detailTd = document.createElement('td');
+      detailTd.colSpan = row.cells.length;
+      detailTd.innerHTML = parts.join(' &middot; ');
+      detailRow.appendChild(detailTd);
+      row.after(detailRow);
+
+      xbtn.addEventListener('click', function() {
+        var open = detailRow.classList.toggle('open');
+        xbtn.textContent = open ? '▴' : '▾';
+        detailRow.style.display = open ? '' : 'none';
+      });
+    });
+  }
+  </script>
+</body>
+</html>
+

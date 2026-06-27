@@ -37,6 +37,15 @@
             <li>
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
           </ul>
         </details>
         
@@ -177,7 +186,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0010/places/P0023/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0010/places/P0008/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Marriage"]}]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0010/places/P0017/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Child born"]}, {"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Birth"]}]}, {"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0010/places/P0003/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Child born"]}, {"name": "Sophie Hartwell", "url": "/I0010/people/I0083/", "types": ["Birth"]}]}, {"lat": "53.3811", "lon": "-1.4701", "name": "Sheffield", "url": "/I0010/places/P0002/", "people": [{"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Marriage"]}]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0010/places/P0028/", "people": [{"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Child born"]}, {"name": "Leo Hartwell", "url": "/I0010/people/I0085/", "types": ["Birth"]}, {"name": "Iris Hartwell", "url": "/I0010/people/I0086/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0010/places/P0010/", "people": [{"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Child born"]}, {"name": "Hugh Hartwell", "url": "/I0010/people/I0087/", "types": ["Birth", "Baptism"]}]}, {"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0010/places/P0020/", "people": [{"name": "Sophie Hartwell", "url": "/I0010/people/I0083/", "types": ["Child born"]}, {"name": "Fern Ashford", "url": "/I0010/people/I0089/", "types": ["Birth", "Baptism"]}, {"name": "Miles Ashford", "url": "/I0010/people/I0090/", "types": ["Birth"]}]}];
+    var points = [{"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0010/places/P0015/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0010/places/P0005/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Marriage"]}]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0010/places/P0028/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Child born"]}, {"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Birth"]}]}, {"lat": "52.9540", "lon": "-1.1550", "name": "Nottingham", "url": "/I0010/places/P0025/", "people": [{"name": "Alex Hartwell", "url": "/I0010/people/I0000/", "types": ["Child born"]}, {"name": "Sophie Hartwell", "url": "/I0010/people/I0083/", "types": ["Birth"]}]}, {"lat": "53.3933", "lon": "-2.9166", "name": "Liverpool", "url": "/I0010/places/P0013/", "people": [{"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Marriage"]}]}, {"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0010/places/P0008/", "people": [{"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Child born"]}, {"name": "Leo Hartwell", "url": "/I0010/people/I0085/", "types": ["Birth"]}, {"name": "Iris Hartwell", "url": "/I0010/people/I0086/", "types": ["Birth", "Baptism"]}]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0010/places/P0021/", "people": [{"name": "Oliver Hartwell", "url": "/I0010/people/I0082/", "types": ["Child born"]}, {"name": "Hugh Hartwell", "url": "/I0010/people/I0087/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0010/places/P0006/", "people": [{"name": "Sophie Hartwell", "url": "/I0010/people/I0083/", "types": ["Child born"]}, {"name": "Fern Ashford", "url": "/I0010/people/I0089/", "types": ["Birth", "Baptism"]}, {"name": "Miles Ashford", "url": "/I0010/people/I0090/", "types": ["Birth"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

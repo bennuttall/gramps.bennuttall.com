@@ -35,6 +35,15 @@
               <a href="/I0001/">Norman Hartwell</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -107,7 +116,7 @@
                   
                   <span class="years">Married</span>
                   <span class="years">
-                    2 Nov 1865<span>, Bolton</span>
+                    2 Nov 1865<span>, Lincoln</span>
                   </span>
                 </li>
               
@@ -205,7 +214,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0028/">Lincoln</a>
+                     href="/I0002/places/P0008/">Goole</a>
                   
                 </td>
               
@@ -231,7 +240,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0028/">Lincoln</a>
+                     href="/I0002/places/P0008/">Goole</a>
                   
                 </td>
               
@@ -258,7 +267,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0017/">Bolton</a>
+                     href="/I0002/places/P0028/">Lincoln</a>
                   
                 </td>
               
@@ -285,7 +294,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0026/">Retford</a>
+                     href="/I0002/places/P0019/">Clitheroe</a>
                   
                 </td>
               
@@ -316,7 +325,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0006/">Doncaster</a>
+                     href="/I0002/places/P0022/">Southwark</a>
                   
                 </td>
               
@@ -342,7 +351,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0016/">Blackburn</a>
+                     href="/I0002/places/P0023/">Westminster</a>
                   
                 </td>
               
@@ -397,7 +406,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0002/places/P0022/">Southwark</a>
+                     href="/I0002/places/P0017/">Bolton</a>
                   
                 </td>
               
@@ -699,7 +708,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0002/places/P0028/", "types": ["Birth", "Baptism"]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0002/places/P0017/", "types": ["Marriage"]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0002/places/P0026/", "types": ["Child born"]}, {"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0002/places/P0006/", "types": ["Child born"]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0002/places/P0016/", "types": ["Census"]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0002/places/P0022/", "types": ["Death"]}, {"lat": "53.69068", "lon": "-2.21566", "name": "Bacup Cemetery", "url": "/I0002/places/P0039/", "types": ["Burial"]}];
+    var points = [{"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0002/places/P0008/", "types": ["Birth", "Baptism"]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0002/places/P0028/", "types": ["Marriage"]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0002/places/P0019/", "types": ["Child born"]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0002/places/P0022/", "types": ["Child born"]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0002/places/P0023/", "types": ["Census"]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0002/places/P0017/", "types": ["Death"]}, {"lat": "53.69068", "lon": "-2.21566", "name": "Bacup Cemetery", "url": "/I0002/places/P0039/", "types": ["Burial"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

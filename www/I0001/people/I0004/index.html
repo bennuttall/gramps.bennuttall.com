@@ -35,6 +35,15 @@
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -211,7 +220,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0028/">Lincoln</a>
+                     href="/I0001/places/P0008/">Goole</a>
                   
                 </td>
               
@@ -293,7 +302,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0018/">Bury</a>
+                     href="/I0001/places/P0020/">London</a>
                   
                 </td>
               
@@ -323,7 +332,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0030/">Buxton</a>
+                     href="/I0001/places/P0016/">Blackburn</a>
                   
                 </td>
               
@@ -691,7 +700,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0001/places/P0028/", "types": ["Birth"]}, {"lat": "53.5933", "lon": "-2.2966", "name": "Bury", "url": "/I0001/places/P0018/", "types": ["Child born"]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0001/places/P0030/", "types": ["Death"]}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "/I0001/places/P0034/", "types": ["Burial"]}];
+    var points = [{"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0001/places/P0008/", "types": ["Birth"]}, {"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0001/places/P0020/", "types": ["Child born"]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0001/places/P0016/", "types": ["Death"]}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "/I0001/places/P0034/", "types": ["Burial"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

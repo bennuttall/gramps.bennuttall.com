@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitby — Hartwell Family Tree</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" media="print" href="/print.css">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/I0005/index.html">My tree</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/I0005/people/I0005/">Me</a>
+        <a class="secondary" href="/I0005/people/">People</a>
+        <a class="secondary" href="/I0005/places/">Places</a>
+        <a class="secondary" href="/I0005/events/">Events</a>
+        <a class="secondary" href="/I0005/census/">Census</a>
+        <a class="secondary" href="/I0005/cemeteries/">Cemeteries</a>
+        <a class="secondary" href="/I0005/birthdays/">Birthdays</a>
+        <a class="secondary" href="/I0005/surnames/">Surnames</a>
+        <details class="secondary view-as" data-current="I0005">
+          <summary>Viewing as Dorothea &mdash; switch</summary>
+          <ul>
+            <li>
+              <a href="/I0000/">Alex Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0001/">Norman Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0002/">Ursula Ravenswood</a>
+            </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0010/">Tabitha Thornbury</a>
+            </li>
+          </ul>
+        </details>
+        
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <h1>Whitby <span class="place-type">Town</span></h1>
+    <p class="place-enclosing">
+      Part of
+      
+        <a href="/I0005/places/P0001/">Yorkshire</a> &rsaquo; 
+      
+        <a href="/I0005/places/P0000/">England</a>
+      
+    </p>
+
+    
+
+    
+
+    <div id="map"></div>
+
+    <section>
+      <h2>Events (7)</h2>
+      <input type="search" id="people-search" placeholder="Search people…">
+      <div id="filters" class="event-filters"></div>
+      <table class="events-table" id="places-events-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Event</th>
+            <th>People</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-type="Birth">
+            <td class="year">1739</td>
+            <td>
+              <a href="/I0005/events/E0292/">Birth</a>
+              
+              
+              
+              
+            </td>
+            <td>
+              
+              <span>
+                <span>
+                  <a href="/I0005/people/I0074/" class="male">Stanley Quinton</a>
+                  
+                  
+                </span>
+              </span>
+            </td>
+            
+          </tr>
+          <tr data-type="Birth">
+            <td class="year">1753</td>
+            <td>
+              <a href="/I0005/events/E0272/">Birth</a>
+              <a href="/I0005/events/E0272/" class="photo-icon" title="Has image">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                </svg>
+              </a>
+              
+              
+              
+            </td>
+            <td>
+              
+              <span>
+                <span>
+                  <a href="/I0005/people/I0069/" class="male">Kenneth Zelby</a>
+                  
+                  
+                </span>
+              </span>
+            </td>
+            
+          </tr>
+          <tr data-type="Baptism">
+            <td class="year">1753</td>
+            <td>
+              <a href="/I0005/events/E0273/">Baptism</a>
+              
+              
+              
+              
+            </td>
+            <td>
+              
+              <span>
+                <span>
+                  <a href="/I0005/people/I0069/" class="male">Kenneth Zelby</a>
+                  
+                  
+                </span>
+              </span>
+            </td>
+            
+          </tr>
+          <tr data-type="Census">
+            <td class="year">1881</td>
+            <td>
+              <a href="/I0005/events/E0379/">Census</a>
+              
+              
+              
+              
+            </td>
+            <td>
+              
+              <span>
+                <span>
+                  <a href="/I0005/people/I0028/" class="male">Douglas Zelby</a>
+                  
+                  
+                </span>
+                <span>
+                  <a href="/I0005/people/I0029/" class="female">Cecily Stanwick</a>
+                  
+                  
+                </span>
+              </span>
+            </td>
+            
+          </tr>
+          <tr data-type="Census">
+            <td class="year">1901</td>
+            <td>
+              <a href="/I0005/events/E0398/">Census</a>
+              
+              
+              
+              
+            </td>
+            <td>
+              
+              <span>
+                <span>
+                  <a href="/I0005/people/I0022/" class="male">Oswald Crowther</a>
+                  <span class="ancestor-badge">ancestor</span>
+                  
+                </span>
+                <span>
+                  <a href="/I0005/people/I0023/" class="female">Venetia Pembridge</a>
+                  <span class="ancestor-badge">ancestor</span>
+                  
+                </span>
+              </span>
+            </td>
+            
+          </tr>
+          <tr data-type="Death">
+            <td class="year">1922</td>
+            <td>
+              <a href="/I0005/events/E0123/">Death</a>
+              <a href="/I0005/events/E0123/" class="photo-icon" title="Has image">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                </svg>
+              </a>
+              
+              
+              
+            </td>
+            <td>
+              
+              <span>
+                <span>
+                  <a href="/I0005/people/I0032/" class="female">Ursula Halcomb</a>
+                  
+                  
+                </span>
+              </span>
+            </td>
+            
+          </tr>
+          <tr data-type="Death">
+            <td class="year">1985</td>
+            <td>
+              <a href="/I0005/events/E0027/">Death</a>
+              <a href="/I0005/events/E0027/" class="photo-icon" title="Has image">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="14" height="14" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                </svg>
+              </a>
+              
+              
+              
+            </td>
+            <td>
+              
+              <span>
+                <span>
+                  <a href="/I0005/people/I0007/" class="male">Quentin Ravenswood</a>
+                  
+                  
+                </span>
+              </span>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+  
+  </main>
+  <footer>
+    <p><a href="https://www.gramps-project.org">GRAMPS</a> family tree website generated by <a href="https://github.com/bennuttall/greatgramps">greatgramps</a></p>
+  </footer>
+  
+    <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    var map = L.map('map');
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var allMarkers = [];
+
+    var subject = {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby"};
+    if (subject) {
+      var sm = L.circleMarker([subject.lat, subject.lon], {
+        radius: 9, color: '#b91c1c', fillColor: '#ef4444', fillOpacity: 0.9, weight: 2
+      }).bindTooltip(subject.name).addTo(map);
+      allMarkers.push(sm);
+    }
+
+    var subPlaces = [];
+    subPlaces.forEach(function(p) {
+      var m = L.circleMarker([p.lat, p.lon], {
+        radius: 7, color: '#1a6ab0', fillColor: '#3388ff', fillOpacity: 0.85, weight: 2
+      }).bindTooltip(p.name).addTo(map);
+      allMarkers.push(m);
+    });
+
+    if (allMarkers.length === 1) {
+      map.setView(allMarkers[0].getLatLng(), 11);
+    } else {
+      map.fitBounds(L.featureGroup(allMarkers).getBounds().pad(0.2));
+    }
+    </script>
+    <script>
+    const rows = Array.from(document.querySelectorAll('#places-events-table tbody tr'));
+    const filtersEl = document.getElementById('filters');
+
+    const types = [...new Set(rows.map(r => r.dataset.type))];
+    rows.forEach(r => { if (r.querySelector('.ancestor-badge')) r.dataset.ancestor = 'true'; });
+    const hasAncestors = rows.some(r => r.dataset.ancestor);
+
+    let active = null;
+    const peopleSearch = document.getElementById('people-search');
+
+    function applyFilter() {
+      const q = peopleSearch.value.toLowerCase();
+      rows.forEach(r => {
+        const typeMatch = active === null ? true
+          : active === 'ancestors' ? r.dataset.ancestor
+          : r.dataset.type === active;
+        const peopleMatch = r.cells[2].textContent.toLowerCase().includes(q);
+        r.hidden = !(typeMatch && peopleMatch);
+      });
+    }
+
+    peopleSearch.addEventListener('input', applyFilter);
+
+    function makeButton(label, value) {
+      const btn = document.createElement('button');
+      btn.textContent = label;
+      btn.className = 'filter-btn';
+      if (value === null) btn.classList.add('active');
+      btn.addEventListener('click', () => {
+        active = value;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter();
+      });
+      return btn;
+    }
+
+    if (types.length > 1 || hasAncestors) {
+      filtersEl.appendChild(makeButton('All', null));
+      types.forEach(t => filtersEl.appendChild(makeButton(t, t)));
+      if (hasAncestors) filtersEl.appendChild(makeButton('Ancestors', 'ancestors'));
+    }
+    </script>
+  
+  <script>
+  var viewAs = document.querySelector('.view-as');
+  if (viewAs) {
+    var currentId = viewAs.dataset.current;
+    var path = window.location.pathname;
+    var prefix = '/' + currentId + '/';
+    var pagePath = path.startsWith(prefix) ? path.slice(prefix.length) : '';
+    viewAs.querySelectorAll('a[href]').forEach(function(a) {
+      a.href = a.getAttribute('href') + pagePath;
+    });
+  }
+
+  var tabs = document.querySelector('.person-tabs');
+  if (tabs) {
+    var active = tabs.querySelector('span.active');
+    if (active) {
+      var btn = document.createElement('button');
+      btn.className = 'tabs-toggle';
+      btn.textContent = '▾';
+      btn.setAttribute('aria-label', 'Toggle tabs');
+      active.after(btn);
+      btn.addEventListener('click', function() {
+        var open = tabs.classList.toggle('open');
+        btn.textContent = open ? '▴' : '▾';
+      });
+    }
+  }
+
+  var eventsTable = document.querySelector('.events table');
+  if (eventsTable) {
+    var headRow = eventsTable.querySelector('thead tr');
+    var emptyTh = document.createElement('th');
+    emptyTh.className = 'expand-td';
+    headRow.appendChild(emptyTh);
+
+    Array.from(eventsTable.querySelectorAll('tbody tr')).forEach(function(row) {
+      var cell4 = row.cells[3];
+      var cell5 = row.cells[4];
+
+      var expandTd = document.createElement('td');
+      expandTd.className = 'expand-td';
+      row.appendChild(expandTd);
+
+      var parts = [];
+      if (cell4 && cell4.textContent.trim()) parts.push(cell4.innerHTML.trim());
+      if (cell5 && cell5.textContent.trim()) parts.push(cell5.innerHTML.trim());
+      if (!parts.length) return;
+
+      var xbtn = document.createElement('button');
+      xbtn.className = 'row-expand-btn';
+      xbtn.textContent = '▾';
+      expandTd.appendChild(xbtn);
+
+      var detailRow = document.createElement('tr');
+      detailRow.className = 'row-detail';
+      var detailTd = document.createElement('td');
+      detailTd.colSpan = row.cells.length;
+      detailTd.innerHTML = parts.join(' &middot; ');
+      detailRow.appendChild(detailTd);
+      row.after(detailRow);
+
+      xbtn.addEventListener('click', function() {
+        var open = detailRow.classList.toggle('open');
+        xbtn.textContent = open ? '▴' : '▾';
+        detailRow.style.display = open ? '' : 'none';
+      });
+    });
+  }
+  </script>
+</body>
+</html>
+

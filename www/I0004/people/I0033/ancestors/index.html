@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edgar Halcomb — Ancestor Tree</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" media="print" href="/print.css">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/I0004/index.html">My tree</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/I0004/people/I0004/">Me</a>
+        <a class="secondary" href="/I0004/people/">People</a>
+        <a class="secondary" href="/I0004/places/">Places</a>
+        <a class="secondary" href="/I0004/events/">Events</a>
+        <a class="secondary" href="/I0004/census/">Census</a>
+        <a class="secondary" href="/I0004/cemeteries/">Cemeteries</a>
+        <a class="secondary" href="/I0004/birthdays/">Birthdays</a>
+        <a class="secondary" href="/I0004/surnames/">Surnames</a>
+        <details class="secondary view-as" data-current="I0004">
+          <summary>Viewing as Theodore &mdash; switch</summary>
+          <ul>
+            <li>
+              <a href="/I0000/">Alex Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0001/">Norman Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0002/">Ursula Ravenswood</a>
+            </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
+              <a href="/I0010/">Tabitha Thornbury</a>
+            </li>
+          </ul>
+        </details>
+        
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <div class="person-header">
+  <div class="person-header-info">
+    <h1>
+      
+      
+        <span>Edgar </span><a href="/I0004/surnames/Halcomb/">Halcomb</a>
+      
+      
+      
+      <small class="years">(1845–1907)</small>
+    </h1>
+    
+    <table class="person-meta-table">
+      <tr>
+        <td>
+          
+          
+          <span class="ancestor-badge relative">relative</span>
+          
+          
+        </td>
+        <td>your great-uncle</td>
+        
+        
+      </tr>
+      
+      <tr>
+        <td><span class="ancestor-badge deceased">deceased</span></td>
+        <td>died in 1907 aged 62</td>
+      </tr>
+    </table>
+  </div>
+  <div class="person-header-photo">
+    
+  </div>
+</div>
+    <nav class="person-tabs">
+      <a href="/I0004/people/I0033/">Profile</a>
+      <span class="active">Ancestors <span class="tab-count">(6)</span></span>
+      <a href="/I0004/people/I0033/descendants/">Descendants <span class="tab-count">(0)</span></a>
+      <a href="/I0004/people/I0033/pictures/">Pictures <span class="tab-count">(1)</span></a>
+      
+    </nav>
+    <div class="pedigree-wrap">
+      <div class="pedigree-chart" style="grid-template-rows:repeat(16,minmax(2.5rem,auto));grid-template-columns:repeat(5,minmax(140px,1fr))">
+        <a href="/I0004/people/I0033/" class="pedigree-cell gen-0 male" style="grid-column:1;grid-row:1/17">
+          <span class="pedigree-name">Edgar Halcomb</span>
+          <span class="pedigree-years">
+            1845–1907
+          </span>
+        </a>
+        <a href="/I0004/people/I0034/ancestors/" class="pedigree-cell gen-1 male" style="grid-column:2;grid-row:1/9">
+          <span class="pedigree-name">Maurice Halcomb</span>
+          <span class="pedigree-years">
+            1811–1905
+          </span>
+        </a>
+        <a href="/I0004/people/I0035/ancestors/" class="pedigree-cell gen-1 female" style="grid-column:2;grid-row:9/17">
+          <span class="pedigree-name">Beatrice Ingleton</span>
+          <span class="pedigree-years">
+            1814–1875
+          </span>
+        </a>
+        <a href="/I0004/people/I0047/ancestors/" class="pedigree-cell gen-2 male" style="grid-column:3;grid-row:1/5">
+          <span class="pedigree-name">Cecil Halcomb</span>
+          <span class="pedigree-years">
+            1784–1866
+          </span>
+        </a>
+        <a href="/I0004/people/I0048/ancestors/" class="pedigree-cell gen-2 female" style="grid-column:3;grid-row:5/9">
+          <span class="pedigree-name">Octavia Quinton</span>
+          <span class="pedigree-years">
+            1782–1857
+          </span>
+        </a>
+        <a href="/I0004/people/I0049/ancestors/" class="pedigree-cell gen-2 male" style="grid-column:3;grid-row:9/13">
+          <span class="pedigree-name">Ulric Ingleton</span>
+          <span class="pedigree-years">
+            1782–1878
+          </span>
+        </a>
+        <a href="/I0004/people/I0050/ancestors/" class="pedigree-cell gen-2 female" style="grid-column:3;grid-row:13/17">
+          <span class="pedigree-name">Isolde Zelby</span>
+          <span class="pedigree-years">
+            1784–1879
+          </span>
+        </a>
+      </div>
+    </div>
+    <div id="map"></div>
+  
+  </main>
+  <footer>
+    <p><a href="https://www.gramps-project.org">GRAMPS</a> family tree website generated by <a href="https://github.com/bennuttall/greatgramps">greatgramps</a></p>
+  </footer>
+  
+    <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    var points = [{"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0004/places/P0020/", "people": [{"name": "Edgar Halcomb", "url": "/I0004/people/I0033/", "types": ["Birth"]}, {"name": "Maurice Halcomb", "url": "/I0004/people/I0034/", "types": ["Child born"]}, {"name": "Beatrice Ingleton", "url": "/I0004/people/I0035/", "types": ["Child born"]}]}, {"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0004/places/P0005/", "people": [{"name": "Edgar Halcomb", "url": "/I0004/people/I0033/", "types": ["Census"]}, {"name": "Maurice Halcomb", "url": "/I0004/people/I0034/", "types": ["Census"]}, {"name": "Beatrice Ingleton", "url": "/I0004/people/I0035/", "types": ["Census"]}]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0004/places/P0021/", "people": [{"name": "Edgar Halcomb", "url": "/I0004/people/I0033/", "types": ["Death", "Burial"]}, {"name": "Maurice Halcomb", "url": "/I0004/people/I0034/", "types": ["Census"]}, {"name": "Ulric Ingleton", "url": "/I0004/people/I0049/", "types": ["Census"]}, {"name": "Isolde Zelby", "url": "/I0004/people/I0050/", "types": ["Census"]}]}, {"lat": "53.3933", "lon": "-2.9166", "name": "Liverpool", "url": "/I0004/places/P0013/", "people": [{"name": "Maurice Halcomb", "url": "/I0004/people/I0034/", "types": ["Child born"]}, {"name": "Beatrice Ingleton", "url": "/I0004/people/I0035/", "types": ["Child born"]}]}, {"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0004/places/P0014/", "people": [{"name": "Maurice Halcomb", "url": "/I0004/people/I0034/", "types": ["Census"]}]}, {"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0004/places/P0010/", "people": [{"name": "Maurice Halcomb", "url": "/I0004/people/I0034/", "types": ["Census"]}]}, {"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0004/places/P0006/", "people": [{"name": "Maurice Halcomb", "url": "/I0004/people/I0034/", "types": ["Death"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0004/places/P0030/", "people": [{"name": "Cecil Halcomb", "url": "/I0004/people/I0047/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0004/places/P0017/", "people": [{"name": "Cecil Halcomb", "url": "/I0004/people/I0047/", "types": ["Census"]}, {"name": "Octavia Quinton", "url": "/I0004/people/I0048/", "types": ["Census", "Death", "Burial"]}]}, {"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0004/places/P0008/", "people": [{"name": "Cecil Halcomb", "url": "/I0004/people/I0047/", "types": ["Census"]}, {"name": "Octavia Quinton", "url": "/I0004/people/I0048/", "types": ["Census"]}]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0004/places/P0015/", "people": [{"name": "Cecil Halcomb", "url": "/I0004/people/I0047/", "types": ["Death"]}]}, {"lat": "52.9540", "lon": "-1.1550", "name": "Nottingham", "url": "/I0004/places/P0025/", "people": [{"name": "Octavia Quinton", "url": "/I0004/people/I0048/", "types": ["Birth"]}]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0004/places/P0007/", "people": [{"name": "Beatrice Ingleton", "url": "/I0004/people/I0035/", "types": ["Birth"]}, {"name": "Ulric Ingleton", "url": "/I0004/people/I0049/", "types": ["Child born"]}, {"name": "Isolde Zelby", "url": "/I0004/people/I0050/", "types": ["Child born"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0004/places/P0004/", "people": [{"name": "Beatrice Ingleton", "url": "/I0004/people/I0035/", "types": ["Death"]}]}, {"lat": "53.42781", "lon": "-2.2611", "name": "Southern Cemetery", "url": "/I0004/places/P0037/", "people": [{"name": "Beatrice Ingleton", "url": "/I0004/people/I0035/", "types": ["Burial"]}, {"name": "Isolde Zelby", "url": "/I0004/people/I0050/", "types": ["Burial"]}]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0004/places/P0022/", "people": [{"name": "Ulric Ingleton", "url": "/I0004/people/I0049/", "types": ["Birth", "Baptism"]}]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0004/places/P0023/", "people": [{"name": "Ulric Ingleton", "url": "/I0004/people/I0049/", "types": ["Census"]}, {"name": "Isolde Zelby", "url": "/I0004/people/I0050/", "types": ["Census", "Death"]}]}, {"lat": "53.7974", "lon": "-1.5438", "name": "Leeds", "url": "/I0004/places/P0003/", "people": [{"name": "Ulric Ingleton", "url": "/I0004/people/I0049/", "types": ["Death"]}]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0004/places/P0041/", "people": [{"name": "Ulric Ingleton", "url": "/I0004/people/I0049/", "types": ["Burial"]}]}];
+    var map = L.map('map');
+    var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
+    map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    points.forEach(function(p) {
+      var peopleHtml = p.people.map(function(person) {
+        return '<a href="' + person.url + '">' + person.name + '</a>: ' + person.types.join(', ');
+      }).join('<br>');
+      L.circleMarker([parseFloat(p.lat), parseFloat(p.lon)], {
+        radius: Math.max(4, Math.min(14, 3 + p.people.length * 2)),
+        color: '#5a3e28',
+        fillColor: '#5a3e28',
+        fillOpacity: 0.6,
+        weight: 1,
+      }).addTo(map)
+        .bindPopup('<strong><a href="' + p.url + '">' + p.name + '</a></strong><br>' + peopleHtml);
+    });
+    </script>
+  
+  <script>
+  var viewAs = document.querySelector('.view-as');
+  if (viewAs) {
+    var currentId = viewAs.dataset.current;
+    var path = window.location.pathname;
+    var prefix = '/' + currentId + '/';
+    var pagePath = path.startsWith(prefix) ? path.slice(prefix.length) : '';
+    viewAs.querySelectorAll('a[href]').forEach(function(a) {
+      a.href = a.getAttribute('href') + pagePath;
+    });
+  }
+
+  var tabs = document.querySelector('.person-tabs');
+  if (tabs) {
+    var active = tabs.querySelector('span.active');
+    if (active) {
+      var btn = document.createElement('button');
+      btn.className = 'tabs-toggle';
+      btn.textContent = '▾';
+      btn.setAttribute('aria-label', 'Toggle tabs');
+      active.after(btn);
+      btn.addEventListener('click', function() {
+        var open = tabs.classList.toggle('open');
+        btn.textContent = open ? '▴' : '▾';
+      });
+    }
+  }
+
+  var eventsTable = document.querySelector('.events table');
+  if (eventsTable) {
+    var headRow = eventsTable.querySelector('thead tr');
+    var emptyTh = document.createElement('th');
+    emptyTh.className = 'expand-td';
+    headRow.appendChild(emptyTh);
+
+    Array.from(eventsTable.querySelectorAll('tbody tr')).forEach(function(row) {
+      var cell4 = row.cells[3];
+      var cell5 = row.cells[4];
+
+      var expandTd = document.createElement('td');
+      expandTd.className = 'expand-td';
+      row.appendChild(expandTd);
+
+      var parts = [];
+      if (cell4 && cell4.textContent.trim()) parts.push(cell4.innerHTML.trim());
+      if (cell5 && cell5.textContent.trim()) parts.push(cell5.innerHTML.trim());
+      if (!parts.length) return;
+
+      var xbtn = document.createElement('button');
+      xbtn.className = 'row-expand-btn';
+      xbtn.textContent = '▾';
+      expandTd.appendChild(xbtn);
+
+      var detailRow = document.createElement('tr');
+      detailRow.className = 'row-detail';
+      var detailTd = document.createElement('td');
+      detailTd.colSpan = row.cells.length;
+      detailTd.innerHTML = parts.join(' &middot; ');
+      detailRow.appendChild(detailTd);
+      row.after(detailRow);
+
+      xbtn.addEventListener('click', function() {
+        var open = detailRow.classList.toggle('open');
+        xbtn.textContent = open ? '▴' : '▾';
+        detailRow.style.display = open ? '' : 'none';
+      });
+    });
+  }
+  </script>
+</body>
+</html>
+

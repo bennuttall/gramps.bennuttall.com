@@ -35,6 +35,15 @@
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -272,7 +281,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0008/">Goole</a>
+                     href="/I0001/places/P0005/">Kingston upon Hull</a>
                   
                 </td>
               
@@ -307,7 +316,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0026/">Retford</a>
+                     href="/I0001/places/P0019/">Clitheroe</a>
                   
                 </td>
               
@@ -333,7 +342,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0008/">Goole</a>
+                     href="/I0001/places/P0005/">Kingston upon Hull</a>
                   
                 </td>
               
@@ -386,7 +395,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0008/">Goole</a>
+                     href="/I0001/places/P0005/">Kingston upon Hull</a>
                   
                 </td>
               
@@ -412,7 +421,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0009/">Whitby</a>
+                     href="/I0001/places/P0007/">Wakefield</a>
                   
                 </td>
               
@@ -438,7 +447,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0002/">Sheffield</a>
+                     href="/I0001/places/P0013/">Liverpool</a>
                   
                 </td>
               
@@ -464,7 +473,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0010/">Snaith</a>
+                     href="/I0001/places/P0021/">Islington</a>
                   
                 </td>
               
@@ -494,7 +503,7 @@
                 </td>
                 <td>
                   <a
-                     href="/I0001/places/P0008/">Goole</a>
+                     href="/I0001/places/P0005/">Kingston upon Hull</a>
                   
                 </td>
               
@@ -846,7 +855,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.7045", "lon": "-0.8746", "name": "Goole", "url": "/I0001/places/P0008/", "types": ["Census", "Census", "Child born", "Death"]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0001/places/P0026/", "types": ["Child born"]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0001/places/P0009/", "types": ["Census"]}, {"lat": "53.3811", "lon": "-1.4701", "name": "Sheffield", "url": "/I0001/places/P0002/", "types": ["Census"]}, {"lat": "53.6911", "lon": "-1.0239", "name": "Snaith", "url": "/I0001/places/P0010/", "types": ["Census"]}, {"lat": "53.42781", "lon": "-2.2611", "name": "Southern Cemetery", "url": "/I0001/places/P0037/", "types": ["Burial"]}];
+    var points = [{"lat": "53.7675", "lon": "-0.3273", "name": "Kingston upon Hull", "url": "/I0001/places/P0005/", "types": ["Census", "Census", "Child born", "Death"]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0001/places/P0019/", "types": ["Child born"]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0001/places/P0007/", "types": ["Census"]}, {"lat": "53.3933", "lon": "-2.9166", "name": "Liverpool", "url": "/I0001/places/P0013/", "types": ["Census"]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0001/places/P0021/", "types": ["Census"]}, {"lat": "53.42781", "lon": "-2.2611", "name": "Southern Cemetery", "url": "/I0001/places/P0037/", "types": ["Burial"]}];
     var map = L.map('map');
     var bounds = points.map(p => [p.lat, p.lon]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

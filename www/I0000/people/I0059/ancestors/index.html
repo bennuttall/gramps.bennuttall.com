@@ -35,6 +35,15 @@
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -114,7 +123,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0000/places/P0006/", "people": [{"name": "Edgar Thornbury", "url": "/I0000/people/I0059/", "types": ["Child born"]}]}, {"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0000/places/P0030/", "people": [{"name": "Edgar Thornbury", "url": "/I0000/people/I0059/", "types": ["Death"]}]}, {"lat": "53.36917", "lon": "-1.48722", "name": "Sheffield General Cemetery", "url": "/I0000/places/P0035/", "people": [{"name": "Edgar Thornbury", "url": "/I0000/people/I0059/", "types": ["Burial"]}]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0000/places/P0007/", "people": [{"name": "Agatha Zelby", "url": "/I0000/people/I0073/", "types": ["Birth"]}]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0000/places/P0009/", "people": [{"name": "Agatha Zelby", "url": "/I0000/people/I0073/", "types": ["Death"]}]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0000/places/P0041/", "people": [{"name": "Agatha Zelby", "url": "/I0000/people/I0073/", "types": ["Burial"]}]}];
+    var points = [{"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0000/places/P0022/", "people": [{"name": "Edgar Thornbury", "url": "/I0000/people/I0059/", "types": ["Child born"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0000/places/P0016/", "people": [{"name": "Edgar Thornbury", "url": "/I0000/people/I0059/", "types": ["Death"]}]}, {"lat": "53.36917", "lon": "-1.48722", "name": "Sheffield General Cemetery", "url": "/I0000/places/P0035/", "people": [{"name": "Edgar Thornbury", "url": "/I0000/people/I0059/", "types": ["Burial"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0000/places/P0004/", "people": [{"name": "Agatha Zelby", "url": "/I0000/people/I0073/", "types": ["Birth"]}]}, {"lat": "53.6830", "lon": "-1.4967", "name": "Wakefield", "url": "/I0000/places/P0007/", "people": [{"name": "Agatha Zelby", "url": "/I0000/people/I0073/", "types": ["Death"]}]}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0000/places/P0041/", "people": [{"name": "Agatha Zelby", "url": "/I0000/people/I0073/", "types": ["Burial"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

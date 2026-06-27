@@ -35,6 +35,15 @@
               <a href="/I0001/">Norman Hartwell</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -117,7 +126,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.2591", "lon": "-1.9148", "name": "Buxton", "url": "/I0002/places/P0030/", "people": [{"name": "Felicity Dunmore", "url": "/I0002/people/I0013/", "types": ["Census"]}]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0002/places/P0023/", "people": [{"name": "Felicity Dunmore", "url": "/I0002/people/I0013/", "types": ["Census"]}]}, {"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0002/places/P0014/", "people": [{"name": "Felicity Dunmore", "url": "/I0002/people/I0013/", "types": ["Child born"]}]}];
+    var points = [{"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0002/places/P0016/", "people": [{"name": "Felicity Dunmore", "url": "/I0002/people/I0013/", "types": ["Census"]}]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0002/places/P0015/", "people": [{"name": "Felicity Dunmore", "url": "/I0002/people/I0013/", "types": ["Census"]}]}, {"lat": "53.3811", "lon": "-1.4701", "name": "Sheffield", "url": "/I0002/places/P0002/", "people": [{"name": "Felicity Dunmore", "url": "/I0002/people/I0013/", "types": ["Child born"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

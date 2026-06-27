@@ -37,6 +37,15 @@
             <li>
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
           </ul>
         </details>
         
@@ -117,7 +126,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "52.9540", "lon": "-1.1550", "name": "Nottingham", "url": "/I0010/places/P0025/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.7486", "lon": "-2.4875", "name": "Blackburn", "url": "/I0010/places/P0016/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Census"]}]}, {"lat": "53.7944", "lon": "-1.7519", "name": "Bradford", "url": "/I0010/places/P0004/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Child born", "Census"]}]}, {"lat": "53.8711", "lon": "-2.3931", "name": "Clitheroe", "url": "/I0010/places/P0019/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Marriage"]}]}, {"lat": "54.0488", "lon": "-2.8013", "name": "Lancaster", "url": "/I0010/places/P0015/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Census"]}]}];
+    var points = [{"lat": "53.7632", "lon": "-2.7031", "name": "Preston", "url": "/I0010/places/P0014/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Birth", "Baptism"]}]}, {"lat": "51.5072", "lon": "-0.1277", "name": "Westminster", "url": "/I0010/places/P0023/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Census"]}]}, {"lat": "53.4808", "lon": "-2.2426", "name": "Manchester", "url": "/I0010/places/P0012/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Child born", "Census"]}]}, {"lat": "53.3214", "lon": "-0.9455", "name": "Retford", "url": "/I0010/places/P0026/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Marriage"]}]}, {"lat": "54.4863", "lon": "-0.6133", "name": "Whitby", "url": "/I0010/places/P0009/", "people": [{"name": "Cecily Stanwick", "url": "/I0010/people/I0029/", "types": ["Census"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});

@@ -35,6 +35,15 @@
               <a href="/I0002/">Ursula Ravenswood</a>
             </li>
             <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
               <a href="/I0010/">Tabitha Thornbury</a>
             </li>
           </ul>
@@ -117,7 +126,7 @@
     <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    var points = [{"lat": "53.5933", "lon": "-2.2966", "name": "Bury", "url": "/I0000/places/P0018/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Birth", "Baptism"]}]}, {"lat": "53.5229", "lon": "-1.1312", "name": "Doncaster", "url": "/I0000/places/P0006/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Child born"]}]}, {"lat": "53.5769", "lon": "-2.4282", "name": "Bolton", "url": "/I0000/places/P0017/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Census"]}]}, {"lat": "51.5386", "lon": "-0.1028", "name": "Islington", "url": "/I0000/places/P0021/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Death"]}]}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "/I0000/places/P0034/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Burial"]}]}];
+    var points = [{"lat": "51.5072", "lon": "-0.1276", "name": "London", "url": "/I0000/places/P0020/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Birth", "Baptism"]}]}, {"lat": "51.5028", "lon": "-0.0877", "name": "Southwark", "url": "/I0000/places/P0022/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Child born"]}]}, {"lat": "53.2307", "lon": "-0.5406", "name": "Lincoln", "url": "/I0000/places/P0028/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Census"]}]}, {"lat": "53.2350", "lon": "-1.4216", "name": "Chesterfield", "url": "/I0000/places/P0031/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Death"]}]}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "/I0000/places/P0034/", "people": [{"name": "Agatha Kestrel", "url": "/I0000/people/I0056/", "types": ["Burial"]}]}];
     var map = L.map('map');
     var bounds = points.map(p => [parseFloat(p.lat), parseFloat(p.lon)]);
     map.fitBounds(bounds, {padding: [20, 20], maxZoom: 10});
