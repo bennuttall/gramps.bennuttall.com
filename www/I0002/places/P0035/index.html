@@ -14,7 +14,7 @@
 <body>
   <header>
     <nav>
-      <a href="/I0002/index.html">My tree</a>
+      <a href="/I0002/index.html" style="border-right:1px solid rgba(255,255,255,0.15);padding-right:1.2rem;margin-right:0.4rem">&#x1F333; My tree</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
       <div id="nav-links" class="nav-links">
         <a class="secondary" href="/I0002/people/I0002/">Me</a>
@@ -80,6 +80,7 @@
         <thead>
           <tr>
             <th>Year</th>
+            <th>Event</th>
             <th>Person</th>
             <th>Find A Grave</th>
             
@@ -88,6 +89,12 @@
         <tbody>
           <tr data-type="Burial">
             <td class="year">1828</td>
+            <td>
+              <a href="/I0002/events/E0233/">Burial</a>
+              
+              
+              
+            </td>
             <td>
               
               <span>
@@ -106,6 +113,12 @@
           <tr data-type="Burial">
             <td class="year">1856</td>
             <td>
+              <a href="/I0002/events/E0240/">Burial</a>
+              
+              
+              
+            </td>
+            <td>
               
               <span>
                 <span>
@@ -122,6 +135,12 @@
           </tr>
           <tr data-type="Burial">
             <td class="year">1986</td>
+            <td>
+              <a href="/I0002/events/E0009/">Burial</a>
+              
+              
+              
+            </td>
             <td>
               
               <span>
@@ -194,7 +213,7 @@
       const q = peopleSearch.value.toLowerCase();
       rows.forEach(r => {
         const typeMatch = active === null ? true : r.dataset.ancestor;
-        const peopleMatch = r.cells[1].textContent.toLowerCase().includes(q);
+        const peopleMatch = r.cells[2].textContent.toLowerCase().includes(q);
         r.hidden = !(typeMatch && peopleMatch);
       });
     }

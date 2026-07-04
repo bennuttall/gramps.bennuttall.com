@@ -14,7 +14,7 @@
 <body>
   <header>
     <nav>
-      <a href="/I0001/index.html">My tree</a>
+      <a href="/I0001/index.html" style="border-right:1px solid rgba(255,255,255,0.15);padding-right:1.2rem;margin-right:0.4rem">&#x1F333; My tree</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
       <div id="nav-links" class="nav-links">
         <a class="secondary" href="/I0001/people/I0001/">Me</a>
@@ -80,6 +80,7 @@
         <thead>
           <tr>
             <th>Year</th>
+            <th>Event</th>
             <th>Person</th>
             <th>Find A Grave</th>
             
@@ -88,6 +89,12 @@
         <tbody>
           <tr data-type="Burial">
             <td class="year">1882</td>
+            <td>
+              <a href="/I0001/events/E0162/">Burial</a>
+              
+              
+              
+            </td>
             <td>
               
               <span>
@@ -106,6 +113,12 @@
           <tr data-type="Burial">
             <td class="year">1897</td>
             <td>
+              <a href="/I0001/events/E0093/">Burial</a>
+              
+              
+              
+            </td>
+            <td>
               
               <span>
                 <span>
@@ -122,6 +135,12 @@
           </tr>
           <tr data-type="Burial">
             <td class="year">1934</td>
+            <td>
+              <a href="/I0001/events/E0098/">Burial</a>
+              
+              
+              
+            </td>
             <td>
               
               <span>
@@ -140,6 +159,12 @@
           <tr data-type="Burial">
             <td class="year">1944</td>
             <td>
+              <a href="/I0001/events/E0089/">Burial</a>
+              
+              
+              
+            </td>
+            <td>
               
               <span>
                 <span>
@@ -156,6 +181,12 @@
           </tr>
           <tr data-type="Burial">
             <td class="year">1961</td>
+            <td>
+              <a href="/I0001/events/E0048/">Burial</a>
+              
+              
+              
+            </td>
             <td>
               
               <span>
@@ -228,7 +259,7 @@
       const q = peopleSearch.value.toLowerCase();
       rows.forEach(r => {
         const typeMatch = active === null ? true : r.dataset.ancestor;
-        const peopleMatch = r.cells[1].textContent.toLowerCase().includes(q);
+        const peopleMatch = r.cells[2].textContent.toLowerCase().includes(q);
         r.hidden = !(typeMatch && peopleMatch);
       });
     }

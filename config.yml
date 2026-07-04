@@ -9,3 +9,5 @@ roots:
   - I0010
 ancestry_tree_id: "1234567890"
 site_title: "Hartwell Family Tree"
+templates_dir: templates
+static_dir: static
