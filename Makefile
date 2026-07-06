@@ -1,4 +1,4 @@
-PYTHON=python3
+PYTHON=/home/ben/.virtualenvs/gramps/bin/python
 GREATGRAMPS_CONFIG=config.yml
 
 .PHONY: generate html clean serve deploy
