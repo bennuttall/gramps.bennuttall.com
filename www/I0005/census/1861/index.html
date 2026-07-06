@@ -14,9 +14,10 @@
 <body>
   <header>
     <nav>
-      <a href="/I0005/index.html">My tree</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">&#9776;</button>
       <div id="nav-links" class="nav-links">
+        <a class="secondary" href="/index.html">Home</a>
+        <a class="secondary" href="/I0005/index.html">My tree</a>
         <a class="secondary" href="/I0005/people/I0005/">Me</a>
         <a class="secondary" href="/I0005/people/">People</a>
         <a class="secondary" href="/I0005/places/">Places</a>
@@ -25,29 +26,31 @@
         <a class="secondary" href="/I0005/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0005/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0005/surnames/">Surnames</a>
-        <details class="secondary view-as" data-current="I0005">
-          <summary>Viewing as Dorothea &mdash; switch</summary>
-          <ul>
-            <li>
-              <a href="/I0000/">Alex Hartwell</a>
-            </li>
-            <li>
-              <a href="/I0001/">Norman Hartwell</a>
-            </li>
-            <li>
-              <a href="/I0002/">Ursula Ravenswood</a>
-            </li>
-            <li>
-              <a href="/I0003/">Norah Hartwell</a>
-            </li>
-            <li>
-              <a href="/I0004/">Theodore Hartwell</a>
-            </li>
-            <li>
-              <a href="/I0010/">Tabitha Thornbury</a>
-            </li>
-          </ul>
-        </details>
+        
+          <details class="secondary view-as" data-current="I0005">
+            <summary>Viewing as Dorothea &mdash; switch</summary>
+            <ul>
+              <li>
+                <a href="/I0000/">Alex Hartwell</a>
+              </li>
+              <li>
+                <a href="/I0001/">Norman Hartwell</a>
+              </li>
+              <li>
+                <a href="/I0002/">Ursula Ravenswood</a>
+              </li>
+              <li>
+                <a href="/I0003/">Norah Hartwell</a>
+              </li>
+              <li>
+                <a href="/I0004/">Theodore Hartwell</a>
+              </li>
+              <li>
+                <a href="/I0010/">Tabitha Thornbury</a>
+              </li>
+            </ul>
+          </details>
+          
         
       </div>
     </nav>
@@ -492,7 +495,13 @@
         const lines = Array.from(g.households.entries())
           .map(([url, name]) => '<a href="' + url + '">' + name + '</a>')
           .join('<br>');
-        L.marker([g.lat, g.lon]).addTo(markersLayer)
+        L.circleMarker([g.lat, g.lon], {
+          radius: Math.max(4, Math.min(14, 3 + g.households.size * 2)),
+          color: '#5a3e28',
+          fillColor: '#5a3e28',
+          fillOpacity: 0.6,
+          weight: 1,
+        }).addTo(markersLayer)
           .bindPopup('<strong>' + g.place + '</strong><br>' + lines);
       });
       censusMap.fitBounds(pts.map(g => [g.lat, g.lon]), { padding: [20, 20], maxZoom: 10 });
