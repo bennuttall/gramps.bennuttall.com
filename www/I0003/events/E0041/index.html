@@ -90,6 +90,10 @@
         
         <table class="events">
           <tr>
+            <th>Relation</th>
+            <td>your grandmother</td>
+          </tr>
+          <tr>
             <th>Age at marriage</th>
             <td>27</td>
           </tr>
@@ -128,6 +132,7 @@
             <th>Name</th>
             <th>Born</th>
             <th>Died</th>
+            <th>Relation</th>
           </tr>
         </thead>
         <tbody>
@@ -137,6 +142,7 @@
             </td>
             <td class="year">1902</td>
             <td class="year">1989</td>
+            <td class="year">your father</td>
           </tr>
         </tbody>
       </table>
@@ -166,13 +172,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

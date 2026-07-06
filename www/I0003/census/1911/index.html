@@ -225,7 +225,7 @@
             <td class="year">1840</td>
             <td class="year">70</td>
             
-            <td class="year">great-grandfather</td>
+            <td class="year">your great-grandfather</td>
           </tr>
         
           <tr data-ancestor="true" data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0003/events/E0405/">
@@ -245,7 +245,7 @@
             <td class="year">1840</td>
             <td class="year">70</td>
             
-            <td class="year">great-grandmother</td>
+            <td class="year">your great-grandmother</td>
           </tr>
           <tr data-ancestor="true" data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0003/events/E0405/">
             <td>
@@ -264,7 +264,7 @@
             <td class="year">1841</td>
             <td class="year">69</td>
             
-            <td class="year">great-grandfather</td>
+            <td class="year">your great-grandfather</td>
           </tr>
         
       </tbody>
@@ -399,13 +399,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

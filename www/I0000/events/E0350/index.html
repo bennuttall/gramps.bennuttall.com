@@ -94,7 +94,7 @@
             <td class="year">1757</td>
             <td class="year">83</td>
             
-            <td class="year">5th great-grandfather</td>
+            <td class="year">your 5th great-grandfather</td>
           </tr>
           <tr>
             <td>
@@ -105,7 +105,7 @@
             <td class="year">1761</td>
             <td class="year">79</td>
             
-            <td class="year">5th great-grandmother</td>
+            <td class="year">your 5th great-grandmother</td>
           </tr>
         </tbody>
       </table>
@@ -134,13 +134,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

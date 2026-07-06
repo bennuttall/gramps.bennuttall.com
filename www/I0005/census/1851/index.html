@@ -264,7 +264,7 @@
             <td class="year">1813</td>
             <td class="year">37</td>
             
-            <td class="year">great-grandmother</td>
+            <td class="year">your great-grandmother</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.3214" data-lon="-0.9455" data-place="Retford" data-event-url="/I0005/events/E0353/">
             <td>
@@ -283,7 +283,7 @@
             <td class="year">1814</td>
             <td class="year">36</td>
             
-            <td class="year">great-grandfather</td>
+            <td class="year">your great-grandfather</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.3214" data-lon="-0.9455" data-place="Retford" data-event-url="/I0005/events/E0353/">
             <td>
@@ -302,7 +302,7 @@
             <td class="year">1840</td>
             <td class="year">10</td>
             
-            <td class="year">grandfather</td>
+            <td class="year">your grandfather</td>
           </tr>
         
           <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0005/events/E0352/">
@@ -553,7 +553,7 @@
             <td class="year">1761</td>
             <td class="year">89</td>
             
-            <td class="year">3rd great-grandfather</td>
+            <td class="year">your 3rd great-grandfather</td>
           </tr>
         
           <tr data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0005/events/E0358/">
@@ -766,13 +766,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

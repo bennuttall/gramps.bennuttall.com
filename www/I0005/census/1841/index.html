@@ -244,7 +244,7 @@
             <td class="year">1783</td>
             <td class="year">57</td>
             
-            <td class="year">2nd great-grandfather</td>
+            <td class="year">your 2nd great-grandfather</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.7486" data-lon="-2.4875" data-place="Blackburn" data-event-url="/I0005/events/E0345/">
             <td>
@@ -263,7 +263,7 @@
             <td class="year">1786</td>
             <td class="year">54</td>
             
-            <td class="year">2nd great-grandmother</td>
+            <td class="year">your 2nd great-grandmother</td>
           </tr>
         
           <tr data-lat="53.7974" data-lon="-1.5438" data-place="Leeds" data-event-url="/I0005/events/E0341/">
@@ -496,7 +496,7 @@
             <td class="year">1758</td>
             <td class="year">82</td>
             
-            <td class="year">3rd great-grandmother</td>
+            <td class="year">your 3rd great-grandmother</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.5229" data-lon="-1.1312" data-place="Doncaster" data-event-url="/I0005/events/E0349/">
             <td>
@@ -515,7 +515,7 @@
             <td class="year">1761</td>
             <td class="year">79</td>
             
-            <td class="year">3rd great-grandfather</td>
+            <td class="year">your 3rd great-grandfather</td>
           </tr>
         
           <tr data-ancestor="true" data-event-url="/I0005/events/E0350/">
@@ -535,7 +535,7 @@
             <td class="year">1757</td>
             <td class="year">83</td>
             
-            <td class="year">3rd great-grandfather</td>
+            <td class="year">your 3rd great-grandfather</td>
           </tr>
           <tr data-ancestor="true" data-event-url="/I0005/events/E0350/">
             <td>
@@ -554,7 +554,7 @@
             <td class="year">1761</td>
             <td class="year">79</td>
             
-            <td class="year">3rd great-grandmother</td>
+            <td class="year">your 3rd great-grandmother</td>
           </tr>
         
           <tr data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0005/events/E0344/">
@@ -767,13 +767,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

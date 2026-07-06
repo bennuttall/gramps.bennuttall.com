@@ -323,7 +323,7 @@
             <td class="year">1811</td>
             <td class="year">89</td>
             
-            <td class="year">grandfather</td>
+            <td class="year">your grandfather</td>
           </tr>
         
           <tr data-lat="54.4863" data-lon="-0.6133" data-place="Whitby" data-event-url="/I0010/events/E0398/">
@@ -382,7 +382,7 @@
             <td class="year">1873</td>
             <td class="year">27</td>
             
-            <td class="year">you</td>
+            <td class="year"></td>
           </tr>
         
       </tbody>
@@ -517,13 +517,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

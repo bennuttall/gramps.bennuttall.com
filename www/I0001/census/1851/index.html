@@ -167,7 +167,7 @@
             <td class="year">1782</td>
             <td class="year">68</td>
             
-            <td class="year">3rd great-grandmother</td>
+            <td class="year">your 3rd great-grandmother</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.7045" data-lon="-0.8746" data-place="Goole" data-event-url="/I0001/events/E0357/">
             <td>
@@ -186,7 +186,7 @@
             <td class="year">1784</td>
             <td class="year">66</td>
             
-            <td class="year">3rd great-grandfather</td>
+            <td class="year">your 3rd great-grandfather</td>
           </tr>
         
           <tr data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0001/events/E0354/">
@@ -264,7 +264,7 @@
             <td class="year">1813</td>
             <td class="year">37</td>
             
-            <td class="year">2nd great-grandmother</td>
+            <td class="year">your 2nd great-grandmother</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.3214" data-lon="-0.9455" data-place="Retford" data-event-url="/I0001/events/E0353/">
             <td>
@@ -283,7 +283,7 @@
             <td class="year">1814</td>
             <td class="year">36</td>
             
-            <td class="year">2nd great-grandfather</td>
+            <td class="year">your 2nd great-grandfather</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.3214" data-lon="-0.9455" data-place="Retford" data-event-url="/I0001/events/E0353/">
             <td>
@@ -302,7 +302,7 @@
             <td class="year">1840</td>
             <td class="year">10</td>
             
-            <td class="year">great-grandfather</td>
+            <td class="year">your great-grandfather</td>
           </tr>
         
           <tr data-ancestor="true" data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0001/events/E0352/">
@@ -322,7 +322,7 @@
             <td class="year">1811</td>
             <td class="year">39</td>
             
-            <td class="year">2nd great-grandfather</td>
+            <td class="year">your 2nd great-grandfather</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0001/events/E0352/">
             <td>
@@ -341,7 +341,7 @@
             <td class="year">1814</td>
             <td class="year">36</td>
             
-            <td class="year">2nd great-grandmother</td>
+            <td class="year">your 2nd great-grandmother</td>
           </tr>
           <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0001/events/E0352/">
             <td>
@@ -360,7 +360,7 @@
             <td class="year">1834</td>
             <td class="year">16</td>
             
-            <td class="year">2nd great-aunt</td>
+            <td class="year">your 2nd great-aunt</td>
           </tr>
           <tr data-ancestor="true" data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0001/events/E0352/">
             <td>
@@ -379,7 +379,7 @@
             <td class="year">1840</td>
             <td class="year">10</td>
             
-            <td class="year">great-grandmother</td>
+            <td class="year">your great-grandmother</td>
           </tr>
           <tr data-lat="53.7675" data-lon="-0.3273" data-place="Kingston upon Hull" data-event-url="/I0001/events/E0352/">
             <td>
@@ -398,7 +398,7 @@
             <td class="year">1845</td>
             <td class="year">5</td>
             
-            <td class="year">2nd great-uncle</td>
+            <td class="year">your 2nd great-uncle</td>
           </tr>
         
           <tr data-lat="53.7974" data-lon="-1.5438" data-place="Leeds" data-event-url="/I0001/events/E0359/">
@@ -553,7 +553,7 @@
             <td class="year">1761</td>
             <td class="year">89</td>
             
-            <td class="year">4th great-grandfather</td>
+            <td class="year">your 4th great-grandfather</td>
           </tr>
         
           <tr data-ancestor="true" data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0001/events/E0358/">
@@ -573,7 +573,7 @@
             <td class="year">1782</td>
             <td class="year">68</td>
             
-            <td class="year">3rd great-grandfather</td>
+            <td class="year">your 3rd great-grandfather</td>
           </tr>
           <tr data-ancestor="true" data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0001/events/E0358/">
             <td>
@@ -592,7 +592,7 @@
             <td class="year">1784</td>
             <td class="year">66</td>
             
-            <td class="year">3rd great-grandmother</td>
+            <td class="year">your 3rd great-grandmother</td>
           </tr>
         
           <tr data-lat="53.8711" data-lon="-2.3931" data-place="Clitheroe" data-event-url="/I0001/events/E0360/">
@@ -766,13 +766,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

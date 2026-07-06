@@ -102,7 +102,7 @@
             <td class="year">1802</td>
             <td class="year">48</td>
             
-            <td class="year">2nd great-grandmother</td>
+            <td class="year">your 2nd great-grandmother</td>
           </tr>
           <tr>
             <td>
@@ -113,7 +113,7 @@
             <td class="year">1804</td>
             <td class="year">46</td>
             
-            <td class="year">2nd great-grandfather</td>
+            <td class="year">your 2nd great-grandfather</td>
           </tr>
           <tr>
             <td>
@@ -124,7 +124,7 @@
             <td class="year">1832</td>
             <td class="year">18</td>
             
-            <td class="year">2nd great-aunt</td>
+            <td class="year">your 2nd great-aunt</td>
           </tr>
           <tr>
             <td>
@@ -135,7 +135,7 @@
             <td class="year">1838</td>
             <td class="year">12</td>
             
-            <td class="year">great-grandfather</td>
+            <td class="year">your great-grandfather</td>
           </tr>
           <tr>
             <td>
@@ -146,7 +146,7 @@
             <td class="year">1839</td>
             <td class="year">11</td>
             
-            <td class="year">2nd great-uncle</td>
+            <td class="year">your 2nd great-uncle</td>
           </tr>
         </tbody>
       </table>
@@ -188,13 +188,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

@@ -89,7 +89,7 @@
             <td class="year">1866</td>
             <td class="year">34</td>
             
-            <td class="year">grandfather</td>
+            <td class="year">your grandfather</td>
           </tr>
           <tr data-ancestor="true" data-lat="54.0488" data-lon="-2.8013" data-place="Lancaster" data-event-url="/I0003/events/E0396/">
             <td>
@@ -108,7 +108,7 @@
             <td class="year">1871</td>
             <td class="year">29</td>
             
-            <td class="year">grandmother</td>
+            <td class="year">your grandmother</td>
           </tr>
           <tr data-ancestor="true" data-lat="54.0488" data-lon="-2.8013" data-place="Lancaster" data-event-url="/I0003/events/E0396/">
             <td>
@@ -127,7 +127,7 @@
             <td class="year">1897</td>
             <td class="year">3</td>
             
-            <td class="year">mother</td>
+            <td class="year">your mother</td>
           </tr>
         
           <tr data-lat="51.5072" data-lon="-0.1277" data-place="Westminster" data-event-url="/I0003/events/E0397/">
@@ -303,7 +303,7 @@
             <td class="year">1814</td>
             <td class="year">86</td>
             
-            <td class="year">2nd great-grandfather</td>
+            <td class="year">your 2nd great-grandfather</td>
           </tr>
         
           <tr data-ancestor="true" data-lat="51.5386" data-lon="-0.1028" data-place="Islington" data-event-url="/I0003/events/E0402/">
@@ -323,7 +323,7 @@
             <td class="year">1811</td>
             <td class="year">89</td>
             
-            <td class="year">2nd great-grandfather</td>
+            <td class="year">your 2nd great-grandfather</td>
           </tr>
         
           <tr data-ancestor="true" data-lat="54.4863" data-lon="-0.6133" data-place="Whitby" data-event-url="/I0003/events/E0398/">
@@ -343,7 +343,7 @@
             <td class="year">1837</td>
             <td class="year">63</td>
             
-            <td class="year">great-grandmother</td>
+            <td class="year">your great-grandmother</td>
           </tr>
           <tr data-ancestor="true" data-lat="54.4863" data-lon="-0.6133" data-place="Whitby" data-event-url="/I0003/events/E0398/">
             <td>
@@ -362,7 +362,7 @@
             <td class="year">1840</td>
             <td class="year">60</td>
             
-            <td class="year">great-grandfather</td>
+            <td class="year">your great-grandfather</td>
           </tr>
         
           <tr data-ancestor="true" data-lat="53.3811" data-lon="-1.4701" data-place="Sheffield" data-event-url="/I0003/events/E0395/">
@@ -382,7 +382,7 @@
             <td class="year">1873</td>
             <td class="year">27</td>
             
-            <td class="year">grandmother</td>
+            <td class="year">your grandmother</td>
           </tr>
         
       </tbody>
@@ -517,13 +517,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';

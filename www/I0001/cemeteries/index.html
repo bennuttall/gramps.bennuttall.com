@@ -149,7 +149,7 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-    var places = [{"lat": "53.69068", "lon": "-2.21566", "name": "Bacup Cemetery", "url": "P0039/", "count": 5, "ancestor_count": 1}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "P0034/", "count": 5, "ancestor_count": 1}, {"lat": "53.36948", "lon": "-1.44069", "name": "City Road Cemetery", "url": "P0036/", "count": 3, "ancestor_count": 2}, {"lat": "53.75176", "lon": "-0.36274", "name": "Hull General Cemetery", "url": "P0038/", "count": 4, "ancestor_count": 3}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "P0041/", "count": 6, "ancestor_count": 1}, {"lat": "53.36917", "lon": "-1.48722", "name": "Sheffield General Cemetery", "url": "P0035/", "count": 3, "ancestor_count": 1}, {"lat": "53.42781", "lon": "-2.2611", "name": "Southern Cemetery", "url": "P0037/", "count": 5, "ancestor_count": 3}, {"lat": "53.70373", "lon": "-2.20196", "name": "St John the Evangelist Churchyard", "url": "P0040/", "count": 7, "ancestor_count": 2}];
+    var places = [{"lat": "53.69068", "lon": "-2.21566", "name": "Bacup Cemetery", "url": "/I0001/places/P0039/", "count": 5, "ancestor_count": 1}, {"lat": "53.3969", "lon": "-1.4615", "name": "Burngreave Cemetery", "url": "/I0001/places/P0034/", "count": 5, "ancestor_count": 1}, {"lat": "53.36948", "lon": "-1.44069", "name": "City Road Cemetery", "url": "/I0001/places/P0036/", "count": 3, "ancestor_count": 2}, {"lat": "53.75176", "lon": "-0.36274", "name": "Hull General Cemetery", "url": "/I0001/places/P0038/", "count": 4, "ancestor_count": 3}, {"lat": "53.70602", "lon": "-2.28475", "name": "Rawtenstall Cemetery", "url": "/I0001/places/P0041/", "count": 6, "ancestor_count": 1}, {"lat": "53.36917", "lon": "-1.48722", "name": "Sheffield General Cemetery", "url": "/I0001/places/P0035/", "count": 3, "ancestor_count": 1}, {"lat": "53.42781", "lon": "-2.2611", "name": "Southern Cemetery", "url": "/I0001/places/P0037/", "count": 5, "ancestor_count": 3}, {"lat": "53.70373", "lon": "-2.20196", "name": "St John the Evangelist Churchyard", "url": "/I0001/places/P0040/", "count": 7, "ancestor_count": 2}];
     if (places.length) {
       map.fitBounds(places.map(p => [p.lat, p.lon]), {padding: [20, 20], maxZoom: 10});
     } else {
@@ -269,13 +269,13 @@
 
   var tabs = document.querySelector('.person-tabs');
   if (tabs) {
-    var active = tabs.querySelector('span.active');
-    if (active) {
+    var activeTab = tabs.querySelector('span.active');
+    if (activeTab) {
       var btn = document.createElement('button');
       btn.className = 'tabs-toggle';
       btn.textContent = '▾';
       btn.setAttribute('aria-label', 'Toggle tabs');
-      active.after(btn);
+      activeTab.after(btn);
       btn.addEventListener('click', function() {
         var open = tabs.classList.toggle('open');
         btn.textContent = open ? '▴' : '▾';
