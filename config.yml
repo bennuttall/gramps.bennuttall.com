@@ -9,3 +9,13 @@ roots:
   - I0010
 ancestry_tree_id: "1234567890"
 site_title: "Hartwell Family Tree"
+nav_pages:
+- my-tree
+- me
+- people
+- places
+- events
+- census
+- cemeteries
+- birthdays
+- surnames
