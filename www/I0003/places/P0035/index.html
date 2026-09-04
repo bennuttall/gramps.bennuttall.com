@@ -25,31 +25,30 @@
         <a class="secondary" href="/I0003/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0003/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0003/surnames/">Surnames</a>
-        
-          <details class="secondary view-as" data-current="I0003">
-            <summary>Viewing as Norah &mdash; switch</summary>
-            <ul>
-              <li>
-                <a href="/I0000/">Alex Hartwell</a>
-              </li>
-              <li>
-                <a href="/I0001/">Norman Hartwell</a>
-              </li>
-              <li>
-                <a href="/I0002/">Ursula Ravenswood</a>
-              </li>
-              <li>
-                <a href="/I0004/">Theodore Hartwell</a>
-              </li>
-              <li>
-                <a href="/I0005/">Dorothea Crowther</a>
-              </li>
-              <li>
-                <a href="/I0010/">Tabitha Thornbury</a>
-              </li>
-            </ul>
-          </details>
-          
+        <a class="secondary" href="/I0003/explore/">Explore</a>
+        <details class="secondary view-as" data-current="I0003">
+          <summary>Viewing as Norah &mdash; switch</summary>
+          <ul>
+            <li>
+              <a href="/I0000/">Alex Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0001/">Norman Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0002/">Ursula Ravenswood</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+            <li>
+              <a href="/I0010/">Tabitha Thornbury</a>
+            </li>
+          </ul>
+        </details>
         
       </div>
     </nav>
@@ -81,10 +80,10 @@
       <table class="events-table" id="places-events-table">
         <thead>
           <tr>
-            <th>Year</th>
-            <th>Event</th>
-            <th>Person</th>
-            <th>Find A Grave</th>
+            <th data-col="0" class="sortable sort-asc">Year</th>
+            <th data-col="1" class="sortable">Event</th>
+            <th data-col="2" class="sortable">Person</th>
+            <th data-col="3" class="sortable">Find A Grave</th>
             
           </tr>
         </thead>
@@ -202,8 +201,46 @@
     }
     </script>
     <script>
-    const rows = Array.from(document.querySelectorAll('#places-events-table tbody tr'));
+    const tbody = document.querySelector('#places-events-table tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
     const filtersEl = document.getElementById('filters');
+
+    let sortCol = 0;
+    let sortAsc = true;
+
+    function cellText(row, col) {
+      return row.cells[col].textContent.trim();
+    }
+
+    function sortRows() {
+      rows.sort((a, b) => {
+        let av = cellText(a, sortCol);
+        let bv = cellText(b, sortCol);
+        if (sortCol === 0) {
+          const an = parseInt(av) || 0, bn = parseInt(bv) || 0;
+          return sortAsc ? an - bn : bn - an;
+        }
+        return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    }
+
+    document.querySelectorAll('#places-events-table th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = +th.dataset.col;
+        if (sortCol === col) {
+          sortAsc = !sortAsc;
+        } else {
+          sortCol = col;
+          sortAsc = true;
+        }
+        document.querySelectorAll('#places-events-table th.sortable').forEach(h => {
+          h.classList.remove('sort-asc', 'sort-desc');
+        });
+        th.classList.add(sortAsc ? 'sort-asc' : 'sort-desc');
+        sortRows();
+      });
+    });
 
     rows.forEach(r => { if (r.querySelector('.ancestor-badge')) r.dataset.ancestor = 'true'; });
     const hasAncestors = rows.some(r => r.dataset.ancestor);

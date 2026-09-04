@@ -25,31 +25,30 @@
         <a class="secondary" href="/I0010/cemeteries/">Cemeteries</a>
         <a class="secondary" href="/I0010/birthdays/">Birthdays</a>
         <a class="secondary" href="/I0010/surnames/">Surnames</a>
-        
-          <details class="secondary view-as" data-current="I0010">
-            <summary>Viewing as Tabitha &mdash; switch</summary>
-            <ul>
-              <li>
-                <a href="/I0000/">Alex Hartwell</a>
-              </li>
-              <li>
-                <a href="/I0001/">Norman Hartwell</a>
-              </li>
-              <li>
-                <a href="/I0002/">Ursula Ravenswood</a>
-              </li>
-              <li>
-                <a href="/I0003/">Norah Hartwell</a>
-              </li>
-              <li>
-                <a href="/I0004/">Theodore Hartwell</a>
-              </li>
-              <li>
-                <a href="/I0005/">Dorothea Crowther</a>
-              </li>
-            </ul>
-          </details>
-          
+        <a class="secondary" href="/I0010/explore/">Explore</a>
+        <details class="secondary view-as" data-current="I0010">
+          <summary>Viewing as Tabitha &mdash; switch</summary>
+          <ul>
+            <li>
+              <a href="/I0000/">Alex Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0001/">Norman Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0002/">Ursula Ravenswood</a>
+            </li>
+            <li>
+              <a href="/I0003/">Norah Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0004/">Theodore Hartwell</a>
+            </li>
+            <li>
+              <a href="/I0005/">Dorothea Crowther</a>
+            </li>
+          </ul>
+        </details>
         
       </div>
     </nav>
@@ -11241,7 +11240,9 @@
         let av = cellText(a, sortCol);
         let bv = cellText(b, sortCol);
         if (sortCol === 0) {
-          const an = parseInt(av) || 0, bn = parseInt(bv) || 0;
+          // Undated events sort last whichever direction is chosen
+          const missing = sortAsc ? Infinity : -Infinity;
+          const an = av ? parseInt(av) : missing, bn = bv ? parseInt(bv) : missing;
           return sortAsc ? an - bn : bn - an;
         }
         return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
